@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pho Bò - Receta Auténtica Vietnamita</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hero-pho {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://eatlittlebird.com/wp-content/uploads/2023/01/bun-bo-hue-6.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 120px 0;
+            margin-bottom: 40px;
+        }
+        .ingredient-card {
+            transition: transform 0.3s;
+            border-left: 4px solid #dc3545;
+        }
+        .ingredient-card:hover {
+            transform: translateY(-5px);
+        }
+        .step-card {
+            border-left: 4px solid #28a745;
+            margin-bottom: 20px;
+        }
+        .broth-tips {
+            border-left: 4px solid #ffc107;
+            background-color: #fff8e1;
+        }
+        .cultural-note {
+            font-style: italic;
+            color: #6c757d;
+        }
+        .nutrition-badge {
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero-pho text-center">
+        <div class="container">
+            <h1 class="display-3 fw-bold">Pho Bò</h1>
+            <p class="lead fs-4">La auténtica sopa de fideos vietnamita con carne</p>
+            <div class="mt-4">
+                <span class="badge bg-light text-dark me-2">Tiempo: 4-6 horas</span>
+                <span class="badge bg-light text-dark me-2">Dificultad: Media</span>
+                <span class="badge bg-light text-dark">Porciones: 6-8</span>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <!-- Intro -->
+        <div class="row mb-5">
+            <div class="col-lg-10 mx-auto">
+                <div class="text-center mb-4">
+                    <p class="fs-5">El Pho Bò es el plato nacional de Vietnam, una reconfortante sopa de fideos de arroz con un caldo perfumado con especias, hierbas aromáticas y tiernos cortes de carne. Esta receta tradicional requiere paciencia pero el resultado es una experiencia culinaria inolvidable.</p>
+                    <div class="d-flex justify-content-center flex-wrap gap-2 mt-3">
+                        <span class="badge bg-danger">Comida callejera</span>
+                        <span class="badge bg-success">Auténtica</span>
+                        <span class="badge bg-primary">Comfort food</span>
+                        <span class="badge bg-warning text-dark">Sin gluten</span>
+                    </div>
+                </div>
+                
+                <div class="alert alert-dark cultural-note">
+                    <p class="mb-0">"Pho" se pronuncia aproximadamente como "fuh". En Vietnam, se consume a cualquier hora del día, especialmente como desayuno energético. Cada familia tiene su versión, pero los elementos esenciales son el caldo claro pero sabroso, los fideos de arroz y las hierbas frescas.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-4">
+            <!-- Ingredients Section -->
+            <div class="col-lg-5">
+                <div class="card shadow-sm mb-4">
+                    <div class="card-header bg-danger text-white">
+                        <h2 class="h4 mb-0">Ingredientes para el Caldo</h2>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">2-3 kg de huesos de res</div>
+                                    (tibia, rodilla, hueso de caña - preferiblemente con médula)
+                                </div>
+                                <span class="badge bg-danger rounded-pill">Base</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">1 cebolla grande</div>
+                                    cortada por la mitad sin pelar
+                                </div>
+                                <span class="badge bg-secondary rounded-pill">Aroma</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">1 trozo de jengibre (5cm)</div>
+                                    cortado por la mitad sin pelar
+                                </div>
+                                <span class="badge bg-secondary rounded-pill">Aroma</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">Especias para pho</div>
+                                    3 anís estrellado, 1 canela en rama, 3 clavos, 1 cardamomo, 1 cucharadita de semillas de cilantro
+                                </div>
+                                <span class="badge bg-warning text-dark rounded-pill">Esencia</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">3-4 litros de agua</div>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">2-3 cucharadas de salsa de pescado</div>
+                                    (nuoc mam)
+                                </div>
+                                <span class="badge bg-dark rounded-pill">Umami</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">1 cucharada de azúcar</div>
+                                    o 1 trozo de rock sugar vietnamita
+                                </div>
+                                <span class="badge bg-light text-dark rounded-pill">Balance</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">Sal al gusto</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card shadow-sm mb-4">
+                    <div class="card-header bg-success text-white">
+                        <h2 class="h4 mb-0">Otros Ingredientes</h2>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">500g de fideos de arroz para pho</div>
+                                    (banh pho) secos
+                                </div>
+                                <span class="badge bg-primary rounded-pill">Base</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">400-500g de carne de res</div>
+                                    (falda, solomillo o lomo fino - cortada muy fina)
+                                </div>
+                                <span class="badge bg-danger rounded-pill">Proteína</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">Guarniciones</div>
+                                    cebolla blanca finamente rebanada, cebollino picado, cilantro, brotes de soja, hojas de menta, hierba limón, albahaca tailandesa, lima
+                                </div>
+                                <span class="badge bg-success rounded-pill">Frescura</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold">Salsas para servir</div>
+                                    salsa hoisin, salsa sriracha
+                                </div>
+                                <span class="badge bg-dark rounded-pill">Acompañamiento</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card shadow-sm broth-tips">
+                    <div class="card-header bg-warning text-dark">
+                        <h2 class="h4 mb-0">Consejos para el Caldo Perfecto</h2>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li class="mb-2">Blanquear los huesos (hervir 5 min, desechar agua y limpiar) para un caldo claro</li>
+                            <li class="mb-2">Tostar la cebolla y jengibre en sartén seca o asar hasta que estén carbonizados por fuera</li>
+                            <li class="mb-2">Las especias deben tostarse ligeramente antes de añadirlas al caldo</li>
+                            <li>El caldo debe cocerse a fuego lento, nunca hirviendo fuerte</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Preparation Section -->
+            <div class="col-lg-7">
+                <div class="card shadow-sm mb-4">
+                    <div class="card-header bg-primary text-white">
+                        <h2 class="h4 mb-0">Preparación del Caldo</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="step-card card mb-3">
+                            <div class="card-body">
+                                <h3 class="h5">1. Preparar los huesos</h3>
+                                <p class="mb-0">Coloca los huesos en una olla grande con agua fría que los cubra. Lleva a ebullición y hierve durante 5 minutos. Escurre y lava bien los huesos bajo agua fría, frotando para eliminar impurezas. Limpia la olla.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step-card card mb-3">
+                            <div class="card-body">
+                                <h3 class="h5">2. Tostar aromáticos</h3>
+                                <p class="mb-0">En una sartén seca a fuego medio, coloca las mitades de cebolla y jengibre con el lado cortado hacia abajo. Tuesta hasta que estén carbonizados (5-7 min). También tuesta ligeramente las especias (1-2 min) hasta que sean fragantes.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step-card card mb-3">
+                            <div class="card-body">
+                                <h3 class="h5">3. Cocinar el caldo</h3>
+                                <p>Vuelve a colocar los huesos limpios en la olla grande y añade 3-4 litros de agua fresca. Lleva a ebullición y reduce el fuego para mantener un hervor suave. Con una espumadera, elimina cualquier impureza que suba a la superficie durante los primeros 30 minutos.</p>
+                                <p class="mb-0">Añade la cebolla, jengibre y especias (puedes meterlas en una bolsita de muselina). Cocina a fuego lento durante 4-6 horas (cuanto más, mejor). Añade salsa de pescado, azúcar y sal en los últimos 30 minutos.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step-card card">
+                            <div class="card-body">
+                                <h3 class="h5">4. Colar y desgrasar</h3>
+                                <p class="mb-0">Cuela el caldo a través de un colador fino forrado con estameña o paño de cocina limpio. Desgrasa quitando la capa de grasa de la superficie con una cuchara o usando un desgrasador. El caldo debe ser claro pero con mucho sabor.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card shadow-sm mb-4">
+                    <div class="card-header bg-success text-white">
+                        <h2 class="h4 mb-0">Montaje del Pho</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="step-card card mb-3">
+                            <div class="card-body">
+                                <h3 class="h5">1. Preparar los fideos</h3>
+                                <p class="mb-0">Remoja los fideos de arroz en agua tibia durante 20-30 minutos hasta que estén flexibles. Escurre bien. Para servir, sumerge los fideos en agua hirviendo durante 10-20 segundos hasta que estén tiernos pero firmes. Escurre inmediatamente.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step-card card mb-3">
+                            <div class="card-body">
+                                <h3 class="h5">2. Cortar la carne</h3>
+                                <p class="mb-0">Corta la carne en lonchas muy finas (casi transparentes). Es más fácil si la carne está medio congelada. La carne se cocinará con el calor del caldo hirviendo al servir.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step-card card mb-3">
+                            <div class="card-body">
+                                <h3 class="h5">3. Preparar guarniciones</h3>
+                                <p class="mb-0">Lava y prepara todas las hierbas frescas. Corta la cebolla blanca en juliana fina, pica el cebollino y prepara los brotes de soja. Corta las limas en cuartos.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step-card card">
+                            <div class="card-body">
+                                <h3 class="h5">4. Servir</h3>
+                                <p>En cada tazón grande coloca: fideos cocidos, carne cruda en lonchas, un poco de cebolla blanca y cebollino. Vierte caldo hirviendo sobre la carne (esto la cocinará). Cada comensal puede añadir sus guarniciones favoritas al gusto: hierbas frescas, brotes de soja, jugo de lima, salsa hoisin y sriracha.</p>
+                                <p class="mb-0">Tradicionalmente se come inmediatamente, mezclando los ingredientes con los palillos y cuchara de sopa.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card shadow-sm h-100">
+                            <div class="card-header bg-info text-white">
+                                <h2 class="h5 mb-0">Variaciones</h2>
+                            </div>
+                            <div class="card-body">
+                                <ul>
+                                    <li class="mb-2"><strong>Pho Ga:</strong> Versión con pollo en lugar de carne de res</li>
+                                    <li class="mb-2"><strong>Pho Chay:</strong> Versión vegetariana con caldo de verduras y tofu</li>
+                                    <li class="mb-2"><strong>Pho Tai:</strong> Solo con carne poco cocida (el corte más popular)</li>
+                                    <li><strong>Pho Dac Biet:</strong> "Especial" con varios cortes de carne y albóndigas</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card shadow-sm h-100">
+                            <div class="card-header bg-dark text-white">
+                                <h2 class="h5 mb-0">Información Nutricional</h2>
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex flex-wrap gap-2 mb-3">
+                                    <span class="badge bg-primary nutrition-badge">450-600 kcal</span>
+                                    <span class="badge bg-success nutrition-badge">30g proteína</span>
+                                    <span class="badge bg-warning text-dark nutrition-badge">50g carbohidratos</span>
+                                    <span class="badge bg-danger nutrition-badge">10g grasas</span>
+                                </div>
+                                <p class="mb-2"><strong>Beneficios:</strong> Rico en colágeno (de los huesos), hierro, vitaminas B y antioxidantes. Bajo en grasa si se desgrasa bien el caldo.</p>
+                                <p class="mb-0"><strong>Contiene:</strong> Glutamatos naturales (umami), jengibre (digestivo), anís estrellado (propiedades antivirales).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- History Section -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-secondary text-white">
+                        <h2 class="h4 mb-0">Historia y Cultura del Pho</h2>
+                    </div>
+                    <div class="card-body">
+                        <p>El Pho surgió a principios del siglo XX en el norte de Vietnam, posiblemente influenciado por la cocina francesa (el término "feu" como en "pot-au-feu") y la china. Se popularizó en todo el país después de 1954 cuando muchos norvietnamitas emigraron al sur.</p>
+                        <p>En Vietnam, el Pho se consume principalmente como desayuno, aunque también es común para almuerzo o cena. Los puestos callejeros de Pho suelen especializarse solo en este plato, sirviéndolo desde primeras horas de la mañana hasta que se agota el caldo.</p>
+                        <p class="mb-0">El Pho llegó a Occidente con los refugiados vietnamitas después de la guerra, convirtiéndose en uno de los platos más reconocibles de la cocina del sudeste asiático.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 class="h5">Pho Bò Vietnamita</h3>
+                    <p class="text-muted">Receta tradicional adaptada para cocinas occidentales</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">© 2023 Cocina Asiática Auténtica</p>
+                    <p class="text-muted small">El Pho está considerado como uno de los platos nacionales de Vietnam</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

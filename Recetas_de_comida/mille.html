@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receta de Mille-feuille</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .recipe-header {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1551024506-0bccd828d307');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            margin-bottom: 30px;
+        }
+        .ingredient-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .ingredient-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .step-card {
+            margin-bottom: 20px;
+            transition: transform 0.3s;
+        }
+        .step-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header con imagen de fondo -->
+    <header class="recipe-header text-center">
+        <div class="container">
+            <h1 class="display-3 fw-bold">Mille-feuille Clásico</h1>
+            <p class="lead">El postre francés de hojaldre y crema pastelera que enamora</p>
+            <div class="badge bg-light text-dark fs-6 mt-3">Tiempo: 2 horas (más enfriamiento)</div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <!-- Columna de ingredientes -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-primary text-white">
+                        <h2 class="h5 mb-0">Ingredientes</h2>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="h6 text-muted">Para el hojaldre:</h3>
+                        <ul class="ingredient-list">
+                            <li>500g de masa de hojaldre (o 2 planchas precocidas)</li>
+                            <li>Harina para espolvorear</li>
+                        </ul>
+
+                        <h3 class="h6 text-muted mt-4">Para la crema pastelera:</h3>
+                        <ul class="ingredient-list">
+                            <li>500ml de leche entera</li>
+                            <li>1 vaina de vainilla (o 1 cucharadita de extracto)</li>
+                            <li>4 yemas de huevo</li>
+                            <li>100g de azúcar</li>
+                            <li>40g de maicena</li>
+                            <li>30g de mantequilla</li>
+                        </ul>
+
+                        <h3 class="h6 text-muted mt-4">Para decorar:</h3>
+                        <ul class="ingredient-list">
+                            <li>150g de azúcar glas</li>
+                            <li>2 cucharadas de cacao en polvo</li>
+                            <li>Frambuesas frescas (opcional)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Columna de preparación -->
+            <div class="col-md-8">
+                <div class="card shadow-sm mb-4">
+                    <div class="card-header bg-success text-white">
+                        <h2 class="h5 mb-0">Preparación</h2>
+                    </div>
+                    <div class="card-body">
+                        <!-- Paso 1 -->
+                        <div class="step-card card mb-3">
+                            <div class="card-header bg-light">
+                                <h3 class="h6 mb-0">Paso 1: Preparar el hojaldre</h3>
+                            </div>
+                            <div class="card-body">
+                                <p>Precalienta el horno a 200°C. Extiende la masa de hojaldre sobre una superficie enharinada hasta obtener un rectángulo de unos 3mm de grosor.</p>
+                                <p>Corta en 3 rectángulos iguales y colócalos en una bandeja para horno con papel pergamino. Pincha con un tenedor para evitar que se hinche demasiado.</p>
+                                <p>Hornear durante 15-20 minutos hasta que estén dorados y crujientes. Dejar enfriar.</p>
+                            </div>
+                        </div>
+
+                        <!-- Paso 2 -->
+                        <div class="step-card card mb-3">
+                            <div class="card-header bg-light">
+                                <h3 class="h6 mb-0">Paso 2: Hacer la crema pastelera</h3>
+                            </div>
+                            <div class="card-body">
+                                <p>Calienta la leche con la vainilla (si usas vainilla en vaina, ábrela y raspa las semillas).</p>
+                                <p>En un bol aparte, bate las yemas con el azúcar hasta que blanqueen. Añade la maicena y mezcla bien.</p>
+                                <p>Vierte la leche caliente poco a poco sobre la mezcla de yemas, removiendo constantemente. Lleva todo de vuelta al fuego y cocina a fuego medio hasta que espese.</p>
+                                <p>Retira del fuego, añade la mantequilla y mezcla bien. Cubre con film transparente tocando la superficie para evitar que se forme costra y deja enfriar.</p>
+                            </div>
+                        </div>
+
+                        <!-- Paso 3 -->
+                        <div class="step-card card mb-3">
+                            <div class="card-header bg-light">
+                                <h3 class="h6 mb-0">Paso 3: Montar el Mille-feuille</h3>
+                            </div>
+                            <div class="card-body">
+                                <p>Coloca una capa de hojaldre en una bandeja. Extiende la mitad de la crema pastelera de manera uniforme.</p>
+                                <p>Coloca la segunda capa de hojaldre y extiende el resto de la crema. Termina con la tercera capa de hojaldre.</p>
+                                <p>Refrigera al menos 1 hora antes de decorar.</p>
+                            </div>
+                        </div>
+
+                        <!-- Paso 4 -->
+                        <div class="step-card card mb-3">
+                            <div class="card-header bg-light">
+                                <h3 class="h6 mb-0">Paso 4: Decorar</h3>
+                            </div>
+                            <div class="card-body">
+                                <p>Mezcla el azúcar glas con un poco de agua hasta obtener una consistencia espesa pero vertible.</p>
+                                <p>Extiende sobre la capa superior del hojaldre. Con el cacao en polvo haz líneas paralelas y luego pasa un palillo en perpendicular para crear el efecto de peine característico.</p>
+                                <p>Deja secar y corta en porciones con un cuchillo afilado. Decora con frambuesas si deseas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Consejos -->
+                <div class="card shadow-sm">
+                    <div class="card-header bg-warning">
+                        <h2 class="h5 mb-0">Consejos del Chef</h2>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Para un hojaldre más crujiente, puedes colocar otro papel pergamino y otra bandeja encima mientras se hornea para que quede plano.</li>
+                            <li class="list-group-item">La crema pastelera debe estar fría pero aún maleable al montar el postre.</li>
+                            <li class="list-group-item">Puedes añadir un poco de licor como Grand Marnier a la crema para darle un toque especial.</li>
+                            <li class="list-group-item">Sirve inmediatamente después de cortar para mantener la textura crujiente.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <p class="mb-0">© 2023 Recetas Francesas | Para los amantes de la repostería</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Macarons Parisinos - Receta Francesa</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .recipe-header {
+            background-color: #f8f9fa;
+            padding: 2rem;
+            border-radius: 0.5rem;
+            margin-bottom: 2rem;
+        }
+        .ingredient-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .ingredient-item {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #eee;
+        }
+        .step-card {
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #6f42c1;
+        }
+        .tips-section {
+            background-color: #e9ecef;
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+        }
+        .macaron-image {
+            border-radius: 0.5rem;
+            box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container py-5">
+        <!-- Header -->
+        <div class="recipe-header text-center">
+            <h1 class="display-4">Macarons Parisinos</h1>
+            <p class="lead">La auténtica receta francesa de estos delicados pastelitos</p>
+            <div class="d-flex justify-content-center gap-3">
+                <span class="badge bg-primary">Postre</span>
+                <span class="badge bg-secondary">Francés</span>
+                <span class="badge bg-success">Avanzado</span>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Imagen principal -->
+            <div class="col-md-6">
+                <img src="https://images.unsplash.com/photo-1558326567-98ae2405596b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Macarons de colores" class="img-fluid macaron-image">
+                
+                <!-- Información rápida -->
+                <div class="card mb-4">
+                    <div class="card-header bg-purple text-white">
+                        <h5 class="mb-0">Información Rápida</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-6">
+                                <p><strong>Tiempo Prep:</strong> 1h 30min</p>
+                                <p><strong>Horneado:</strong> 15min</p>
+                            </div>
+                            <div class="col-6">
+                                <p><strong>Reposo:</strong> 30min</p>
+                                <p><strong>Dificultad:</strong> Media/Alta</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ingredientes -->
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header bg-purple text-white">
+                        <h2 class="h5 mb-0">Ingredientes</h2>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="h6 text-muted">Para las tapas de macaron:</h3>
+                        <ul class="ingredient-list">
+                            <li class="ingredient-item">100g de clara de huevo (aproximadamente 3 huevos)</li>
+                            <li class="ingredient-item">125g de almendra molida</li>
+                            <li class="ingredient-item">225g de azúcar glas</li>
+                            <li class="ingredient-item">30g de azúcar granulada</li>
+                            <li class="ingredient-item">Colorante alimentario en gel (opcional)</li>
+                        </ul>
+
+                        <h3 class="h6 text-muted mt-4">Para el relleno (ganache de chocolate):</h3>
+                        <ul class="ingredient-list">
+                            <li class="ingredient-item">100g de chocolate negro (70% cacao)</li>
+                            <li class="ingredient-item">100ml de nata para montar (crema de leche espesa)</li>
+                            <li class="ingredient-item">10g de mantequilla sin sal</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Preparación -->
+        <div class="row mt-4">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header bg-purple text-white">
+                        <h2 class="h5 mb-0">Preparación</h2>
+                    </div>
+                    <div class="card-body">
+                        <!-- Paso 1 -->
+                        <div class="card step-card">
+                            <div class="card-body">
+                                <div class="d-flex">
+                                    <span class="badge bg-purple me-3">1</span>
+                                    <div>
+                                        <h3 class="h5">Preparar los ingredientes</h3>
+                                        <p>Tamiza la almendra molida y el azúcar glas juntos dos veces para asegurar una textura fina y uniforme. Reserva.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Paso 2 -->
+                        <div class="card step-card">
+                            <div class="card-body">
+                                <div class="d-flex">
+                                    <span class="badge bg-purple me-3">2</span>
+                                    <div>
+                                        <h3 class="h5">Montar las claras</h3>
+                                        <p>En un bol limpio y seco, bate las claras a punto de nieve. Cuando empiecen a formar picos, añade el azúcar granulada poco a poco sin dejar de batir hasta obtener un merengue brillante y firme. Si usas colorante, añádelo al final y mezcla suavemente.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Paso 3 -->
+                        <div class="card step-card">
+                            <div class="card-body">
+                                <div class="d-flex">
+                                    <span class="badge bg-purple me-3">3</span>
+                                    <div>
+                                        <h3 class="h5">Macaronage</h3>
+                                        <p>Incorpora la mezcla de almendra y azúcar glas al merengue en tres veces, mezclando con movimientos envolventes. La masa debe quedar homogénea y fluida, pero no demasiado líquida. Cuando al levantar la espátula la masa caiga formando una cinta que desaparece en unos 20 segundos, está lista.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Paso 4 -->
+                        <div class="card step-card">
+                            <div class="card-body">
+                                <div class="d-flex">
+                                    <span class="badge bg-purple me-3">4</span>
+                                    <div>
+                                        <h3 class="h5">Formar los macarons</h3>
+                                        <p>Coloca la masa en una manga pastelera con boquilla lisa de 8-10mm. Sobre una bandeja con papel sulfurizado, forma círculos de unos 3-4cm de diámetro, dejando espacio entre ellos. Golpea ligeramente la bandeja contra la mesa para eliminar burbujas de aire.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Paso 5 -->
+                        <div class="card step-card">
+                            <div class="card-body">
+                                <div class="d-flex">
+                                    <span class="badge bg-purple me-3">5</span>
+                                    <div>
+                                        <h3 class="h5">Reposo</h3>
+                                        <p>Deja reposar los macarons a temperatura ambiente durante 30-60 minutos hasta que al tocarlos ligeramente no se peguen a los dedos y se forme una película seca en la superficie.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Paso 6 -->
+                        <div class="card step-card">
+                            <div class="card-body">
+                                <div class="d-flex">
+                                    <span class="badge bg-purple me-3">6</span>
+                                    <div>
+                                        <h3 class="h5">Hornear</h3>
+                                        <p>Precalienta el horno a 150°C (convección) o 160°C (horno convencional). Hornea los macarons durante 12-15 minutos, rotando la bandeja a mitad de cocción. Deben estar firmes pero no dorarse.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Paso 7 -->
+                        <div class="card step-card">
+                            <div class="card-body">
+                                <div class="d-flex">
+                                    <span class="badge bg-purple me-3">7</span>
+                                    <div>
+                                        <h3 class="h5">Preparar el relleno</h3>
+                                        <p>Mientras se enfrían los macarons, prepara la ganache: calienta la nata hasta que hierva, viértela sobre el chocolate picado y deja reposar 2 minutos. Remueve hasta obtener una mezcla homogénea y añade la mantequilla. Refrigera hasta que espese.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Paso 8 -->
+                        <div class="card step-card">
+                            <div class="card-body">
+                                <div class="d-flex">
+                                    <span class="badge bg-purple me-3">8</span>
+                                    <div>
+                                        <h3 class="h5">Rellenar</h3>
+                                        <p>Cuando los macarons estén completamente fríos, despegalos con cuidado del papel. Rellena con la ganache usando una manga pastelera, emparejando las tapas por tamaño. Presiona ligeramente para que el relleno llegue hasta los bordes.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Paso 9 -->
+                        <div class="card step-card">
+                            <div class="card-body">
+                                <div class="d-flex">
+                                    <span class="badge bg-purple me-3">9</span>
+                                    <div>
+                                        <h3 class="h5">Maduración</h3>
+                                        <p>Guarda los macarons en el refrigerador durante 24 horas antes de consumir para que desarrollen su textura característica (crujiente por fuera y suave por dentro).</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Consejos y variaciones -->
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <div class="tips-section">
+                    <h3 class="h5">Consejos Profesionales</h3>
+                    <ul>
+                        <li>Usa huevos a temperatura ambiente y preferiblemente que hayan sido separados 1-2 días antes.</li>
+                        <li>La humedad ambiental afecta mucho el resultado, idealmente trabaja en un día seco.</li>
+                        <li>Si no tienes almendra molida, puedes moler almendras peladas con el azúcar glas en un procesador, pero no demasiado o liberarán aceite.</li>
+                        <li>Para saber si están cocidos, intenta levantar suavemente un macaron; si la base se separa limpia del papel, están listos.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="tips-section">
+                    <h3 class="h5">Variaciones</h3>
+                    <ul>
+                        <li><strong>De frambuesa:</strong> Añade 1 cucharadita de polvo de frambuesa liofilizada a la mezcla seca y rellena con mermelada de frambuesa.</li>
+                        <li><strong>De pistacho:</strong> Sustituye 30g de almendra por pistacho molido y rellena con ganache de chocolate blanco y pistacho.</li>
+                        <li><strong>De limón:</strong> Añade ralladura de limón a la masa y rellena con curd de limón.</li>
+                        <li><strong>De café:</strong> Añade 1 cucharadita de café instantáneo disuelto en 1 cucharada de agua caliente al merengue.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Notas finales -->
+        <div class="row mt-4">
+            <div class="col-12">
+                <div class="alert alert-info">
+                    <h3 class="h5">Notas importantes</h3>
+                    <p>Los macarons son delicados y requieren precisión en las medidas y técnica. No te desanimes si las primeras veces no salen perfectos - ¡la práctica hace al maestro! La consistencia de la masa (ni muy líquida ni muy espesa) y el tiempo de reposo son claves para obtener los característicos "pies" del macaron.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

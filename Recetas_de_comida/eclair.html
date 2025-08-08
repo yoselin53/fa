@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Éclair au Chocolat - Receta Clásica Francesa</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .recipe-header {
+            background-color: #f8f9fa;
+            padding: 2rem;
+            border-radius: 0.5rem;
+            margin-bottom: 2rem;
+            background-image: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url('https://images.unsplash.com/photo-1571115177098-24ec42ed204d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .ingredient-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .ingredient-item {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #eee;
+        }
+        .step-card {
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #8B4513;
+        }
+        .tips-section {
+            background-color: #e9ecef;
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+        }
+        .eclair-image {
+            border-radius: 0.5rem;
+            box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+            margin-bottom: 1.5rem;
+        }
+        .bg-chocolate {
+            background-color: #6B4423;
+        }
+        .text-chocolate {
+            color: #6B4423;
+        }
+    </style>
+</head>
+<body>
+    <div class="container py-5">
+        <!-- Header -->
+        <div class="recipe-header text-center">
+            <h1 class="display-4">Éclair au Chocolat</h1>
+            <p class="lead">El clásico pastelito francés relleno de crema y cubierto con glaseado de chocolate</p>
+            <div class="d-flex justify-content-center gap-3">
+                <span class="badge bg-chocolate text-white">Postre</span>
+                <span class="badge bg-secondary">Francés</span>
+                <span class="badge bg-warning text-dark">Intermedio</span>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Imagen principal -->
+            <div class="col-md-6">
+                <img src="https://images.unsplash.com/photo-1623241894050-5b2d64a0a4ba?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Éclairs de chocolate" class="img-fluid eclair-image">
+                
+                <!-- Información rápida -->
+                <div class="card mb-4">
+                    <div class="card-header bg-chocolate text-white">
+                        <h5 class="mb-0">Información Rápida</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-6">
+                                <p><strong>Tiempo Prep:</strong> 1h</p>
+                                <p><strong>Horneado:</strong> 25-30min</p>
+                            </div>
+                            <div class="col-6">
+                                <p><strong>Reposo:</strong> 1h</p>
+                                <p><strong>Dificultad:</strong> Media</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-12">
+                                <p><strong>Rendimiento:</strong> 12-15 éclairs</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ingredientes -->
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header bg-chocolate text-white">
+                        <h2 class="h5 mb-0">Ingredientes</h2>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="h6 text-muted">Para la masa choux:</h3>
+                        <ul class="ingredient-list">
+                            <li class="ingredient-item">125ml de agua</li>
+                            <li class="ingredient-item">125ml de leche entera</li>
+                            <li class="ingredient-item">100g de mantequilla sin sal</li>
+                            <li class="ingredient-item">1 cucharadita de azúcar</li>
+                            <li class="ingredient-item">1/2 cucharadita de sal</li>
+                            <li class="ingredient-item">150g de harina de trigo</li>
+                            <li class="ingredient-item">4-5 huevos grandes (a temperatura ambiente)</li>
+                        </ul>
+
+                        <h3 class="h6 text-muted mt-4">Para la crema pastelera:</h3>
+                        <ul class="ingredient-list">
+                            <li class="ingredient-item">500ml de leche entera</li>
+                            <li class="ingredient-item">1 vaina de vainilla o 1 cucharadita de extracto</li>
+                            <li class="ingredient-item">4 yemas de huevo</li>
+                            <li class="ingredient-item">100g de azúcar</li>
+                            <li class="ingredient-item">40g de maicena</li>
+                            <li class="ingredient-item">30g de mantequilla sin sal</li>
+                        </ul>
+
+                        <h3 class="h6 text-muted mt-4">Para el glaseado de chocolate:</h3>
+                        <ul class="ingredient-list">
+                            <li class="ingredient-item">150g de chocolate negro (50-70% cacao)</li>
+                            <li class="ingredient-item">150ml de nata para montar (crema de leche espesa)</li>
+                            <li class="ingredient-item">1 cucharada de miel o jarabe de maíz (opcional, para brillo)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Preparación -->
+        <div class="row mt-4">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header bg-chocolate text-white">
+                        <h2 class="h5 mb-0">Preparación</h2>
+                    </div>
+                    <div class="card-body">
+                        <!-- Paso 1 - Masa Choux -->
+                        <div class="card step-card">
+                            <div class="card-body">
+                                <div class="d-flex">
+                                    <span class="badge bg-chocolate me-3">1</span>
+                                    <div>
+                                        <h3 class="h5">Preparar la masa choux</h3>
+                                        <p>En una cacerola, calienta el agua, la leche, la mantequilla, el azúcar y la sal hasta que hierva. Retira del fuego y añade toda la harina de una vez, mezclando vigorosamente con una cuchara de madera hasta formar una bola que se despegue de los lados de la cacerola.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Paso 2 -->
+                        <div class="card step-card">
+                            <div class="card-body">
+                                <div class="d-flex">
+                                    <span class="badge bg-chocolate me-3">2</span>
+                                    <div>
+                                        <h3 class="h5">Secar la masa</h3>
+                                        <p>Vuelve a poner la cacerola a fuego medio durante 1-2 minutos, moviendo constantemente para secar la masa. Transfiere a un bol y deja enfriar 5 minutos.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Paso 3 -->
+                        <div class="card step-card">
+                            <div class="card-body">
+                                <div class="d-flex">
+                                    <span class="badge bg-chocolate me-3">3</span>
+                                    <div>
+                                        <h3 class="h5">Incorporar los huevos</h3>
+                                        <p>Añade los huevos uno a uno, mezclando bien después de cada adición hasta que quede completamente incorporado. La masa debe quedar brillante y suave, con una consistencia que al levantar la cuchara forme una "V" que caiga lentamente.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Paso 4 -->
+                        <div class="card step-card">
+                            <div class="card-body">
+                                <div class="d-flex">
+                                    <span class="badge bg-chocolate me-3">4</span>
+                                    <div>
+                                        <h3 class="h5">Formar los éclairs</h3>
+                                        <p>Precalienta el horno a 200°C. Coloca la masa en una manga pastelera con boquilla lisa de 10-12mm. En una bandeja con papel de horno, forma cilindros de unos 12-15cm de largo, dejando espacio entre ellos. Humedece un dedo y aplana las puntas.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Paso 5 -->
+                        <div class="card step-card">
+                            <div class="card-body">
+                                <div class="d-flex">
+                                    <span class="badge bg-chocolate me-3">5</span>
+                                    <div>
+                                        <h3 class="h5">Hornear</h3>
+                                        <p>Hornea durante 15 minutos a 200°C, luego baja a 180°C y hornea 10-15 minutos más hasta que estén dorados y crujientes. No abras el horno durante los primeros 20 minutos. Saca del horno y haz un pequeño agujero en cada extremo para que salga el vapor. Deja enfriar completamente.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Paso 6 - Crema pastelera -->
+                        <div class="card step-card">
+                            <div class="card-body">
+                                <div class="d-flex">
+                                    <span class="badge bg-chocolate me-3">6</span>
+                                    <div>
+                                        <h3 class="h5">Preparar la crema pastelera</h3>
+                                        <p>Calienta la leche con la vainilla (si usas vainilla en vaina, rásala y añade las semillas y la vaina). En un bol aparte, bate las yemas con el azúcar hasta blanquear, luego añade la maicena. Vierte la leche caliente poco a poco sobre la mezcla de yemas, revolviendo constantemente.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Paso 7 -->
+                        <div class="card step-card">
+                            <div class="card-body">
+                                <div class="d-flex">
+                                    <span class="badge bg-chocolate me-3">7</span>
+                                    <div>
+                                        <h3 class="h5">Cocer la crema</h3>
+                                        <p>Vuelve la mezcla a la cacerola y cocina a fuego medio, revolviendo constantemente con una cuchara de madera hasta que espese. Retira del fuego, añade la mantequilla y mezcla bien. Cubre con film transparente directamente sobre la crema para evitar que se forme piel y refrigera hasta que enfríe completamente.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Paso 8 - Glaseado -->
+                        <div class="card step-card">
+                            <div class="card-body">
+                                <div class="d-flex">
+                                    <span class="badge bg-chocolate me-3">8</span>
+                                    <div>
+                                        <h3 class="h5">Preparar el glaseado</h3>
+                                        <p>Calienta la nata hasta que hierva, retira del fuego y añade el chocolate picado. Deja reposar 2 minutos, luego remueve hasta obtener una mezcla homogénea. Añade la miel si deseas más brillo. Deja enfriar hasta que espese ligeramente pero siga siendo vertible.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Paso 9 - Ensamblaje -->
+                        <div class="card step-card">
+                            <div class="card-body">
+                                <div class="d-flex">
+                                    <span class="badge bg-chocolate me-3">9</span>
+                                    <div>
+                                        <h3 class="h5">Rellenar y decorar</h3>
+                                        <p>Rellena los éclairs con la crema pastelera usando una manga pastelera con boquilla fina (puedes hacer tres agujeros en la base o cortar por la mitad). Sumerge la parte superior de cada éclair en el glaseado de chocolate y deja que escurra el exceso. Deja secar a temperatura ambiente antes de servir.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Consejos y variaciones -->
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <div class="tips-section">
+                    <h3 class="h5">Consejos Profesionales</h3>
+                    <ul>
+                        <li>La masa choux debe estar tibia (no caliente) al añadir los huevos para evitar que se cuezan.</li>
+                        <li>Si la masa queda muy líquida después de añadir los huevos, puedes añadir un poco más de harina cocida o dejar reposar 10 minutos en la nevera.</li>
+                        <li>Para éclairs más crujientes, puedes hornearlos un poco más tiempo a temperatura más baja (160°C) después del horneado inicial.</li>
+                        <li>La crema pastelera debe estar completamente fría antes de rellenar los éclairs para evitar que se reblandezcan.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="tips-section">
+                    <h3 class="h5">Variaciones</h3>
+                    <ul>
+                        <li><strong>Éclair au Café:</strong> Añade 1 cucharada de café instantáneo disuelto a la crema pastelera y usa un glaseado de café.</li>
+                        <li><strong>Éclair à la Vanille:</strong> Haz la crema pastelera con vainilla y cubre con glaseado blanco.</li>
+                        <li><strong>Éclair Caramel:</strong> Rellena con crema de caramelo salado y cubre con glaseado de caramelo.</li>
+                        <li><strong>Mini Éclairs:</strong> Haz porciones más pequeñas (5-6cm) para cócteles o eventos.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Notas finales -->
+        <div class="row mt-4">
+            <div class="col-12">
+                <div class="alert alert-warning">
+                    <h3 class="h5">Notas importantes</h3>
+                    <p>Los éclairs son mejores consumidos el mismo día, pero puedes preparar los componentes por separado con anticipación: la masa choux sin hornear puede refrigerarse hasta 2 días o congelarse, la crema pastelera aguanta 3 días en refrigeración y el glaseado puede recalentarse suavemente antes de usar. Los éclairs rellenos deben consumirse en 24 horas.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

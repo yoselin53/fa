@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receta de Tom Yum Goong</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-image {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://susiecooksthai.com/wp-content/uploads/2024/05/Tom_Yum_Goong_featuring_1.jpg');
+            height: 50vh;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            color: white;
+        }
+        .hero-text {
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .ingredient-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .ingredient-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .time-badge {
+            font-size: 1rem;
+            padding: 8px 15px;
+        }
+        .step-number {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #dc3545;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Image con título -->
+    <div class="hero-image mb-5">
+        <div class="hero-text">
+            <h1 class="display-3 fw-bold">Tom Yum Goong</h1>
+            <p class="lead">La clásica sopa tailandesa picante y agria con camarones</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Introducción -->
+        <div class="row mb-5">
+            <div class="col-md-8 mx-auto text-center">
+                <p class="fs-5">El Tom Yum Goong es una de las sopas más famosas de Tailandia, conocida por su explosión de sabores: picante, agrio, salado y umami. Esta receta auténtica te guiará paso a paso para recrear este delicioso platillo en casa.</p>
+            </div>
+        </div>
+
+        <!-- Información de la receta -->
+        <div class="row mb-5">
+            <div class="col-md-4 text-center mb-4 mb-md-0">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body">
+                        <i class="fas fa-utensils fa-3x mb-3 text-danger"></i>
+                        <h3 class="h5">Dificultad</h3>
+                        <p class="text-muted">Media</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 text-center mb-4 mb-md-0">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body">
+                        <i class="fas fa-clock fa-3x mb-3 text-danger"></i>
+                        <h3 class="h5">Tiempo total</h3>
+                        <p class="text-muted">40 minutos</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body">
+                        <i class="fas fa-users fa-3x mb-3 text-danger"></i>
+                        <h3 class="h5">Porciones</h3>
+                        <p class="text-muted">4 personas</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Ingredientes -->
+            <div class="col-lg-5 mb-5 mb-lg-0">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-danger text-white">
+                        <h2 class="h4 mb-0"><i class="fas fa-shopping-basket me-2"></i>Ingredientes</h2>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="h5 text-danger">Para la sopa:</h3>
+                        <ul class="ingredient-list">
+                            <li><i class="fas fa-check-circle text-danger me-2"></i>500g de camarones grandes (con cabeza)</li>
+                            <li><i class="fas fa-check-circle text-danger me-2"></i>4 tazas de caldo de pollo o agua</li>
+                            <li><i class="fas fa-check-circle text-danger me-2"></i>2 tallos de hierba de limón (partidos por la mitad y golpeados)</li>
+                            <li><i class="fas fa-check-circle text-danger me-2"></i>3 hojas de lima kaffir (o cáscara de lima)</li>
+                            <li><i class="fas fa-check-circle text-danger me-2"></i>3-4 rodajas de galanga (o jengibre si no encuentras)</li>
+                            <li><i class="fas fa-check-circle text-danger me-2"></i>3-4 chiles tailandeses (ajustar al gusto)</li>
+                            <li><i class="fas fa-check-circle text-danger me-2"></i>200g de champiñones ostra o champiñones blancos</li>
+                            <li><i class="fas fa-check-circle text-danger me-2"></i>3 cucharadas de salsa de pescado</li>
+                            <li><i class="fas fa-check-circle text-danger me-2"></i>2-3 cucharadas de jugo de limón</li>
+                            <li><i class="fas fa-check-circle text-danger me-2"></i>1 cucharadita de azúcar</li>
+                            <li><i class="fas fa-check-circle text-danger me-2"></i>1 cucharada de pasta de chile (opcional, para más picante)</li>
+                        </ul>
+
+                        <h3 class="h5 text-danger mt-4">Para decorar:</h3>
+                        <ul class="ingredient-list">
+                            <li><i class="fas fa-check-circle text-danger me-2"></i>Cilantro fresco</li>
+                            <li><i class="fas fa-check-circle text-danger me-2"></i>Rodajas de chile rojo</li>
+                            <li><i class="fas fa-check-circle text-danger me-2"></i>Hojas de lima kaffir</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Preparación -->
+            <div class="col-lg-7">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-danger text-white">
+                        <h2 class="h4 mb-0"><i class="fas fa-mortar-pestle me-2"></i>Preparación</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex mb-4">
+                            <div>
+                                <span class="step-number">1</span>
+                            </div>
+                            <div>
+                                <h3 class="h5">Preparar los camarones</h3>
+                                <p>Limpia los camarones, quitando las cabezas (pero guárdalas) y las venas. Reserva las colas peladas.</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex mb-4">
+                            <div>
+                                <span class="step-number">2</span>
+                            </div>
+                            <div>
+                                <h3 class="h5">Hacer el caldo</h3>
+                                <p>En una olla, calienta el caldo de pollo o agua. Agrega las cabezas de camarón y cocina a fuego medio durante 5 minutos para extraer el sabor. Cuela y reserva el caldo.</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex mb-4">
+                            <div>
+                                <span class="step-number">3</span>
+                            </div>
+                            <div>
+                                <h3 class="h5">Infusionar los aromáticos</h3>
+                                <p>En la misma olla con el caldo, añade la hierba de limón, hojas de lima kaffir, galanga y chiles. Hierve a fuego medio durante 5 minutos para liberar los sabores.</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex mb-4">
+                            <div>
+                                <span class="step-number">4</span>
+                            </div>
+                            <div>
+                                <h3 class="h5">Cocinar los champiñones</h3>
+                                <p>Agrega los champiñones y cocina por 2-3 minutos hasta que estén tiernos.</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex mb-4">
+                            <div>
+                                <span class="step-number">5</span>
+                            </div>
+                            <div>
+                                <h3 class="h5">Añadir los camarones</h3>
+                                <p>Incorpora los camarones y cocina hasta que se pongan rosados (aproximadamente 2-3 minutos). No los cocines demasiado o se pondrán duros.</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex mb-4">
+                            <div>
+                                <span class="step-number">6</span>
+                            </div>
+                            <div>
+                                <h3 class="h5">Sazonar</h3>
+                                <p>Baja el fuego y agrega la salsa de pescado, jugo de limón y azúcar. Prueba y ajusta los sabores: debe estar equilibrado entre picante, agrio, salado y un poco dulce.</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex mb-4">
+                            <div>
+                                <span class="step-number">7</span>
+                            </div>
+                            <div>
+                                <h3 class="h5">Servir</h3>
+                                <p>Retira del fuego y sirve caliente en tazones. Decora con cilantro fresco, rodajas de chile y hojas de lima kaffir. Acompaña con arroz al vapor si lo deseas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Consejos -->
+                <div class="card shadow-sm mt-4 border-warning">
+                    <div class="card-header bg-warning text-dark">
+                        <h2 class="h4 mb-0"><i class="fas fa-lightbulb me-2"></i>Consejos del Chef</h2>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="fas fa-asterisk text-warning me-2"></i><strong>Autenticidad:</strong> Para un sabor más auténtico, busca los ingredientes tailandeses en tiendas especializadas.</li>
+                            <li class="mb-2"><i class="fas fa-asterisk text-warning me-2"></i><strong>Picante:</strong> Ajusta la cantidad de chiles según tu tolerancia al picante.</li>
+                            <li class="mb-2"><i class="fas fa-asterisk text-warning me-2"></i><strong>Variaciones:</strong> Puedes agregar leche de coco para una versión cremosa (Tom Yum Goong Nam Khon).</li>
+                            <li><i class="fas fa-asterisk text-warning me-2"></i><strong>Conservación:</strong> Esta sopa es mejor consumirse fresca, ya que los sabores pueden cambiar al recalentarla.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Información nutricional -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-info text-white">
+                        <h2 class="h4 mb-0"><i class="fas fa-chart-pie me-2"></i>Información Nutricional (por porción)</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="row text-center">
+                            <div class="col-md-3 mb-3 mb-md-0">
+                                <div class="display-6 text-info">180</div>
+                                <p class="mb-0 text-muted">Calorías</p>
+                            </div>
+                            <div class="col-md-3 mb-3 mb-md-0">
+                                <div class="display-6 text-info">5g</div>
+                                <p class="mb-0 text-muted">Grasas</p>
+                            </div>
+                            <div class="col-md-3 mb-3 mb-md-0">
+                                <div class="display-6 text-info">10g</div>
+                                <p class="mb-0 text-muted">Carbohidratos</p>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="display-6 text-info">22g</div>
+                                <p class="mb-0 text-muted">Proteínas</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white mt-5 py-4">
+        <div class="container text-center">
+            <p class="mb-0">© 2023 Recetas Tailandesas Auténticas | Desarrollado con <i class="fas fa-heart text-danger"></i> para amantes de la cocina</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

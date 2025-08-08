@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bibimbap Coreano - Receta Tradicional</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hero-bibimbap {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://cdn.stoneline.de/media/3f/12/g0/1727431220/koreanisches-bibimbap.jpeg?ts=1727431220');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 120px 0;
+            margin-bottom: 40px;
+        }
+        .ingredient-card {
+            border-left: 4px solid #e53935;
+            transition: transform 0.3s;
+        }
+        .ingredient-card:hover {
+            transform: translateY(-5px);
+        }
+        .step-card {
+            border-left: 4px solid #43a047;
+            margin-bottom: 20px;
+        }
+        .korean-flag {
+            height: 20px;
+            width: 30px;
+            display: inline-block;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 20"><circle cx="15" cy="10" r="6" fill="%23C60C30"/><path d="M15,4l2.5,6h6.5l-5.5,4l2,6l-5.5-4l-5.5,4l2-6l-5.5-4h6.5z" fill="%23C60C30"/><path d="M15,16l-2.5-6h-6.5l5.5-4l-2-6l5.5,4l5.5-4l-2,6l5.5,4h-6.5z" fill="%230037A8"/><path d="M15,4l-2.5,6h-6.5l5.5,4l-2,6l5.5-4l5.5,4l-2-6l5.5-4h-6.5z" fill="%230037A8"/></svg>');
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+        .vegetable-section {
+            background-color: #e8f5e9;
+            border-left: 4px solid #4caf50;
+        }
+        .spice-meter {
+            height: 10px;
+            background: linear-gradient(to right, #f5f5f5, #ff5722);
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+        .spice-label {
+            font-size: 0.8rem;
+            color: #e53935;
+        }
+        .cultural-note {
+            font-style: italic;
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero-bibimbap text-center">
+        <div class="container">
+            <h1 class="display-3 fw-bold">Bibimbap Coreano</h1>
+            <p class="lead fs-4">El colorido tazón de arroz mezclado</p>
+            <div class="mt-4">
+                <span class="badge bg-light text-dark me-2"><i class="bi bi-clock"></i> Tiempo: 45 min</span>
+                <span class="badge bg-light text-dark me-2">Dificultad: Media</span>
+                <span class="badge bg-light text-dark">Porciones: 2-3</span>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <!-- Intro -->
+        <div class="row mb-5">
+            <div class="col-lg-10 mx-auto">
+                <div class="text-center mb-4">
+                    <p class="fs-5">El Bibimbap (비빔밥) es uno de los platos más emblemáticos de Corea, conocido por su presentación colorida y su mezcla de sabores y texturas. Literalmente significa "arroz mezclado", y su versión más famosa incluye una variedad de vegetales, carne y un huevo, todo coronado con gochujang (pasta de chile coreana).</p>
+                    <div class="d-flex justify-content-center flex-wrap gap-2 mt-3">
+                        <span class="badge bg-danger">Picante</span>
+                        <span class="badge bg-primary"><span class="korean-flag"></span> Corea</span>
+                        <span class="badge bg-success">Balanceado</span>
+                        <span class="badge bg-warning text-dark">UNESCO</span>
+                    </div>
+                </div>
+                
+                <div class="alert alert-dark cultural-note">
+                    <p class="mb-0">"Bibimbap" se pronuncia "bi-bim-bap". En 2011, el bibimbap fue incluido en la lista representativa del Patrimonio Cultural Inmaterial de la Humanidad de la UNESCO. Tradicionalmente se servía en vísperas del Año Nuevo Lunar para utilizar sobras, pero hoy es un plato gourmet.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-4">
+            <!-- Ingredients Section -->
+            <div class="col-lg-5">
+                <h2 class="h3 mb-4" style="color: #e53935;">Ingredientes</h2>
+                
+                <div class="card shadow-sm ingredient-card mb-4">
+                    <div class="card-header bg-danger text-white">
+                        <h3 class="h5 mb-0">Base y proteínas</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    2 tazas de arroz de grano corto coreano
+                                </div>
+                                <span class="badge bg-primary rounded-pill">Base</span>
+                            </li>
+                            <li class="list-group-item">200g de carne molida de res (o pollo)</li>
+                            <li class="list-group-item">1 huevo por persona</li>
+                            <li class="list-group-item">1 cucharada de aceite de sésamo</li>
+                            <li class="list-group-item">1 cucharada de semillas de sésamo tostadas</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="card shadow-sm vegetable-section mb-4">
+                    <div class="card-header bg-success text-white">
+                        <h3 class="h5 mb-0">Vegetales (5 colores tradicionales)</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><strong>Rojo:</strong> 1 zanahoria (juliana)</li>
+                            <li class="list-group-item"><strong>Verde:</strong> 1 puñado de espinacas</li>
+                            <li class="list-group-item"><strong>Amarillo:</strong> 1 calabacín (juliana)</li>
+                            <li class="list-group-item"><strong>Blanco:</strong> 100g de brotes de soja</li>
+                            <li class="list-group-item"><strong>Negro:</strong> 5 setas shiitake secas</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="card shadow-sm ingredient-card mb-4">
+                    <div class="card-header bg-danger text-white">
+                        <h3 class="h5 mb-0">Salsa y condimentos</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    2 cucharadas de gochujang (pasta de chile coreana)
+                                </div>
+                                <span class="badge bg-danger rounded-pill">Picante</span>
+                            </li>
+                            <li class="list-group-item">1 cucharada de miel o azúcar</li>
+                            <li class="list-group-item">1 cucharada de vinagre de arroz</li>
+                            <li class="list-group-item">1 cucharada de aceite de sésamo</li>
+                            <li class="list-group-item">1 diente de ajo picado</li>
+                            <li class="list-group-item">Sal al gusto</li>
+                        </ul>
+                        <div class="mt-3">
+                            <div class="d-flex justify-content-between">
+                                <span class="spice-label">Picor</span>
+                                <span class="spice-label">Moderado</span>
+                            </div>
+                            <div class="spice-meter" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card shadow-sm">
+                    <div class="card-header bg-info text-white">
+                        <h3 class="h5 mb-0">Ingredientes opcionales</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul class="mb-0">
+                            <li class="mb-2">Kimchi (para más sabor coreano)</li>
+                            <li class="mb-2">Algas nori tostadas en tiras</li>
+                            <li class="mb-2">Pepino en rodajas finas</li>
+                            <li>Brotes de helecho (gosari) tradicionales</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Preparation Section -->
+            <div class="col-lg-7">
+                <h2 class="h3 mb-4" style="color: #43a047;">Preparación</h2>
+                
+                <div class="step-card card mb-3">
+                    <div class="card-body">
+                        <h3 class="h5">1. Preparar los componentes</h3>
+                        <p><strong>Arroz:</strong> Cocina el arroz según las instrucciones del paquete. El arroz coreano idealmente debe quedar ligeramente pegajoso.</p>
+                        <p><strong>Vegetales:</strong> Prepara cada vegetal por separado:
+                            <ul>
+                                <li><strong>Zanahoria:</strong> Saltear rápidamente con un poco de aceite</li>
+                                <li><strong>Espinacas:</strong> Blanquear en agua hirviendo, escurrir y mezclar con ajo y sésamo</li>
+                                <li><strong>Calabacín:</strong> Saltear con un poco de sal</li>
+                                <li><strong>Brotes de soja:</strong> Cocinar al vapor con sal</li>
+                                <li><strong>Shiitake:</strong> Remojar 30 min si son secas, cortar y saltear con salsa de soja</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="step-card card mb-3">
+                    <div class="card-body">
+                        <h3 class="h5">2. Cocinar la carne</h3>
+                        <p>En una sartén, saltea la carne molida con un diente de ajo picado, 1 cucharadita de salsa de soja, 1/2 cucharadita de azúcar y pimienta negra al gusto. Cocina hasta que esté bien dorada. Reserva.</p>
+                    </div>
+                </div>
+                
+                <div class="step-card card mb-3">
+                    <div class="card-body">
+                        <h3 class="h5">3. Preparar la salsa</h3>
+                        <p>En un bowl pequeño, mezcla el gochujang, miel (o azúcar), vinagre de arroz, aceite de sésamo y ajo picado. Prueba y ajusta los sabores según tu preferencia (más dulce, más ácido o más picante).</p>
+                    </div>
+                </div>
+                
+                <div class="step-card card mb-3">
+                    <div class="card-body">
+                        <h3 class="h5">4. Montar el bibimbap</h3>
+                        <p>En un tazón hondo, coloca una porción de arroz caliente. Organiza los vegetales y la carne alrededor del arroz en secciones separadas, mostrando los colores. En el centro, coloca un huevo frito (yema líquida) o crudo si vas a usar dolsot.</p>
+                        <p class="mb-0">Espolvorea con semillas de sésamo tostadas. Sirve con la salsa aparte o colocada sobre el huevo.</p>
+                    </div>
+                </div>
+                
+                <div class="step-card card mb-4">
+                    <div class="card-body">
+                        <h3 class="h5">5. Mezclar y servir</h3>
+                        <p>Antes de comer, mezcla bien todos los ingredientes con la salsa, rompiendo la yema del huevo si está cruda. La textura debe ser uniforme pero con algunos trozos reconocibles.</p>
+                        <p class="mb-0"><strong>Versión Dolsot:</strong> Para bibimbap en cazuela de piedra, calienta la cazuela con aceite, añade el arroz y los ingredientes, y cocina hasta que el arroz del fondo se dore (creando nurungji).</p>
+                    </div>
+                </div>
+                
+                <div class="card shadow-sm mb-4">
+                    <div class="card-header bg-primary text-white">
+                        <h3 class="h5 mb-0">Consejos para el Bibimbap perfecto</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li class="mb-2"><strong>Presentación:</strong> Organiza los ingredientes en secciones radiales para mostrar los colores</li>
+                            <li class="mb-2"><strong>Texturas:</strong> Cocina cada vegetal por separado para mantener sus características únicas</li>
+                            <li class="mb-2"><strong>Huevo:</strong> La yema líquida ayuda a unir todos los sabores al mezclar</li>
+                            <li><strong>Variaciones:</strong> Para versión vegetariana, sustituye la carne por tofu salteado</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card shadow-sm h-100">
+                            <div class="card-header bg-info text-white">
+                                <h3 class="h5 mb-0">Variaciones regionales</h3>
+                            </div>
+                            <div class="card-body">
+                                <ul class="mb-0">
+                                    <li class="mb-2"><strong>Jeonju Bibimbap:</strong> La versión más famosa, con más ingredientes</li>
+                                    <li class="mb-2"><strong>Dolsot Bibimbap:</strong> Servido en cazuela de piedra caliente</li>
+                                    <li class="mb-2"><strong>Yukhoe Bibimbap:</strong> Con carne cruda marinada</li>
+                                    <li><strong>Haemul Bibimbap:</strong> Con mariscos variados</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card shadow-sm h-100">
+                            <div class="card-header bg-success text-white">
+                                <h3 class="h5 mb-0">Información Nutricional</h3>
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex flex-wrap gap-2 mb-3">
+                                    <span class="badge bg-primary">550 kcal</span>
+                                    <span class="badge bg-success">25g proteína</span>
+                                    <span class="badge bg-warning text-dark">80g carbohidratos</span>
+                                    <span class="badge bg-danger">12g grasas</span>
+                                </div>
+                                <p class="mb-2"><strong>Beneficios:</strong> Balance perfecto de carbohidratos, proteínas y vegetales. Rico en fibra, vitaminas A y C, y hierro.</p>
+                                <p class="mb-0"><strong>Contiene:</strong> Probióticos (si se añade kimchi), capsaicina del gochujang, y antioxidantes de los vegetales coloridos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- History Section -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-secondary text-white">
+                        <h2 class="h4 mb-0">Historia y Cultura del Bibimbap</h2>
+                    </div>
+                    <div class="card-body">
+                        <p>El Bibimbap tiene sus raíces en la antigua práctica coreana de mezclar varios ingredientes con arroz. Originalmente era un plato práctico para usar sobras, pero con el tiempo se convirtió en una comida ritual y festiva.</p>
+                        <p>La versión más famosa, el Jeonju Bibimbap, proviene de la ciudad de Jeonju, capital gastronómica de Corea. Aquí se prepara con hasta 30 ingredientes diferentes, incluyendo brotes de helecho y carne cruda marinada (yukhoe).</p>
+                        <p class="mb-0">El concepto del bibimbap refleja la filosofía coreana de balance (yin-yang) y los cinco elementos, representados por los cinco colores tradicionales de los ingredientes. Hoy es uno de los platos coreanos más conocidos internacionalmente, gracias a su combinación única de salud, sabor y belleza visual.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 class="h5">Bibimbap Coreano</h3>
+                    <p class="text-muted">Patrimonio Cultural Inmaterial de la UNESCO</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">© 2023 Sabores de Corea</p>
+                    <p class="text-muted small">Harmonía en un tazón</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

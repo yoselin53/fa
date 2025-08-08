@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crema de Calabaza | Recetas de Otoño</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome para íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --color-primario: #e67e22;
+            --color-secundario: #d35400;
+        }
+        .recipe-header {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://comedera.com/wp-content/uploads/sites/9/2023/06/crema-de-calabaza-y-jengibre.jpg?fit=1200,800&crop=0px,63px,1200px,675px');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            margin-bottom: 30px;
+        }
+        .ingredient-item {
+            margin-bottom: 10px;
+        }
+        .nutrition-badge {
+            font-size: 0.9rem;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+        .step-number {
+            background-color: var(--color-secundario);
+            color: white;
+            width: 30px;
+            height: 30px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .time-badge {
+            font-size: 1rem;
+            padding: 8px 12px;
+        }
+        .card-header-primary {
+            background-color: var(--color-primario);
+            color: white;
+        }
+        .ingredient-icon {
+            color: var(--color-secundario);
+            margin-right: 10px;
+            width: 20px;
+            text-align: center;
+        }
+        .tips-card {
+            border-left: 5px solid var(--color-primario);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header con imagen de fondo -->
+    <header class="recipe-header text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Crema de Calabaza Cremosa</h1>
+            <p class="lead">Una reconfortante sopa de otoño con el dulzor natural de la calabaza</p>
+            <div class="mt-4">
+                <span class="badge bg-light text-dark me-2"><i class="fas fa-clock me-1"></i> 45 min</span>
+                <span class="badge bg-light text-dark me-2"><i class="fas fa-utensils me-1"></i> 4 porciones</span>
+                <span class="badge bg-light text-dark"><i class="fas fa-signal me-1"></i> Fácil</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <!-- Columna de ingredientes -->
+            <div class="col-lg-5">
+                <div class="card mb-4">
+                    <div class="card-header card-header-primary">
+                        <h3 class="h5 mb-0"><i class="fas fa-shopping-basket me-2"></i>Ingredientes</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-unstyled">
+                            <li class="ingredient-item d-flex align-items-center">
+                                <span class="ingredient-icon"><i class="fas fa-pumpkin"></i></span>
+                                <span>1 kg de calabaza (preferiblemente tipo butternut)</span>
+                            </li>
+                            <li class="ingredient-item d-flex align-items-center">
+                                <span class="ingredient-icon"><i class="fas fa-onion"></i></span>
+                                <span>1 cebolla grande</span>
+                            </li>
+                            <li class="ingredient-item d-flex align-items-center">
+                                <span class="ingredient-icon"><i class="fas fa-carrot"></i></span>
+                                <span>2 zanahorias medianas</span>
+                            </li>
+                            <li class="ingredient-item d-flex align-items-center">
+                                <span class="ingredient-icon"><i class="fas fa-apple-alt"></i></span>
+                                <span>1 manzana (opcional, para un toque dulce)</span>
+                            </li>
+                            <li class="ingredient-item d-flex align-items-center">
+                                <span class="ingredient-icon"><i class="fas fa-cube"></i></span>
+                                <span>2 cucharadas de mantequilla o aceite de oliva</span>
+                            </li>
+                            <li class="ingredient-item d-flex align-items-center">
+                                <span class="ingredient-icon"><i class="fas fa-mortar-pestle"></i></span>
+                                <span>1 litro de caldo de verduras o pollo</span>
+                            </li>
+                            <li class="ingredient-item d-flex align-items-center">
+                                <span class="ingredient-icon"><i class="fas fa-wine-bottle"></i></span>
+                                <span>200 ml de nata líquida para cocinar (opcional)</span>
+                            </li>
+                            <li class="ingredient-item d-flex align-items-center">
+                                <span class="ingredient-icon"><i class="fas fa-pepper-hot"></i></span>
+                                <span>Sal, pimienta y nuez moscada al gusto</span>
+                            </li>
+                            <li class="ingredient-item d-flex align-items-center">
+                                <span class="ingredient-icon"><i class="fas fa-seedling"></i></span>
+                                <span>Para decorar: semillas de calabaza, croutons o hierbas frescas</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Información nutricional -->
+                <div class="card mb-4">
+                    <div class="card-header bg-warning text-dark">
+                        <h3 class="h5 mb-0"><i class="fas fa-chart-pie me-2"></i>Información Nutricional</h3>
+                    </div>
+                    <div class="card-body">
+                        <p class="mb-3">Por porción (aproximadamente):</p>
+                        <div>
+                            <span class="badge nutrition-badge bg-primary">180 kcal</span>
+                            <span class="badge nutrition-badge bg-secondary">10g Grasas</span>
+                            <span class="badge nutrition-badge bg-success">20g Carbohidratos</span>
+                            <span class="badge nutrition-badge bg-danger">4g Proteínas</span>
+                            <span class="badge nutrition-badge bg-info text-dark">5g Fibra</span>
+                            <span class="badge nutrition-badge bg-dark">Vitamina A</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tiempos de preparación -->
+                <div class="card tips-card mb-4">
+                    <div class="card-header card-header-primary">
+                        <h3 class="h5 mb-0"><i class="fas fa-stopwatch me-2"></i>Tiempos</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <div>
+                                <i class="fas fa-utensils me-2" style="color: var(--color-secundario);"></i>
+                                <span>Preparación:</span>
+                            </div>
+                            <span class="badge bg-orange time-badge">15 min</span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <div>
+                                <i class="fas fa-fire me-2" style="color: var(--color-secundario);"></i>
+                                <span>Cocción:</span>
+                            </div>
+                            <span class="badge bg-orange time-badge">30 min</span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <i class="fas fa-blender me-2" style="color: var(--color-secundario);"></i>
+                                <span>Triturar:</span>
+                            </div>
+                            <span class="badge bg-orange time-badge">5 min</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Columna de preparación -->
+            <div class="col-lg-7">
+                <div class="card mb-4">
+                    <div class="card-header card-header-primary">
+                        <h3 class="h5 mb-0"><i class="fas fa-book me-2"></i>Preparación</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="mb-4 d-flex">
+                            <div class="step-number">1</div>
+                            <div>
+                                <h5 class="h6">Preparar las verduras</h5>
+                                <p>Pelar y cortar la calabaza en cubos (retirar semillas). Pelar y picar la cebolla y las zanahorias. Si usas manzana, pelarla y cortarla en trozos.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-4 d-flex">
+                            <div class="step-number">2</div>
+                            <div>
+                                <h5 class="h6">Sofreír</h5>
+                                <p>En una olla grande, derretir la mantequilla o calentar el aceite a fuego medio. Añadir la cebolla y cocinar hasta que esté transparente (5 min). Agregar las zanahorias y cocinar 3 minutos más.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-4 d-flex">
+                            <div class="step-number">3</div>
+                            <div>
+                                <h5 class="h6">Cocinar la calabaza</h5>
+                                <p>Añadir los cubos de calabaza (y manzana si usas) a la olla. Revolver bien y cocinar 2 minutos. Verter el caldo hasta cubrir las verduras. Sazonar con sal, pimienta y un poco de nuez moscada.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-4 d-flex">
+                            <div class="step-number">4</div>
+                            <div>
+                                <h5 class="h6">Hervir y cocinar</h5>
+                                <p>Llevar a ebullición, luego reducir el fuego y cocinar a fuego lento durante 20-25 minutos, hasta que la calabaza esté muy tierna.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-4 d-flex">
+                            <div class="step-number">5</div>
+                            <div>
+                                <h5 class="h6">Triturar</h5>
+                                <p>Retirar del fuego y triturar con batidora de mano hasta obtener una crema suave. Si queda muy espesa, añadir más caldo caliente. Incorporar la nata (si usas) y rectificar la sazón.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-4 d-flex">
+                            <div class="step-number">6</div>
+                            <div>
+                                <h5 class="h6">Servir</h5>
+                                <p>Servir caliente decorada con semillas de calabaza tostadas, croutons, un chorrito de nata o hierbas frescas como perejil o cilantro.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Consejos -->
+                <div class="card mb-4">
+                    <div class="card-header bg-warning text-dark">
+                        <h3 class="h5 mb-0"><i class="fas fa-lightbulb me-2"></i>Consejos y Trucos</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <h5 class="h6"><i class="fas fa-pumpkin me-2" style="color: var(--color-secundario);"></i> Elección de calabaza</h5>
+                                    <p>La calabaza butternut es ideal por su textura cremosa y sabor dulce, pero puedes usar cualquier variedad.</p>
+                                </div>
+                                <div class="mb-3">
+                                    <h5 class="h6"><i class="fas fa-temperature-high me-2" style="color: var(--color-secundario);"></i> Textura</h5>
+                                    <p>Para una crema más fina, puedes pasarla por un colador chino después de triturar.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <h5 class="h6"><i class="fas fa-flask me-2" style="color: var(--color-secundario);"></i> Variaciones</h5>
+                                    <p>Prueba añadir un poco de jengibre fresco o curry en polvo para darle un toque diferente.</p>
+                                </div>
+                                <div>
+                                    <h5 class="h6"><i class="fas fa-snowflake me-2" style="color: var(--color-secundario);"></i> Conservación</h5>
+                                    <p>Se conserva 3-4 días en refrigerador o puedes congelarla por hasta 2 meses.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Variaciones -->
+                <div class="card mb-4">
+                    <div class="card-header bg-success text-white">
+                        <h3 class="h5 mb-0"><i class="fas fa-random me-2"></i>Variaciones Creativas</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <div class="d-flex">
+                                    <div class="me-3 text-success">
+                                        <i class="fas fa-cheese fa-2x"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="h6">Crema de calabaza con queso azul</h5>
+                                        <p class="small">Añade 50g de queso azul desmenuzado al triturar para un sabor intenso.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="d-flex">
+                                    <div class="me-3 text-success">
+                                        <i class="fas fa-bacon fa-2x"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="h6">Versión con bacon</h5>
+                                        <p class="small">Agrega bacon crujiente por encima para contraste de texturas.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="d-flex">
+                                    <div class="me-3 text-success">
+                                        <i class="fas fa-leaf fa-2x"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="h6">Vegana</h5>
+                                        <p class="small">Sustituye la mantequilla por aceite y la nata por leche de coco.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <div class="me-3 text-success">
+                                        <i class="fas fa-apple-alt fa-2x"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="h6">Dulce-especiada</h5>
+                                        <p class="small">Añade canela, cardamomo y un poco de sirope de arce.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Galería de fotos paso a paso -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <h2 class="h4 mb-3"><i class="fas fa-images me-2"></i>Presentación</h2>
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <img src="" class="https://www.devinosconalicia.com/wp-content/uploads/2022/10/Crema-ligera-de-calabaza-y-requeson.png" class="card-img-top" alt="Crema servida en plato">
+                            <div class="card-body">
+                                <p class="card-text small text-center">Decorada con semillas y hierbas</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <img src="https://cdn.stoneline.de/media/fc/40/2a/1727424232/Kuerbis-1-Hokkaido-Kuerbissuppe.jpeg?ts=1727424236" class="card-img-top" alt="Crema en cazuela">
+                            <div class="card-body">
+                                <p class="card-text small text-center">Servida en cazuela individual</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <img src="https://chefeel.com/chefgeneralfiles/2025/01/pumpkin-mashed-soup-with-croutons-880x832.jpg " class="card-img-top" alt="Acompañamientos">
+                            <div class="card-body">
+                                <p class="card-text small text-center">Con pan tostado y ensalada</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <h3 class="h5"><i class="fas fa-utensils me-2"></i>Recetas de Otoño</h3>
+                    <p class="small mt-2 mb-0">Platos reconfortantes para los días fríos</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="mb-2">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-pinterest"></i></a>
+                        <a href="#" class="text-white"><i class="fas fa-envelope"></i></a>
+                    </div>
+                    <p class="small mb-0">© 2023 Recetas de Otoño | Todos los derechos reservados</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

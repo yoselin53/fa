@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarta de Manzana Clásica | Recetas de Repostería</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome para íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .recipe-header {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1aWKur3iQJH9woXgh2y1wmDTMTIBhTYq2mw&s');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            margin-bottom: 30px;
+        }
+        .ingredient-item {
+            margin-bottom: 10px;
+        }
+        .nutrition-badge {
+            font-size: 0.9rem;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+        .step-number {
+            background-color: #d63384;
+            color: white;
+            width: 30px;
+            height: 30px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .baking-card {
+            border-left: 5px solid #d63384;
+        }
+        .timer-badge {
+            font-size: 1rem;
+            padding: 8px 12px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header con imagen de fondo -->
+    <header class="recipe-header text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Tarta de Manzana Clásica</h1>
+            <p class="lead">Deliciosa tarta casera con manzanas caramelizadas y masa quebrada crujiente</p>
+            <div class="mt-4">
+                <span class="badge bg-light text-dark me-2"><i class="fas fa-clock me-1"></i> 1h 30min</span>
+                <span class="badge bg-light text-dark me-2"><i class="fas fa-utensils me-1"></i> 8 porciones</span>
+                <span class="badge bg-light text-dark"><i class="fas fa-signal me-1"></i> Intermedio</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <!-- Columna de ingredientes -->
+            <div class="col-lg-5">
+                <div class="card mb-4">
+                    <div class="card-header bg-danger text-white">
+                        <h3 class="h5 mb-0"><i class="fas fa-shopping-basket me-2"></i>Ingredientes</h3>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="h6 text-muted">Para la masa:</h4>
+                        <ul class="list-unstyled">
+                            <li class="ingredient-item"><i class="fas fa-seedling text-danger me-2"></i> 250g de harina</li>
+                            <li class="ingredient-item"><i class="fas fa-cube text-danger me-2"></i> 125g de mantequilla fría</li>
+                            <li class="ingredient-item"><i class="fas fa-tint text-danger me-2"></i> 1 huevo</li>
+                            <li class="ingredient-item"><i class="fas fa-mortar-pestle text-danger me-2"></i> 1 pizca de sal</li>
+                            <li class="ingredient-item"><i class="fas fa-spoon text-danger me-2"></i> 2 cucharadas de azúcar</li>
+                            <li class="ingredient-item"><i class="fas fa-tint text-danger me-2"></i> 2-3 cucharadas de agua fría</li>
+                        </ul>
+                        
+                        <h4 class="h6 text-muted mt-4">Para el relleno:</h4>
+                        <ul class="list-unstyled">
+                            <li class="ingredient-item"><i class="fas fa-apple-alt text-danger me-2"></i> 6 manzanas medianas</li>
+                            <li class="ingredient-item"><i class="fas fa-spoon text-danger me-2"></i> 100g de azúcar</li>
+                            <li class="ingredient-item"><i class="fas fa-mortar-pestle text-danger me-2"></i> 1 cucharadita de canela</li>
+                            <li class="ingredient-item"><i class="fas fa-lemon text-danger me-2"></i> Ralladura de 1 limón</li>
+                            <li class="ingredient-item"><i class="fas fa-cube text-danger me-2"></i> 20g de mantequilla</li>
+                            <li class="ingredient-item"><i class="fas fa-wine-bottle text-danger me-2"></i> 2 cucharadas de mermelada de albaricoque</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Información nutricional -->
+                <div class="card mb-4">
+                    <div class="card-header bg-warning text-dark">
+                        <h3 class="h5 mb-0"><i class="fas fa-chart-pie me-2"></i>Información Nutricional</h3>
+                    </div>
+                    <div class="card-body">
+                        <p class="mb-3">Por porción (aproximadamente):</p>
+                        <div>
+                            <span class="badge nutrition-badge bg-primary">320 kcal</span>
+                            <span class="badge nutrition-badge bg-secondary">12g Grasas</span>
+                            <span class="badge nutrition-badge bg-success">50g Carbohidratos</span>
+                            <span class="badge nutrition-badge bg-danger">4g Proteínas</span>
+                            <span class="badge nutrition-badge bg-info text-dark">3g Fibra</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tiempos de horneado -->
+                <div class="card baking-card mb-4">
+                    <div class="card-header bg-danger text-white">
+                        <h3 class="h5 mb-0"><i class="fas fa-temperature-high me-2"></i>Horneado</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <div>
+                                <i class="fas fa-thermometer-half me-2 text-danger"></i>
+                                <span>Temperatura:</span>
+                            </div>
+                            <span class="badge bg-danger">180°C</span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <i class="fas fa-clock me-2 text-danger"></i>
+                                <span>Tiempo:</span>
+                            </div>
+                            <span class="badge bg-danger timer-badge"><i class="fas fa-hourglass-half me-1"></i> 40-45 min</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Columna de preparación -->
+            <div class="col-lg-7">
+                <div class="card mb-4">
+                    <div class="card-header bg-danger text-white">
+                        <h3 class="h5 mb-0"><i class="fas fa-book me-2"></i>Preparación</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="mb-4 d-flex">
+                            <div class="step-number">1</div>
+                            <div>
+                                <h5 class="h6">Preparar la masa</h5>
+                                <p>En un bol grande, mezclar la harina con la sal y el azúcar. Añadir la mantequilla fría en trocitos y trabajar con las puntas de los dedos hasta obtener una textura arenosa. Incorporar el huevo y el agua fría poco a poco hasta formar una bola de masa. Envolver en film transparente y refrigerar 30 minutos.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-4 d-flex">
+                            <div class="step-number">2</div>
+                            <div>
+                                <h5 class="h6">Preparar el relleno</h5>
+                                <p>Pelar las manzanas, quitar el corazón y cortar en láminas finas. En una sartén, derretir la mantequilla y añadir las manzanas, el azúcar, la canela y la ralladura de limón. Cocinar a fuego medio 10 minutos hasta que las manzanas estén tiernas pero enteras. Dejar enfriar.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-4 d-flex">
+                            <div class="step-number">3</div>
+                            <div>
+                                <h5 class="h6">Armar la tarta</h5>
+                                <p>Precalentar el horno a 180°C. Estirar 2/3 de la masa y forrar un molde para tarta de 24cm. Pinchar el fondo con un tenedor. Verter el relleno de manzana. Estirar el resto de la masa y cortar tiras para hacer un enrejado sobre las manzanas.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-4 d-flex">
+                            <div class="step-number">4</div>
+                            <div>
+                                <h5 class="h6">Hornear</h5>
+                                <p>Hornear durante 40-45 minutos hasta que la masa esté dorada. Calentar la mermelada con un poco de agua y pintar la tarta caliente para darle brillo. Dejar enfriar antes de servir.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Consejos -->
+                <div class="card mb-4">
+                    <div class="card-header bg-warning text-dark">
+                        <h3 class="h5 mb-0"><i class="fas fa-lightbulb me-2"></i>Consejos de Repostería</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <h5 class="h6"><i class="fas fa-apple-alt text-danger me-2"></i> Elegir manzanas</h5>
+                                    <p>Usa manzanas firmes como Granny Smith o Fuji que aguanten bien la cocción.</p>
+                                </div>
+                                <div class="mb-3">
+                                    <h5 class="h6"><i class="fas fa-temperature-low text-danger me-2"></i> Masa fría</h5>
+                                    <p>Trabaja rápido la masa y mantenla fría para que quede más crujiente.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <h5 class="h6"><i class="fas fa-utensil-spoon text-danger me-2"></i> Presentación</h5>
+                                    <p>Sirve con una bola de helado de vainilla o nata montada para contrastar sabores.</p>
+                                </div>
+                                <div>
+                                    <h5 class="h6"><i class="fas fa-clock text-danger me-2"></i> Conservación</h5>
+                                    <p>Guarda en nevera hasta 3 días o congela porciones individuales.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Variaciones -->
+                <div class="card mb-4">
+                    <div class="card-header bg-info text-white">
+                        <h3 class="h5 mb-0"><i class="fas fa-random me-2"></i>Variaciones</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <strong>Tarta de manzana y frutos rojos:</strong> Añade frambuesas o arándanos al relleno
+                            </li>
+                            <li class="list-group-item">
+                                <strong>Versión vegana:</strong> Sustituye la mantequilla por margarina y el huevo por 2 cucharadas de agua fría
+                            </li>
+                            <li class="list-group-item">
+                                <strong>Tarta de manzana y nueces:</strong> Incorpora nueces picadas al relleno para textura
+                            </li>
+                            <li class="list-group-item">
+                                <strong>Tarta invertida:</strong> Coloca las manzanas caramelizadas en el fondo del molde antes de añadir la masa
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Galería de fotos paso a paso -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <h2 class="h4 mb-3"><i class="fas fa-camera me-2"></i>Paso a Paso</h2>
+                <div class="row g-3">
+                    <div class="col-md-3 col-6">
+                        <div class="card h-100">
+                            <img src="https://media.mykaramelli.com/galeria/recetas/masa-quebrada-receta_308_1.jpg" class="card-img-top" alt="Preparación de la masa">
+                            <div class="card-body p-2">
+                                <p class="card-text small text-center">Preparación de la masa</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="card h-100">
+                            <img src="data:image/jpeg;base64,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" class="card-img-top" alt="Relleno de manzana">
+                            <div class="card-body p-2">
+                                <p class="card-text small text-center">Relleno de manzana</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="card h-100">
+                            <img src="data:image/jpeg;base64,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" class="card-img-top" alt="Armado de la tarta">
+                            <div class="card-body p-2">
+                                <p class="card-text small text-center">Armado de la tarta</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="card h-100">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpAd-0PJytC5TwqHwoIu182J7aJbLrKhUSrw&s" class="card-img-top" alt="Resultado final">
+                            <div class="card-body p-2">
+                                <p class="card-text small text-center">Resultado final</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 class="h5"><i class="fas fa-utensils me-2"></i>Recetas de Repostería</h3>
+                    <p class="small mt-2">Recetas caseras y tradicionales para disfrutar en familia</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0 small">© 2023 Recetas de Repostería | Todos los derechos reservados</p>
+                    <div class="mt-2">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="text-white"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

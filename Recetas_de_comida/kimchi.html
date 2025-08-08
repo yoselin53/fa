@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kimchi Tradicional Coreano - Receta Auténtica</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hero-kimchi {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://imag.bonviveur.com/kimchi-coreano.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 120px 0;
+            margin-bottom: 40px;
+        }
+        .ingredient-section {
+            border-left: 4px solid #e53935;
+            padding-left: 15px;
+            margin-bottom: 25px;
+        }
+        .step-card {
+            border-left: 4px solid #43a047;
+            margin-bottom: 20px;
+            transition: transform 0.3s;
+        }
+        .step-card:hover {
+            transform: translateX(5px);
+        }
+        .fermentation-tip {
+            border-left: 4px solid #fb8c00;
+            background-color: #fff3e0;
+        }
+        .korean-flag {
+            height: 20px;
+            width: 30px;
+            display: inline-block;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 20"><circle cx="15" cy="10" r="6" fill="%23C60C30"/><path d="M15,4l2.5,6h6.5l-5.5,4l2,6l-5.5-4l-5.5,4l2-6l-5.5-4h6.5z" fill="%23C60C30"/><path d="M15,16l-2.5-6h-6.5l5.5-4l-2-6l5.5,4l5.5-4l-2,6l5.5,4h-6.5z" fill="%230037A8"/><path d="M15,4l-2.5,6h-6.5l5.5,4l-2,6l5.5-4l5.5,4l-2-6l5.5-4h-6.5z" fill="%230037A8"/></svg>');
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+        .health-badge {
+            font-size: 0.85rem;
+        }
+        .cultural-note {
+            font-style: italic;
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero-kimchi text-center">
+        <div class="container">
+            <h1 class="display-3 fw-bold">Kimchi Tradicional Coreano</h1>
+            <p class="lead fs-4">El fermentado picante que conquistó el mundo</p>
+            <div class="mt-4">
+                <span class="badge bg-light text-dark me-2"><i class="bi bi-clock"></i> Tiempo: 2 días</span>
+                <span class="badge bg-light text-dark me-2">Dificultad: Media</span>
+                <span class="badge bg-light text-dark">Porciones: ~3kg</span>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <!-- Intro -->
+        <div class="row mb-5">
+            <div class="col-lg-10 mx-auto">
+                <div class="text-center mb-4">
+                    <p class="fs-5">El kimchi es el alma de la cocina coreana, un fermentado picante de vegetales con más de 200 variedades registradas. Esta receta de kimchi de repollo napa (baechu kimchi) es la versión más popular, reconocida por la UNESCO como Patrimonio Cultural Inmaterial.</p>
+                    <div class="d-flex justify-content-center flex-wrap gap-2 mt-3">
+                        <span class="badge bg-danger">Fermentado</span>
+                        <span class="badge bg-primary"><span class="korean-flag"></span> Corea</span>
+                        <span class="badge bg-success">Probiótico</span>
+                        <span class="badge bg-warning text-dark">Picante</span>
+                    </div>
+                </div>
+                
+                <div class="alert alert-dark cultural-note">
+                    <p class="mb-0">"Kimchi" se pronuncia "kim-chi". En Corea se prepara tradicionalmente durante el "kimjang", un evento comunitario anual donde familias y vecinos se reúnen para hacer grandes cantidades de kimchi que durarán todo el invierno.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-4">
+            <!-- Ingredients Section -->
+            <div class="col-lg-5">
+                <h2 class="h3 mb-4" style="color: #e53935;">Ingredientes</h2>
+                
+                <div class="ingredient-section">
+                    <h3 class="h5">Vegetales principales:</h3>
+                    <ul class="list-group list-group-flush mb-3">
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="ms-2 me-auto">
+                                2 repollos napa grandes (aproximadamente 3kg)
+                            </div>
+                            <span class="badge bg-danger rounded-pill">Base</span>
+                        </li>
+                        <li class="list-group-item">1 daikon grande o 10 rábanos coreanos (mu)</li>
+                        <li class="list-group-item">1 taza de sal marina gruesa (para el salado)</li>
+                    </ul>
+                </div>
+                
+                <div class="ingredient-section">
+                    <h3 class="h5">Pasta de condimentos:</h3>
+                    <ul class="list-group list-group-flush mb-3">
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="ms-2 me-auto">
+                                1 taza de gochugaru (chile coreano en polvo)
+                            </div>
+                            <span class="badge bg-danger rounded-pill">Picante</span>
+                        </li>
+                        <li class="list-group-item">1 cabeza de ajo (10-12 dientes)</li>
+                        <li class="list-group-item">1 trozo de jengibre (5cm)</li>
+                        <li class="list-group-item">1/2 cebolla</li>
+                        <li class="list-group-item">1/4 taza de salsa de pescado (o 3 cucharadas de pasta de camarones fermentados, saeujeot)</li>
+                        <li class="list-group-item">2 cucharadas de harina de arroz glutinoso</li>
+                        <li class="list-group-item">1 cucharada de azúcar</li>
+                        <li class="list-group-item">1/2 taza de agua</li>
+                    </ul>
+                </div>
+                
+                <div class="ingredient-section">
+                    <h3 class="h5">Otros ingredientes:</h3>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">5 cebollines</li>
+                        <li class="list-group-item">1 zanahoria</li>
+                        <li class="list-group-item">1/2 pera asiática (opcional, para dulzor)</li>
+                    </ul>
+                </div>
+                
+                <div class="card shadow-sm fermentation-tip mt-4">
+                    <div class="card-header bg-warning text-dark">
+                        <h3 class="h5 mb-0">Equipo necesario</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul class="mb-0">
+                            <li class="mb-2">Bowl grande o cubeta para salar</li>
+                            <li class="mb-2">Guantes de cocina (para mezclar)</li>
+                            <li class="mb-2">Frascos de vidrio o recipientes herméticos para fermentar</li>
+                            <li>Plato o peso para mantener el kimchi sumergido</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Preparation Section -->
+            <div class="col-lg-7">
+                <h2 class="h3 mb-4" style="color: #43a047;">Preparación</h2>
+                
+                <div class="step-card card mb-3">
+                    <div class="card-body">
+                        <h3 class="h5">1. Preparar el repollo</h3>
+                        <p>Corta los repollos napa por la base y ábrelos en cuartos. Sumerge en agua fría y lava bien entre las hojas. Escurre y espolvorea generosamente con sal entre cada hoja, especialmente en la parte más gruesa del tallo.</p>
+                        <p class="mb-0">Coloca en un bowl grande y deja reposar a temperatura ambiente durante 1-2 horas, dando vuelta cada 30 minutos. El repollo debe ablandarse pero no quedar demasiado blando.</p>
+                    </div>
+                </div>
+                
+                <div class="step-card card mb-3">
+                    <div class="card-body">
+                        <h3 class="h5">2. Preparar las verduras</h3>
+                        <p>Mientras el repollo reposa, pela y corta el daikon y la zanahoria en juliana fina (como fósforos). Corta los cebollines en trozos de 5cm. Reserva.</p>
+                        <p class="mb-0">Enjuaga bien el repollo salado bajo agua fría para eliminar el exceso de sal. Escurre bien y exprime suavemente para eliminar el exceso de agua.</p>
+                    </div>
+                </div>
+                
+                <div class="step-card card mb-3">
+                    <div class="card-body">
+                        <h3 class="h5">3. Hacer la pasta de condimentos</h3>
+                        <p>En una olla pequeña, mezcla la harina de arroz con el agua y cocina a fuego medio hasta que espese (como puré). Deja enfriar.</p>
+                        <p>En un procesador de alimentos, mezcla el ajo, jengibre, cebolla, pera (si usas) y salsa de pescado hasta obtener una pasta suave.</p>
+                        <p class="mb-0">En un bowl grande, mezcla el gochugaru, la mezcla de harina de arroz enfriada y la pasta de condimentos. Añade el azúcar y mezcla bien hasta formar una pasta homogénea.</p>
+                    </div>
+                </div>
+                
+                <div class="step-card card mb-3">
+                    <div class="card-body">
+                        <h3 class="h5">4. Mezclar todo</h3>
+                        <p>Con guantes, mezcla la pasta de condimentos con el daikon, zanahoria y cebollines reservados. Unta esta mezcla generosamente entre cada hoja del repollo, comenzando por las hojas exteriores.</p>
+                        <p class="mb-0">Dobla cada cuarto de repollo por la mitad y colócalo firmemente en frascos de fermentación limpios, presionando para eliminar burbujas de aire.</p>
+                    </div>
+                </div>
+                
+                <div class="step-card card mb-4">
+                    <div class="card-body">
+                        <h3 class="h5">5. Fermentar</h3>
+                        <p>Deja aproximadamente 5cm de espacio en la parte superior del frasco. Cubre el kimchi con su líquido (si no hay suficiente, añade un poco de agua salada: 1 cucharadita de sal por taza de agua).</p>
+                        <p class="mb-0">Cierra los frascos y deja fermentar a temperatura ambiente (18-22°C) durante 1-2 días, luego refrigera. El kimchi estará listo para comer después de 1 semana, pero desarrollará más sabor con el tiempo (2-3 semanas ideal).</p>
+                    </div>
+                </div>
+                
+                <div class="card shadow-sm mb-4">
+                    <div class="card-header bg-primary text-white">
+                        <h3 class="h5 mb-0">Consejos de fermentación</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li class="mb-2"><strong>Temperatura:</strong> En climas cálidos, fermenta solo 1 día a temperatura ambiente antes de refrigerar</li>
+                            <li class="mb-2"><strong>Burbujas:</strong> Es normal que se formen burbujas durante la fermentación</li>
+                            <li class="mb-2"><strong>Olor:</strong> Desarrollará un olor fuerte y ácido cuando esté listo</li>
+                            <li><strong>Almacenamiento:</strong> Puede durar varios meses refrigerado, aunque se volverá más ácido con el tiempo</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card shadow-sm h-100">
+                            <div class="card-header bg-info text-white">
+                                <h3 class="h5 mb-0">Variaciones</h3>
+                            </div>
+                            <div class="card-body">
+                                <ul class="mb-0">
+                                    <li class="mb-2"><strong>Kimchi blanco (baek kimchi):</strong> Sin chile, más suave</li>
+                                    <li class="mb-2"><strong>Kimchi de pepino (oi sobagi):</strong> Con pepinos rellenos</li>
+                                    <li class="mb-2"><strong>Kimchi de rábano (kkakdugi):</strong> Cubos de rábano fermentados</li>
+                                    <li><strong>Kimchi vegano:</strong> Sustituye salsa de pescado por salsa de soja</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card shadow-sm h-100">
+                            <div class="card-header bg-success text-white">
+                                <h3 class="h5 mb-0">Información Nutricional</h3>
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex flex-wrap gap-2 mb-3">
+                                    <span class="badge bg-primary health-badge">30 kcal</span>
+                                    <span class="badge bg-success health-badge">1g proteína</span>
+                                    <span class="badge bg-warning text-dark health-badge">6g carbohidratos</span>
+                                    <span class="badge bg-danger health-badge">0g grasas</span>
+                                </div>
+                                <p class="mb-2"><strong>Beneficios:</strong> Rico en vitamina C, vitamina K, hierro y fibra. Contiene bacterias probióticas beneficiosas para la salud intestinal.</p>
+                                <p class="mb-0"><strong>Contiene:</strong> Capsaicina (del chile), compuestos sulfurados (del ajo) y isotiocianatos (del repollo) con propiedades antioxidantes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- History Section -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-secondary text-white">
+                        <h2 class="h4 mb-0">Historia y Cultura del Kimchi</h2>
+                    </div>
+                    <div class="card-body">
+                        <p>El kimchi tiene una historia de más de 4,000 años en Corea, mencionado por primera vez en el libro chino de poesía "Shijing". La versión picante con chile se desarrolló después de que los portugueses introdujeran el chile en Asia en el siglo XVI.</p>
+                        <p>En 2013, la UNESCO incluyó el "kimjang", la tradición de hacer y compartir kimchi, en su lista de Patrimonio Cultural Inmaterial. Cada noviembre, familias y comunidades se reúnen para preparar grandes cantidades de kimchi que durarán todo el invierno.</p>
+                        <p class="mb-0">Hoy existen más de 200 variedades documentadas de kimchi, desde el baechu kimchi (con repollo) hasta el oi sobagi (con pepino). Es un alimento básico en Corea, servido en casi todas las comidas, y ha ganado popularidad mundial por sus beneficios para la salud.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 class="h5">Kimchi Tradicional Coreano</h3>
+                    <p class="text-muted">Patrimonio Cultural Inmaterial de la Humanidad</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">© 2023 Cocina Coreana Auténtica</p>
+                    <p class="text-muted small">UNESCO Intangible Cultural Heritage</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

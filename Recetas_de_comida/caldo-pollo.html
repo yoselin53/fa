@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caldo de Pollo Clásico - Receta Reconfortante</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hero-chicken {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://i.ytimg.com/vi/jtn37NmU5NY/maxresdefault.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 120px 0;
+            margin-bottom: 40px;
+        }
+        .ingredient-card {
+            border-left: 4px solid #FFD700;
+            transition: transform 0.3s;
+        }
+        .ingredient-card:hover {
+            transform: translateY(-5px);
+        }
+        .step-card {
+            border-left: 4px solid #28a745;
+            margin-bottom: 20px;
+        }
+        .health-benefits {
+            background-color: #e8f5e9;
+            border-left: 4px solid #4caf50;
+        }
+        .time-badge {
+            background-color: #fff3e0;
+            color: #e65100;
+        }
+        .chef-tip {
+            border-left: 4px solid #2196f3;
+            background-color: #e3f2fd;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero-chicken text-center">
+        <div class="container">
+            <h1 class="display-3 fw-bold">Caldo de Pollo Clásico</h1>
+            <p class="lead fs-4">El remedio casero por excelencia</p>
+            <div class="mt-4">
+                <span class="badge time-badge me-2"><i class="bi bi-clock"></i> Tiempo: 2-3 horas</span>
+                <span class="badge bg-light text-dark me-2">Dificultad: Fácil</span>
+                <span class="badge bg-light text-dark">Porciones: 6-8</span>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <!-- Intro -->
+        <div class="row mb-5">
+            <div class="col-lg-10 mx-auto">
+                <div class="text-center mb-4">
+                    <p class="fs-5">El caldo de pollo es mucho más que una simple sopa. Reconfortante, nutritivo y lleno de sabor, este plato es un clásico en hogares de todo el mundo. Perfecto para días fríos o cuando necesitas un remedio casero reconfortante.</p>
+                    <div class="d-flex justify-content-center flex-wrap gap-2 mt-3">
+                        <span class="badge bg-warning text-dark">Reconfortante</span>
+                        <span class="badge bg-success">Nutritivo</span>
+                        <span class="badge bg-info text-dark">Remedio casero</span>
+                        <span class="badge bg-primary">Familiar</span>
+                    </div>
+                </div>
+                
+                <div class="alert alert-secondary">
+                    <p class="mb-0">"El caldo de pollo cura el alma tanto como el cuerpo. Hay estudios que sugieren que realmente tiene propiedades antiinflamatorias que pueden ayudar con los resfriados."</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-4">
+            <!-- Ingredients Section -->
+            <div class="col-lg-5">
+                <h2 class="h3 mb-4" style="color: #e65100;">Ingredientes</h2>
+                
+                <div class="card shadow-sm ingredient-card mb-4">
+                    <div class="card-header bg-warning text-dark">
+                        <h3 class="h5 mb-0">Para el caldo</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    1 pollo entero (1.5-2 kg) o 1.5 kg de piezas de pollo (muslos, contramuslos, carcasa)
+                                </div>
+                                <span class="badge bg-warning text-dark rounded-pill">Base</span>
+                            </li>
+                            <li class="list-group-item">2 zanahorias medianas</li>
+                            <li class="list-group-item">2 ramas de apio</li>
+                            <li class="list-group-item">1 cebolla grande</li>
+                            <li class="list-group-item">2 dientes de ajo</li>
+                            <li class="list-group-item">1 puerro (opcional)</li>
+                            <li class="list-group-item">2 hojas de laurel</li>
+                            <li class="list-group-item">1 cucharadita de granos de pimienta negra</li>
+                            <li class="list-group-item">1 ramita de tomillo fresco o 1/2 cucharadita de tomillo seco</li>
+                            <li class="list-group-item">3 litros de agua</li>
+                            <li class="list-group-item">Sal al gusto</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="card shadow-sm ingredient-card mb-4">
+                    <div class="card-header bg-warning text-dark">
+                        <h3 class="h5 mb-0">Para completar (opcional)</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">2 patatas medianas</li>
+                            <li class="list-group-item">1 taza de fideos finos o arroz</li>
+                            <li class="list-group-item">1/2 taza de perejil fresco picado</li>
+                            <li class="list-group-item">Jugo de 1 limón</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="card shadow-sm health-benefits">
+                    <div class="card-header bg-success text-white">
+                        <h3 class="h5 mb-0">Beneficios para la salud</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul class="mb-0">
+                            <li class="mb-2">Rico en colágeno (bueno para articulaciones y piel)</li>
+                            <li class="mb-2">Electrolitos naturales (hidratación)</li>
+                            <li class="mb-2">Aminoácidos antiinflamatorios</li>
+                            <li>Fácil digestión (ideal para recuperación)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Preparation Section -->
+            <div class="col-lg-7">
+                <h2 class="h3 mb-4" style="color: #28a745;">Preparación</h2>
+                
+                <div class="step-card card mb-3">
+                    <div class="card-body">
+                        <h3 class="h5">1. Preparar los ingredientes</h3>
+                        <p>Lava bien el pollo bajo agua fría. Si usas un pollo entero, puedes cortarlo en piezas o cocinarlo entero. Pela las zanahorias y córtalas en trozos grandes. Limpia el apio y córtalo en bastones. Pela la cebolla y córtala en cuartos (no es necesario picarla fina).</p>
+                    </div>
+                </div>
+                
+                <div class="step-card card mb-3">
+                    <div class="card-body">
+                        <h3 class="h5">2. Cocinar el caldo</h3>
+                        <p>En una olla grande (preferiblemente de fondo grueso), coloca el pollo y cubre con 3 litros de agua fría. Lleva a ebullición a fuego medio-alto. Con una espumadera, retira la espuma que se forme en la superficie durante los primeros 10-15 minutos.</p>
+                        <p class="mb-0">Reduce el fuego a bajo y añade las zanahorias, apio, cebolla, ajo, puerro (si usas), hojas de laurel, granos de pimienta y tomillo. Cocina a fuego lento (sin hervir fuerte) durante 1.5 a 2 horas. Sazona con sal hacia el final de la cocción.</p>
+                    </div>
+                </div>
+                
+                <div class="step-card card mb-3">
+                    <div class="card-body">
+                        <h3 class="h5">3. Colar y desgrasar</h3>
+                        <p>Retira el pollo y las verduras del caldo con una espumadera. Cuela el caldo a través de un colador fino forrado con estameña o paño de cocina limpio para obtener un caldo claro.</p>
+                        <p class="mb-0">Si deseas reducir la grasa, puedes enfriar el caldo en la nevera y retirar la capa sólida de grasa que se forma en la superficie, o usar un desgrasador mientras está caliente.</p>
+                    </div>
+                </div>
+                
+                <div class="step-card card mb-3">
+                    <div class="card-body">
+                        <h3 class="h5">4. Preparar los acompañamientos</h3>
+                        <p>Desmenuzar la carne de pollo, descartando piel y huesos. Corta las zanahorias cocidas en rodajas si lo prefieres. Puedes añadir patatas peladas y cortadas en cubos al caldo y cocinar hasta que estén tiernas (15-20 min), o cocinar fideos o arroz por separado.</p>
+                    </div>
+                </div>
+                
+                <div class="step-card card mb-4">
+                    <div class="card-body">
+                        <h3 class="h5">5. Servir</h3>
+                        <p>En cada tazón, coloca un poco de carne de pollo, zanahorias y patatas (si usaste). Vierte el caldo caliente sobre estos ingredientes. Añade fideos o arroz si preparaste.</p>
+                        <p class="mb-0">Termina con perejil fresco picado y un chorrito de jugo de limón al gusto. Sirve inmediatamente con pan crujiente o galletas saladas.</p>
+                    </div>
+                </div>
+                
+                <div class="card shadow-sm chef-tip mb-4">
+                    <div class="card-header bg-primary text-white">
+                        <h3 class="h5 mb-0">Consejo del Chef</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>Para un caldo más oscuro y sabroso, puedes dorar las piezas de pollo en el horno antes de hervirlas. También puedes tostar ligeramente las cebollas antes de añadirlas al caldo.</p>
+                        <p class="mb-0">El caldo de pollo siempre sabe mejor al día siguiente, cuando los sabores han tenido tiempo de mezclarse. Puedes guardarlo en la nevera hasta 4 días o congelarlo por hasta 3 meses.</p>
+                    </div>
+                </div>
+                
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card shadow-sm h-100">
+                            <div class="card-header bg-info text-white">
+                                <h3 class="h5 mb-0">Variaciones</h3>
+                            </div>
+                            <div class="card-body">
+                                <ul class="mb-0">
+                                    <li class="mb-2"><strong>Caldo de pollo con fideos:</strong> Añade fideos finos los últimos 5-7 minutos</li>
+                                    <li class="mb-2"><strong>Caldo de pollo con arroz:</strong> Sustituye fideos por arroz</li>
+                                    <li class="mb-2"><strong>Caldo de pollo con verduras:</strong> Añade choclo, ejotes o chícharos</li>
+                                    <li><strong>Caldo de pollo estilo abuela:</strong> Añade un huevo batido al final para hacer "hilillos"</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card shadow-sm h-100">
+                            <div class="card-header bg-dark text-white">
+                                <h3 class="h5 mb-0">Información Nutricional (por porción)</h3>
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex flex-wrap gap-2 mb-3">
+                                    <span class="badge bg-primary">180-250 kcal</span>
+                                    <span class="badge bg-success">20g proteína</span>
+                                    <span class="badge bg-warning text-dark">15g carbohidratos</span>
+                                    <span class="badge bg-danger">7g grasas</span>
+                                </div>
+                                <p class="mb-2"><strong>Beneficios:</strong> Rico en proteínas, vitamina A, hierro y electrolitos. Bajo en calorías si se desgrasa.</p>
+                                <p class="mb-0"><strong>Contiene:</strong> Aminoácidos como glicina y prolina, minerales como zinc y magnesio.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- History Section -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-secondary text-white">
+                        <h2 class="h4 mb-0">Historia y Datos Curiosos</h2>
+                    </div>
+                    <div class="card-body">
+                        <p>El caldo de pollo como remedio medicinal se remonta a la antigüedad. El filósofo y médico griego Galeno lo recomendaba en el siglo II d.C. para equilibrar los humores corporales. En la Edad Media, el médico judío Maimónides lo prescribía para tratar resfriados y asma.</p>
+                        <p>En 2000, el Dr. Stephen Rennard de la Universidad de Nebraska publicó un estudio que demostró que el caldo de pollo tiene propiedades antiinflamatorias que podrían aliviar los síntomas de infecciones respiratorias superiores.</p>
+                        <p class="mb-0">Casi todas las culturas tienen su versión del caldo de pollo: el "Jewish Penicillin" en la tradición judía, la "Sopa de Galinha" portuguesa, el "Samgyetang" coreano o el "Tinola" filipino. Cada versión refleja los ingredientes locales y las tradiciones culinarias.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 class="h5">Caldo de Pollo Clásico</h3>
+                    <p class="text-muted">El remedio casero que atraviesa generaciones</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">© 2023 Recetas Reconfortantes</p>
+                    <p class="text-muted small">Comida que cura el cuerpo y el alma</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

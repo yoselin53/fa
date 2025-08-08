@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gâteau Opéra - Receta Completa</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .recipe-header {
+            background-color: #343a40;
+            color: white;
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+        }
+        .recipe-card {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            margin-bottom: 2rem;
+        }
+        .recipe-card:hover {
+            transform: translateY(-5px);
+        }
+        .recipe-img {
+            height: 300px;
+            object-fit: cover;
+        }
+        .badge-difficulty {
+            font-size: 0.9rem;
+            padding: 0.5em 0.8em;
+        }
+        .badge-hard {
+            background-color: #dc3545;
+        }
+        .ingredient-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .ingredient-list li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #eee;
+        }
+        .step-number {
+            background-color: #343a40;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            font-size: 0.8rem;
+        }
+        .nutrition-info {
+            background-color: #f1f1f1;
+            border-radius: 10px;
+            padding: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="recipe-header text-center">
+        <div class="container">
+            <h1 class="display-4">Gâteau Opéra</h1>
+            <p class="lead">El elegante pastel francés de capas con bizcocho joconde, café, ganache y glaseado de chocolate</p>
+            <div class="d-flex justify-content-center gap-3 mt-3">
+                <span class="badge badge-difficulty badge-hard">Difícil</span>
+                <span class="badge bg-secondary"><i class="fas fa-clock"></i> 4 hrs</span>
+                <span class="badge bg-secondary"><i class="fas fa-utensils"></i> 12 porciones</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <!-- Main Content -->
+            <div class="col-lg-8">
+                <!-- Image -->
+                <div class="card recipe-card mb-4">
+                    <img src="https://thegreatbritishbakeoff.co.uk/wp-content/uploads/2024/11/paul_opera_cake_1024-450-1024x450.jpg" class="card-img-top recipe-img" alt="Gâteau Opéra">
+                </div>
+
+                <!-- Description -->
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h3 class="card-title"><i class="fas fa-info-circle text-primary me-2"></i>Descripción</h3>
+                        <p class="card-text">El Gâteau Opéra es un pastel francés clásico compuesto por capas de bizcocho Joconde (una esponja de almendras), empapado en sirope de café, intercaladas con crema de mantequilla al café y ganache de chocolate, y cubierto con un glaseado de chocolate. Su nombre proviene de la Ópera Garnier de París, y cada capa representa un nivel del teatro de la ópera.</p>
+                        <div class="d-flex flex-wrap gap-2 mt-3">
+                            <span class="badge bg-light text-dark"><i class="fas fa-egg"></i> Huevos</span>
+                            <span class="badge bg-light text-dark"><i class="fas fa-wheat-alt"></i> Almendras</span>
+                            <span class="badge bg-light text-dark"><i class="fas fa-coffee"></i> Café</span>
+                            <span class="badge bg-light text-dark"><i class="fas fa-candy-cane"></i> Chocolate</span>
+                            <span class="badge bg-light text-dark"><i class="fas fa-birthday-cake"></i> Postre elegante</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ingredients -->
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h3 class="card-title"><i class="fas fa-shopping-basket text-primary me-2"></i>Ingredientes</h3>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5 class="mt-3">Para el bizcocho Joconde:</h5>
+                                <ul class="ingredient-list">
+                                    <li><i class="fas fa-check-circle text-success me-2"></i> 150g de almendras molidas</li>
+                                    <li><i class="fas fa-check-circle text-success me-2"></i> 150g de azúcar glas</li>
+                                    <li><i class="fas fa-check-circle text-success me-2"></i> 3 huevos grandes</li>
+                                    <li><i class="fas fa-check-circle text-success me-2"></i> 25g de harina</li>
+                                    <li><i class="fas fa-check-circle text-success me-2"></i> 2 claras de huevo</li>
+                                    <li><i class="fas fa-check-circle text-success me-2"></i> 20g de azúcar</li>
+                                    <li><i class="fas fa-check-circle text-success me-2"></i> 30g de mantequilla derretida</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h5 class="mt-3">Para el sirope de café:</h5>
+                                <ul class="ingredient-list">
+                                    <li><i class="fas fa-check-circle text-success me-2"></i> 100g de agua</li>
+                                    <li><i class="fas fa-check-circle text-success me-2"></i> 100g de azúcar</li>
+                                    <li><i class="fas fa-check-circle text-success me-2"></i> 2 cucharadas de café espresso fuerte</li>
+                                </ul>
+
+                                <h5 class="mt-3">Para la crema de mantequilla al café:</h5>
+                                <ul class="ingredient-list">
+                                    <li><i class="fas fa-check-circle text-success me-2"></i> 2 yemas de huevo</li>
+                                    <li><i class="fas fa-check-circle text-success me-2"></i> 50g de azúcar</li>
+                                    <li><i class="fas fa-check-circle text-success me-2"></i> 25g de agua</li>
+                                    <li><i class="fas fa-check-circle text-success me-2"></i> 125g de mantequilla ablandada</li>
+                                    <li><i class="fas fa-check-circle text-success me-2"></i> 1 cucharada de café espresso</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h5 class="mt-3">Para la ganache de chocolate:</h5>
+                                <ul class="ingredient-list">
+                                    <li><i class="fas fa-check-circle text-success me-2"></i> 100g de chocolate negro (70%)</li>
+                                    <li><i class="fas fa-check-circle text-success me-2"></i> 100ml de nata para montar</li>
+                                    <li><i class="fas fa-check-circle text-success me-2"></i> 15g de mantequilla</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h5 class="mt-3">Para el glaseado de chocolate:</h5>
+                                <ul class="ingredient-list">
+                                    <li><i class="fas fa-check-circle text-success me-2"></i> 100g de chocolate negro</li>
+                                    <li><i class="fas fa-check-circle text-success me-2"></i> 50g de mantequilla</li>
+                                    <li><i class="fas fa-check-circle text-success me-2"></i> 1 cucharada de aceite neutro</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Instructions -->
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h3 class="card-title"><i class="fas fa-list-ol text-primary me-2"></i>Instrucciones</h3>
+                        
+                        <h5 class="mt-4">Bizcocho Joconde:</h5>
+                        <div class="d-flex mb-3">
+                            <div class="step-number">1</div>
+                            <div>Precalienta el horno a 220°C. Forra un molde rectangular (aproximadamente 25x35cm) con papel de hornear.</div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <div class="step-number">2</div>
+                            <div>En un bol, mezcla las almendras molidas con el azúcar glas. Añade los huevos enteros uno a uno, mezclando bien después de cada adición. Incorpora la harina.</div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <div class="step-number">3</div>
+                            <div>En otro bol, monta las claras a punto de nieve, añadiendo el azúcar poco a poco. Incorpora con cuidado las claras montadas a la mezcla de almendras.</div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <div class="step-number">4</div>
+                            <div>Añade la mantequilla derretida y mezcla suavemente. Vierte la masa en el molde y hornea durante 7-8 minutos hasta que esté dorado.</div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <div class="step-number">5</div>
+                            <div>Deja enfriar y corta en 3 rectángulos iguales del tamaño deseado para el pastel.</div>
+                        </div>
+
+                        <h5 class="mt-4">Sirope de café:</h5>
+                        <div class="d-flex mb-3">
+                            <div class="step-number">1</div>
+                            <div>Calienta el agua con el azúcar hasta que hierva. Retira del fuego y añade el café. Deja enfriar.</div>
+                        </div>
+
+                        <h5 class="mt-4">Crema de mantequilla al café:</h5>
+                        <div class="d-flex mb-3">
+                            <div class="step-number">1</div>
+                            <div>Bate las yemas en un bol. En una cazuela, calienta el azúcar con el agua hasta 121°C (punto de hebra).</div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <div class="step-number">2</div>
+                            <div>Vierte el almíbar sobre las yemas batiendo continuamente. Sigue batiendo hasta que se enfríe.</div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <div class="step-number">3</div>
+                            <div>Añade la mantequilla en trozos pequeños, batiendo después de cada adición. Incorpora el café y mezcla bien.</div>
+                        </div>
+
+                        <h5 class="mt-4">Ganache de chocolate:</h5>
+                        <div class="d-flex mb-3">
+                            <div class="step-number">1</div>
+                            <div>Calienta la nata hasta que hierva. Vierte sobre el chocolate picado y deja reposar 1 minuto.</div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <div class="step-number">2</div>
+                            <div>Remueve hasta que el chocolate se derrita completamente. Añade la mantequilla y mezcla hasta obtener una textura suave.</div>
+                        </div>
+
+                        <h5 class="mt-4">Montaje del Gâteau Opéra:</h5>
+                        <div class="d-flex mb-3">
+                            <div class="step-number">1</div>
+                            <div>Coloca una capa de bizcocho en un molde o placa. Empapa generosamente con el sirope de café.</div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <div class="step-number">2</div>
+                            <div>Extiende una capa delgada de ganache de chocolate.</div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <div class="step-number">3</div>
+                            <div>Añade una segunda capa de bizcocho, empapa con sirope y cubre con una capa generosa de crema de mantequilla al café.</div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <div class="step-number">4</div>
+                            <div>Repite con la tercera capa de bizcocho, sirope y ganache.</div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <div class="step-number">5</div>
+                            <div>Refrigera durante al menos 2 horas para que se asiente.</div>
+                        </div>
+
+                        <h5 class="mt-4">Glaseado de chocolate:</h5>
+                        <div class="d-flex mb-3">
+                            <div class="step-number">1</div>
+                            <div>Derrite el chocolate con la mantequilla y el aceite al baño María o en microondas, removiendo hasta que esté suave.</div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <div class="step-number">2</div>
+                            <div>Vierte sobre el pastel frío y alisa con una espátula. Decora con "Opéra" escrito en chocolate o oro comestible si lo deseas.</div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <div class="step-number">3</div>
+                            <div>Refrigera hasta que el glaseado esté firme antes de servir.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tips -->
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h3 class="card-title"><i class="fas fa-lightbulb text-warning me-2"></i>Consejos y Notas</h3>
+                        <ul>
+                            <li class="mb-2">Para un auténtico Gâteau Opéra, las capas deben ser muy finas y precisas.</li>
+                            <li class="mb-2">El bizcocho Joconde debe ser flexible pero no seco. No lo hornees demasiado.</li>
+                            <li class="mb-2">Puedes sustituir el café por extracto de vainilla si prefieres un sabor diferente.</li>
+                            <li class="mb-2">Para cortar el pastel limpiamente, usa un cuchillo afilado calentado en agua caliente y sécalo entre cada corte.</li>
+                            <li class="mb-2">Este pastel sabe mejor al día siguiente, ya que los sabores tienen tiempo de mezclarse.</li>
+                            <li>Conserva en la nevera hasta 3 días o congela porciones individuales hasta 1 mes.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="col-lg-4">
+                <!-- Nutrition Info -->
+                <div class="card mb-4">
+                    <div class="card-body nutrition-info">
+                        <h3 class="card-title"><i class="fas fa-apple-alt text-primary me-2"></i>Información Nutricional</h3>
+                        <p class="text-muted">Por porción (1/12 del pastel)</p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex justify-content-between align-items-center bg-transparent">
+                                Calorías
+                                <span class="badge bg-primary rounded-pill">320</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center bg-transparent">
+                                Grasas
+                                <span class="badge bg-primary rounded-pill">22g</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center bg-transparent">
+                                Carbohidratos
+                                <span class="badge bg-primary rounded-pill">28g</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center bg-transparent">
+                                Proteínas
+                                <span class="badge bg-primary rounded-pill">5g</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Tools Needed -->
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h3 class="card-title"><i class="fas fa-tools text-primary me-2"></i>Utensilios Necesarios</h3>
+                        <div class="d-flex flex-wrap gap-2 mt-3">
+                            <span class="badge bg-light text-dark"><i class="fas fa-blender"></i> Batidora</span>
+                            <span class="badge bg-light text-dark"><i class="fas fa-utensil-spoon"></i> Cuchara de silicona</span>
+                            <span class="badge bg-light text-dark"><i class="fas fa-weight-hanging"></i> Termómetro</span>
+                            <span class="badge bg-light text-dark"><i class="fas fa-ruler-combined"></i> Molde rectangular</span>
+                            <span class="badge bg-light text-dark"><i class="fas fa-ice-cream"></i> Espátula</span>
+                            <span class="badge bg-light text-dark"><i class="fas fa-cut"></i> Cuchillo afilado</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rating -->
+                <div class="card mb-4">
+                    <div class="card-body text-center">
+                        <h3 class="card-title mb-3">Valoración</h3>
+                        <div class="rating-stars mb-2">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="far fa-star text-warning"></i>
+                            <span class="ms-2">4.2/5</span>
+                        </div>
+                        <p class="text-muted">Basado en 156 valoraciones</p>
+                        <button class="btn btn-outline-primary btn-sm">Deja tu valoración</button>
+                    </div>
+                </div>
+
+                <!-- Recipe Author -->
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <img src="https://randomuser.me/api/portraits/women/43.jpg" class="rounded-circle me-3" width="60" height="60" alt="Autora">
+                            <div>
+                                <h5 class="mb-1">Chef Marie Dubois</h5>
+                                <p class="text-muted mb-0">Pastelera profesional formada en Le Cordon Bleu, París</p>
+                            </div>
+                        </div>
+                        <div class="mt-3">
+                            <button class="btn btn-outline-dark btn-sm me-2"><i class="fab fa-instagram"></i> Seguir</button>
+                            <button class="btn btn-outline-dark btn-sm"><i class="fas fa-book"></i> Más recetas</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <p class="mb-0">© 2023 Recetas Francesas - Todos los derechos reservados</p>
+            <div class="mt-2">
+                <a href="#" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-white mx-2"><i class="fab fa-pinterest-p"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

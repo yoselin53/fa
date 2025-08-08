@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ensalada Fresca | Recetas Saludables</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome para íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .recipe-header {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1546793665-c74683f339c1');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            margin-bottom: 30px;
+        }
+        .ingredient-item {
+            margin-bottom: 10px;
+        }
+        .nutrition-badge {
+            font-size: 0.9rem;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+        .step-number {
+            background-color: #28a745;
+            color: white;
+            width: 30px;
+            height: 30px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header con imagen de fondo -->
+    <header class="recipe-header text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Ensalada Fresca Primaveral</h1>
+            <p class="lead">Una combinación crujiente de vegetales frescos con un aderezo ligero de limón</p>
+            <div class="mt-4">
+                <span class="badge bg-light text-dark me-2"><i class="fas fa-clock me-1"></i> 15 min</span>
+                <span class="badge bg-light text-dark me-2"><i class="fas fa-utensils me-1"></i> 2 porciones</span>
+                <span class="badge bg-light text-dark"><i class="fas fa-signal me-1"></i> Fácil</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <!-- Columna de ingredientes -->
+            <div class="col-md-5">
+                <div class="card mb-4">
+                    <div class="card-header bg-success text-white">
+                        <h3 class="h5 mb-0"><i class="fas fa-shopping-basket me-2"></i>Ingredientes</h3>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="h6 text-muted">Para la ensalada:</h4>
+                        <ul class="list-unstyled">
+                            <li class="ingredient-item"><i class="fas fa-carrot text-success me-2"></i> 1 lechuga romana mediana</li>
+                            <li class="ingredient-item"><i class="fas fa-apple-alt text-success me-2"></i> 1 manzana verde</li>
+                            <li class="ingredient-item"><i class="fas fa-seedling text-success me-2"></i> 1 pepino mediano</li>
+                            <li class="ingredient-item"><i class="fas fa-cheese text-success me-2"></i> 100g de queso feta</li>
+                            <li class="ingredient-item"><i class="fas fa-wine-bottle text-success me-2"></i> 1/4 taza de aceitunas negras</li>
+                            <li class="ingredient-item"><i class="fas fa-bread-slice text-success me-2"></i> 1 taza de croutons</li>
+                            <li class="ingredient-item"><i class="fas fa-seedling text-success me-2"></i> 1/4 taza de nueces picadas</li>
+                        </ul>
+                        
+                        <h4 class="h6 text-muted mt-4">Para el aderezo:</h4>
+                        <ul class="list-unstyled">
+                            <li class="ingredient-item"><i class="fas fa-lemon text-success me-2"></i> Jugo de 1 limón</li>
+                            <li class="ingredient-item"><i class="fas fa-tint text-success me-2"></i> 3 cucharadas de aceite de oliva</li>
+                            <li class="ingredient-item"><i class="fas fa-wine-bottle text-success me-2"></i> 1 cucharadita de miel</li>
+                            <li class="ingredient-item"><i class="fas fa-mortar-pestle text-success me-2"></i> Sal y pimienta al gusto</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Información nutricional -->
+                <div class="card mb-4">
+                    <div class="card-header bg-info text-white">
+                        <h3 class="h5 mb-0"><i class="fas fa-chart-pie me-2"></i>Información Nutricional</h3>
+                    </div>
+                    <div class="card-body">
+                        <p class="mb-3">Por porción (aproximadamente):</p>
+                        <div>
+                            <span class="badge nutrition-badge bg-primary">250 kcal</span>
+                            <span class="badge nutrition-badge bg-secondary">15g Grasas</span>
+                            <span class="badge nutrition-badge bg-success">20g Carbohidratos</span>
+                            <span class="badge nutrition-badge bg-danger">8g Proteínas</span>
+                            <span class="badge nutrition-badge bg-warning text-dark">5g Fibra</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Columna de preparación -->
+            <div class="col-md-7">
+                <div class="card mb-4">
+                    <div class="card-header bg-primary text-white">
+                        <h3 class="h5 mb-0"><i class="fas fa-book me-2"></i>Preparación</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="mb-4 d-flex">
+                            <div class="step-number">1</div>
+                            <div>
+                                <h5 class="h6">Lavar y preparar los vegetales</h5>
+                                <p>Lavar bien la lechuga romana, escurrir y picar en trozos medianos. Pelar el pepino y cortar en rodajas finas. Lavar la manzana y cortar en cubitos (dejar la cáscara para más textura).</p>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-4 d-flex">
+                            <div class="step-number">2</div>
+                            <div>
+                                <h5 class="h6">Preparar el aderezo</h5>
+                                <p>En un tazón pequeño, mezclar el jugo de limón, aceite de oliva, miel, sal y pimienta. Batir bien hasta emulsionar.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-4 d-flex">
+                            <div class="step-number">3</div>
+                            <div>
+                                <h5 class="h6">Armar la ensalada</h5>
+                                <p>En un tazón grande, colocar la lechuga picada, agregar los trozos de manzana, pepino, aceitunas y nueces. Desmigar el queso feta por encima.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-4 d-flex">
+                            <div class="step-number">4</div>
+                            <div>
+                                <h5 class="h6">Mezclar y servir</h5>
+                                <p>Agregar el aderezo justo antes de servir y mezclar suavemente. Añadir los croutons por encima para mantener su textura crujiente.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Consejos -->
+                <div class="card mb-4">
+                    <div class="card-header bg-warning text-dark">
+                        <h3 class="h5 mb-0"><i class="fas fa-lightbulb me-2"></i>Consejos y Variaciones</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li class="mb-2">Para una versión vegana, omitir el queso feta o reemplazar con tofu marinado.</li>
+                            <li class="mb-2">Puedes agregar trozos de pollo a la parrilla para hacerla más sustanciosa.</li>
+                            <li class="mb-2">Si prefieres un aderezo cremoso, añade 1 cucharada de yogurt griego.</li>
+                            <li>Para mantener la manzana fresca, rocíala con un poco de jugo de limón después de picarla.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Galería de fotos -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <h2 class="h4 mb-3"><i class="fas fa-camera me-2"></i>Galería</h2>
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd" class="img-fluid rounded" alt="Ingredientes frescos">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c" class="img-fluid rounded" alt="Ensalada preparada">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://images.unsplash.com/photo-1547496502-affa22d38842" class="img-fluid rounded" alt="Aderezo casero">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-0">© 2023 Recetas Saludables | Todos los derechos reservados</p>
+            <div class="mt-2">
+                <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-white me-3"><i class="fab fa-pinterest"></i></a>
+                <a href="#" class="text-white"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dakgalbi Coreano (Pollo Picante a la Parrilla)</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .recipe-header {
+            background-color: #e74c3c;
+            color: white;
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+            border-radius: 0 0 10px 10px;
+        }
+        .recipe-image {
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            object-fit: cover;
+            height: 400px;
+            width: 100%;
+        }
+        .section-title {
+            color: #e74c3c;
+            border-bottom: 2px solid #e74c3c;
+            padding-bottom: 5px;
+            margin-top: 20px;
+        }
+        .ingredient-list, .instruction-list {
+            padding-left: 20px;
+        }
+        .time-badge {
+            background-color: #f39c12;
+            font-size: 1rem;
+        }
+        .spicy-level {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+        .marinade-card {
+            border-left: 4px solid #e74c3c;
+        }
+        .nutrition-card {
+            border-left: 4px solid #2ecc71;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="recipe-header text-center">
+        <div class="container">
+            <h1 class="display-4">Dakgalbi Coreano</h1>
+            <p class="lead">Pollo picante a la parrilla con verduras y pasta de chile coreana</p>
+            <div>
+                <span class="badge time-badge me-2">⏱️ 1 hora (30 min marinado)</span>
+                <span class="badge time-badge me-2">🍽️ 3-4 porciones</span>
+                <span class="badge time-badge spicy-level">🌶️🌶️ Picante moderado</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <!-- Main Content -->
+            <div class="col-lg-8">
+                <!-- Image -->
+                <img src="https://mykoreankitchen.com/wp-content/uploads/2007/01/2.-Dak-Galbi-Korean-Spicy-Chicken-Stir-Fry.jpg" alt="Dakgalbi Coreano" class="img-fluid recipe-image">
+
+                <!-- Description -->
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2 class="section-title">Descripción</h2>
+                        <p>El Dakgalbi es un plato coreano de pollo marinado en una deliciosa salsa picante gochujang, cocinado con verduras frescas y a menudo acompañado de tteok (pasteles de arroz). Originario de la ciudad de Chuncheon, este plato se cocina tradicionalmente en una gran plancha en el centro de la mesa, permitiendo que los comensales disfruten de la experiencia interactiva de cocinar mientras comen.</p>
+                    </div>
+                </div>
+
+                <!-- Ingredients -->
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2 class="section-title">Ingredientes</h2>
+                        
+                        <div class="card mb-3 marinade-card">
+                            <div class="card-body">
+                                <h5>Para el pollo y marinada:</h5>
+                                <ul class="ingredient-list">
+                                    <li>800g de muslos de pollo deshuesados y sin piel, cortados en trozos</li>
+                                    <li>3 cucharadas de pasta de chile coreano (gochujang)</li>
+                                    <li>1 cucharada de pasta de soja fermentada (doenjang)</li>
+                                    <li>2 cucharadas de azúcar moreno</li>
+                                    <li>1 cucharada de miel o sirope de maíz</li>
+                                    <li>3 dientes de ajo, picados finamente</li>
+                                    <li>1 cucharadita de jengibre rallado</li>
+                                    <li>1 cucharada de salsa de soja</li>
+                                    <li>1 cucharada de mirin (vino de arroz dulce)</li>
+                                    <li>1 cucharada de aceite de sésamo</li>
+                                    <li>1 cucharadita de pimienta negra molida</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <h5>Para las verduras y acompañamientos:</h5>
+                        <ul class="ingredient-list">
+                            <li>1 batata mediana, cortada en rodajas finas</li>
+                            <li>1 cebolla morada, en gajos gruesos</li>
+                            <li>1 pimiento verde, en tiras</li>
+                            <li>1 pimiento rojo, en tiras</li>
+                            <li>2 tazas de repollo, en trozos grandes</li>
+                            <li>1 zanahoria, en juliana</li>
+                            <li>2 cebollines, en trozos de 5 cm</li>
+                            <li>200g de tteok (pasteles de arroz coreanos, opcional)</li>
+                            <li>1 cucharada de aceite vegetal</li>
+                        </ul>
+
+                        <h5>Para servir:</h5>
+                        <ul class="ingredient-list">
+                            <li>Hojas de perilla o lechuga</li>
+                            <li>Ssamjang (pasta para envolver)</li>
+                            <li>Arroz blanco cocido</li>
+                            <li>Kimchi</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Instructions -->
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2 class="section-title">Instrucciones</h2>
+                        <ol class="instruction-list">
+                            <li class="mb-3">
+                                <strong>Prepara la marinada:</strong> En un tazón grande, mezcla el gochujang, doenjang, azúcar moreno, miel, ajo, jengibre, salsa de soja, mirin, aceite de sésamo y pimienta negra hasta formar una pasta homogénea.
+                            </li>
+                            <li class="mb-3">
+                                <strong>Marina el pollo:</strong> Añade los trozos de pollo a la marinada y mezcla bien para cubrir completamente. Cubre y refrigera durante al menos 30 minutos (idealmente 2 horas para más sabor).
+                            </li>
+                            <li class="mb-3">
+                                <strong>Prepara las verduras:</strong> Mientras el pollo se marina, lava y corta todas las verduras según las indicaciones. Si usas tteok, remójalo en agua tibia durante 10 minutos si está seco.
+                            </li>
+                            <li class="mb-3">
+                                <strong>Cocina el Dakgalbi:</strong> Calienta una sartén grande o plancha a fuego medio-alto. Añade el aceite vegetal y luego las batatas. Cocina por 2 minutos. Agrega el pollo marinado y cocina durante 5 minutos, revolviendo ocasionalmente.
+                            </li>
+                            <li class="mb-3">
+                                <strong>Añade las verduras:</strong> Incorpora el resto de las verduras (excepto los cebollines) y los tteok si los usas. Revuelve bien para combinar todos los ingredientes. Cocina durante 8-10 minutos más, revolviendo frecuentemente, hasta que el pollo esté completamente cocido y las verduras tiernas pero crujientes.
+                            </li>
+                            <li class="mb-3">
+                                <strong>Finaliza:</strong> Añade los cebollines y cocina por 1 minuto más. Prueba y ajusta el sazón si es necesario, añadiendo más gochujang si deseas más picante o un poco de miel para balancear.
+                            </li>
+                            <li class="mb-3">
+                                <strong>Sirve:</strong> Transfiere a una fuente grande o sirve directamente en la plancha si estás cocinando en la mesa. Acompaña con hojas de perilla o lechuga, ssamjang, arroz blanco y kimchi.
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+
+                <!-- Tips -->
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2 class="section-title">Consejos y Variaciones</h2>
+                        <ul class="ingredient-list">
+                            <li><strong>Control del picante:</strong> Reduce la cantidad de gochujang a 2 cucharadas si prefieres menos picante, o añade 1 cucharadita de gochugaru (polvo de chile coreano) para más intensidad.</li>
+                            <li><strong>Sustitutos:</strong> Si no encuentras doenjang, usa solo gochujang. El mirin puede sustituirse por 1/2 cucharada de azúcar disuelta en 1 cucharada de agua.</li>
+                            <li><strong>Opciones vegetarianas:</strong> Reemplaza el pollo por tofu firme o seitán, marinando de la misma manera.</li>
+                            <li><strong>Queso Dakgalbi:</strong> Para una versión popular, añade queso mozzarella rallado encima al final y deja que se derrita antes de servir.</li>
+                            <li><strong>Experiencia auténtica:</strong> Si tienes una plancha eléctrica, cocina en la mesa para una experiencia coreana tradicional.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="col-lg-4">
+                <!-- Nutrition Info -->
+                <div class="card mb-4 nutrition-card">
+                    <div class="card-body">
+                        <h2 class="section-title">Información Nutricional</h2>
+                        <p><strong>Por porción (sin acompañamientos):</strong></p>
+                        <ul class="ingredient-list">
+                            <li>Calorías: 420 kcal</li>
+                            <li>Proteínas: 35g</li>
+                            <li>Carbohidratos: 45g</li>
+                            <li>Grasas: 12g</li>
+                            <li>Fibra: 6g</li>
+                            <li>Azúcares: 18g</li>
+                            <li>Sodio: 850mg</li>
+                        </ul>
+                        <p class="text-muted">Los valores son aproximados y pueden variar según los ingredientes específicos utilizados.</p>
+                    </div>
+                </div>
+
+                <!-- Tools Needed -->
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2 class="section-title">Utensilios Necesarios</h2>
+                        <ul class="ingredient-list">
+                            <li>Sartén grande antiadherente o plancha</li>
+                            <li>Tazones medianos para mezclar</li>
+                            <li>Tabla de cortar y cuchillo afilado</li>
+                            <li>Cuchara de madera o espátula</li>
+                            <li>Pinzas para voltear el pollo</li>
+                            <li>Plancha eléctrica (opcional para servir)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Wine Pairing -->
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2 class="section-title">Maridaje Recomendado</h2>
+                        <p>El sabor picante y umami del Dakgalbi combina bien con:</p>
+                        <ul class="ingredient-list">
+                            <li><strong>Cerveza:</strong> Una lager coreana fría como Hite o Cass</li>
+                            <li><strong>Soju:</strong> El licor coreano tradicional</li>
+                            <li><strong>Vino blanco:</strong> Un Riesling semiseco o Gewürztraminer</li>
+                            <li><strong>Cóctel:</strong> Mojito o Margarita para contrastar el picante</li>
+                            <li><strong>Refresco:</strong> Coca-Cola fría (combinación popular en Corea)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Related Recipes -->
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2 class="section-title">Recetas Relacionadas</h2>
+                        <div class="list-group">
+                            <a href="#" class="list-group-item list-group-item-action">Bibimbap (Arroz mezclado con verduras)</a>
+                            <a href="#" class="list-group-item list-group-item-action">Bulgogi (Carne marinada coreana)</a>
+                            <a href="#" class="list-group-item list-group-item-action">Tteokbokki (Pasteles de arroz picantes)</a>
+                            <a href="#" class="list-group-item list-group-item-action">Kimchi Jjigae (Estofado de kimchi)</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center py-4 mt-4">
+        <div class="container">
+            <p class="mb-0">© 2023 Recetas Coreanas Auténticas | Desarrollado con Bootstrap 5</p>
+            <p class="text-muted mb-0">Receta tradicional adaptada de la versión de Chuncheon</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

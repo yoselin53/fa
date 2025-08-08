@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tteokbokki Picante - Receta Coreana Callejera</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hero-tteokbokki {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://www.sokobox.cl/cdn/shop/articles/ad4474bef39c4167b84477eaa7a5052f20210708171733-360032.jpg?v=1750370380');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 120px 0;
+            margin-bottom: 40px;
+        }
+        .ingredient-card {
+            border-left: 4px solid #e53935;
+            transition: transform 0.3s;
+        }
+        .ingredient-card:hover {
+            transform: translateY(-5px);
+        }
+        .step-card {
+            border-left: 4px solid #43a047;
+            margin-bottom: 20px;
+        }
+        .street-food {
+            background-color: #fff3e0;
+            border-left: 4px solid #fb8c00;
+        }
+        .korean-flag {
+            height: 20px;
+            width: 30px;
+            display: inline-block;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 20"><circle cx="15" cy="10" r="6" fill="%23C60C30"/><path d="M15,4l2.5,6h6.5l-5.5,4l2,6l-5.5-4l-5.5,4l2-6l-5.5-4h6.5z" fill="%23C60C30"/><path d="M15,16l-2.5-6h-6.5l5.5-4l-2-6l5.5,4l5.5-4l-2,6l5.5,4h-6.5z" fill="%230037A8"/><path d="M15,4l-2.5,6h-6.5l5.5,4l-2,6l5.5-4l5.5,4l-2-6l5.5-4h-6.5z" fill="%230037A8"/></svg>');
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+        .spice-meter {
+            height: 10px;
+            background: linear-gradient(to right, #f5f5f5, #ff5722);
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+        .spice-label {
+            font-size: 0.8rem;
+            color: #e53935;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero-tteokbokki text-center">
+        <div class="container">
+            <h1 class="display-3 fw-bold">Tteokbokki Picante</h1>
+            <p class="lead fs-4">El clásico coreano de comida callejera</p>
+            <div class="mt-4">
+                <span class="badge bg-light text-dark me-2"><i class="bi bi-clock"></i> Tiempo: 30 min</span>
+                <span class="badge bg-light text-dark me-2">Dificultad: Fácil</span>
+                <span class="badge bg-light text-dark">Porciones: 2-3</span>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <!-- Intro -->
+        <div class="row mb-5">
+            <div class="col-lg-10 mx-auto">
+                <div class="text-center mb-4">
+                    <p class="fs-5">El Tteokbokki es uno de los platos callejeros más populares de Corea, caracterizado por sus pasteles de arroz masticables bañados en una salsa picante y dulce. Esta versión auténtica captura el sabor vibrante de los puestos callejeros de Seúl.</p>
+                    <div class="d-flex justify-content-center flex-wrap gap-2 mt-3">
+                        <span class="badge bg-danger">Picante</span>
+                        <span class="badge bg-primary"><span class="korean-flag"></span> Corea</span>
+                        <span class="badge bg-success">Vegetariano opcional</span>
+                        <span class="badge bg-warning text-dark">Comida callejera</span>
+                    </div>
+                </div>
+                
+                <div class="alert alert-dark">
+                    <p class="mb-0">"Tteokbokki" se pronuncia "tok-bok-ki". Surgió en los años 1950 como un plato popular en los mercados callejeros coreanos. Hoy existen variaciones modernas con queso, mariscos o incluso versiones no picantes, pero la receta clásica sigue siendo la favorita.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-4">
+            <!-- Ingredients Section -->
+            <div class="col-lg-5">
+                <h2 class="h3 mb-4" style="color: #e53935;">Ingredientes</h2>
+                
+                <div class="card shadow-sm ingredient-card mb-4">
+                    <div class="card-header bg-danger text-white">
+                        <h3 class="h5 mb-0">Ingredientes principales</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    400g de tteok (pasteles de arroz coreanos)
+                                </div>
+                                <span class="badge bg-primary rounded-pill">Esencial</span>
+                            </li>
+                            <li class="list-group-item">2 tazas de agua o caldo de anchoveta</li>
+                            <li class="list-group-item">1 cebolla pequeña</li>
+                            <li class="list-group-item">2 cebollines</li>
+                            <li class="list-group-item">1/2 repollo pequeño (opcional)</li>
+                            <li class="list-group-item">1 huevo duro por persona (opcional)</li>
+                            <li class="list-group-item">1 cucharada de aceite vegetal</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="card shadow-sm ingredient-card mb-4">
+                    <div class="card-header bg-danger text-white">
+                        <h3 class="h5 mb-0">Para la salsa</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    3 cucharadas de gochujang (pasta de chile coreana)
+                                </div>
+                                <span class="badge bg-danger rounded-pill">Picante</span>
+                            </li>
+                            <li class="list-group-item">1 cucharada de gochugaru (chile coreano en polvo)</li>
+                            <li class="list-group-item">1 cucharada de azúcar</li>
+                            <li class="list-group-item">1 cucharada de miel o jarabe de maíz</li>
+                            <li class="list-group-item">1 cucharada de salsa de soja</li>
+                            <li class="list-group-item">1 cucharadita de ajo picado</li>
+                            <li class="list-group-item">1/2 cucharadita de pimienta negra</li>
+                        </ul>
+                        <div class="mt-3">
+                            <div class="d-flex justify-content-between">
+                                <span class="spice-label">Picor</span>
+                                <span class="spice-label">Alto</span>
+                            </div>
+                            <div class="spice-meter"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card shadow-sm street-food">
+                    <div class="card-header bg-warning text-dark">
+                        <h3 class="h5 mb-0">Ingredientes opcionales</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul class="mb-0">
+                            <li class="mb-2"><strong>Eomuk:</strong> Pasteles de pescado coreanos</li>
+                            <li class="mb-2"><strong>Ramen:</strong> Fideos instantáneos para "rabokki"</li>
+                            <li class="mb-2"><strong>Queso mozzarella:</strong> Para versión con queso</li>
+                            <li><strong>Anchoas secas:</strong> Para caldo más sabroso</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Preparation Section -->
+            <div class="col-lg-7">
+                <h2 class="h3 mb-4" style="color: #43a047;">Preparación</h2>
+                
+                <div class="step-card card mb-3">
+                    <div class="card-body">
+                        <h3 class="h5">1. Preparar los ingredientes</h3>
+                        <p>Si usas tteok congelado, sumérgelo en agua tibia durante 10-15 minutos para ablandarlo. Corta la cebolla en tiras finas y los cebollines en trozos de 5cm. Si usas repollo, corta en trozos del tamaño de un bocado.</p>
+                    </div>
+                </div>
+                
+                <div class="step-card card mb-3">
+                    <div class="card-body">
+                        <h3 class="h5">2. Hacer la salsa</h3>
+                        <p>En un bowl pequeño, mezcla el gochujang, gochugaru, azúcar, miel, salsa de soja, ajo picado y pimienta negra hasta formar una pasta homogénea. Prueba y ajusta el dulzor o picante según tu preferencia.</p>
+                    </div>
+                </div>
+                
+                <div class="step-card card mb-3">
+                    <div class="card-body">
+                        <h3 class="h5">3. Cocinar las verduras</h3>
+                        <p>Calienta el aceite en una sartén grande o wok a fuego medio. Añade la cebolla y saltea por 2-3 minutos hasta que esté transparente. Si usas repollo, añádelo ahora y saltea por 2 minutos más.</p>
+                    </div>
+                </div>
+                
+                <div class="step-card card mb-3">
+                    <div class="card-body">
+                        <h3 class="h5">4. Cocinar el tteokbokki</h3>
+                        <p>Añade la salsa preparada a la sartén y revuelve bien con las verduras. Vierte el agua o caldo y lleva a ebullición. Agrega los pasteles de arroz y reduce el fuego a medio-bajo.</p>
+                        <p class="mb-0">Cocina durante 7-10 minutos, revolviendo ocasionalmente, hasta que la salsa se reduzca y espese, y los pasteles de arroz estén tiernos pero aún masticables. Añade los cebollines en los últimos 2 minutos de cocción.</p>
+                    </div>
+                </div>
+                
+                <div class="step-card card mb-4">
+                    <div class="card-body">
+                        <h3 class="h5">5. Servir</h3>
+                        <p>Sirve caliente en tazones hondos. Si usas huevos duros, córtalos por la mitad y colócalos sobre el tteokbokki. Espolvorea con semillas de sésamo tostadas si deseas.</p>
+                        <p class="mb-0">Tradicionalmente se come inmediatamente, mientras está humeante. Combina perfectamente con odeng (pasteles de pescado) o ramen.</p>
+                    </div>
+                </div>
+                
+                <div class="card shadow-sm mb-4">
+                    <div class="card-header bg-primary text-white">
+                        <h3 class="h5 mb-0">Consejos para el Tteokbokki perfecto</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li class="mb-2"><strong>Textura:</strong> Los tteok deben quedar masticables (al dente), no demasiado blandos</li>
+                            <li class="mb-2"><strong>Salsa:</strong> Si queda muy espesa, añade un poco más de agua; si muy líquida, cocina más tiempo</li>
+                            <li class="mb-2"><strong>Picor:</strong> Ajusta la cantidad de gochujang y gochugaru según tu tolerancia</li>
+                            <li><strong>Variaciones:</strong> Para versión no picante, sustituye el gochujang por pasta de soja (doenjang)</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card shadow-sm h-100">
+                            <div class="card-header bg-info text-white">
+                                <h3 class="h5 mb-0">Variaciones populares</h3>
+                            </div>
+                            <div class="card-body">
+                                <ul class="mb-0">
+                                    <li class="mb-2"><strong>Rabokki:</strong> Con fideos ramen añadidos</li>
+                                    <li class="mb-2"><strong>Cheese tteokbokki:</strong> Cubierto con queso derretido</li>
+                                    <li class="mb-2"><strong>Gungjung tteokbokki:</strong> Versión real no picante</li>
+                                    <li><strong>Haemul tteokbokki:</strong> Con mariscos como mejillones y camarones</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card shadow-sm h-100">
+                            <div class="card-header bg-success text-white">
+                                <h3 class="h5 mb-0">Información Nutricional</h3>
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex flex-wrap gap-2 mb-3">
+                                    <span class="badge bg-primary">350 kcal</span>
+                                    <span class="badge bg-success">8g proteína</span>
+                                    <span class="badge bg-warning text-dark">75g carbohidratos</span>
+                                    <span class="badge bg-danger">1g grasas</span>
+                                </div>
+                                <p class="mb-2"><strong>Beneficios:</strong> Los pasteles de arroz proporcionan energía sostenida. El gochujang contiene capsaicina que puede estimular el metabolismo.</p>
+                                <p class="mb-0"><strong>Contiene:</strong> Carbohidratos complejos, algo de proteína vegetal, y compuestos antioxidantes del chile coreano.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- History Section -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-secondary text-white">
+                        <h2 class="h4 mb-0">Historia y Cultura del Tteokbokki</h2>
+                    </div>
+                    <div class="card-body">
+                        <p>El Tteokbokki tiene dos historias distintas: la versión original (gungjung tteokbokki) era un plato de la corte real durante la dinastía Joseon (1392-1910), preparado sin chile ya que este no se introdujo en Corea hasta el siglo XVI.</p>
+                        <p>La versión picante moderna nació en los años 1950 en los puestos callejeros de Seúl, cuando una mujer llamada Ma Bok-rim comenzó a vender pasteles de arroz en salsa picante cerca de una escuela. Su popularidad creció rápidamente y se convirtió en el snack callejero favorito de estudiantes y trabajadores.</p>
+                        <p class="mb-0">Hoy, el Tteokbokki es uno de los anju (comida para acompañar alcohol) más populares en Corea, especialmente con soju. Existen incluso "tteokbokki towns" en Seúl dedicados enteramente a este plato, con cientos de variaciones creativas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 class="h5">Tteokbokki Picante Coreano</h3>
+                    <p class="text-muted">El rey de la comida callejera coreana</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">© 2023 Sabores de Corea</p>
+                    <p class="text-muted small">Comida que calienta el corazón</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

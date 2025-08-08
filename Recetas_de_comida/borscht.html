@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borscht Ucraniano - Receta Tradicional</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hero-borscht {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://receitadelicia.com.br/wordpress/wp-content/files/receitadelicia.com.br/2024/02/borscht-ucraniano-uma-tradicao-da-ucrania.webp');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 120px 0;
+            margin-bottom: 40px;
+        }
+        .ingredient-section {
+            border-left: 4px solid #dc3545;
+            padding-left: 15px;
+            margin-bottom: 25px;
+        }
+        .step-card {
+            border-left: 4px solid #28a745;
+            margin-bottom: 20px;
+            transition: transform 0.3s;
+        }
+        .step-card:hover {
+            transform: translateX(5px);
+        }
+        .cultural-note {
+            background-color: #f8f9fa;
+            border-left: 4px solid #6c757d;
+            font-style: italic;
+        }
+        .ukraine-flag {
+            height: 20px;
+            width: 30px;
+            display: inline-block;
+            background: linear-gradient(to bottom, #0057b7 50%, #ffd700 50%);
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+        .nutrition-badge {
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero-borscht text-center">
+        <div class="container">
+            <h1 class="display-3 fw-bold">Borscht Ucraniano</h1>
+            <p class="lead fs-4">La sopa de remolacha tradicional de Ucrania</p>
+            <div class="mt-4">
+                <span class="badge bg-light text-dark me-2"><i class="bi bi-clock"></i> Tiempo: 2-3 horas</span>
+                <span class="badge bg-light text-dark me-2">Dificultad: Media</span>
+                <span class="badge bg-light text-dark">Porciones: 6-8</span>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <!-- Intro -->
+        <div class="row mb-5">
+            <div class="col-lg-10 mx-auto">
+                <div class="text-center mb-4">
+                    <p class="fs-5">El Borscht es un plato icónico de la cocina ucraniana, reconocido por la UNESCO como Patrimonio Cultural Inmaterial. Esta sopa vibrante de color rubí combina remolachas, repollo, carne y una mezcla única de sabores agridulces.</p>
+                    <div class="d-flex justify-content-center flex-wrap gap-2 mt-3">
+                        <span class="badge bg-danger">Comfort food</span>
+                        <span class="badge bg-primary"><span class="ukraine-flag"></span> Ucrania</span>
+                        <span class="badge bg-success">Nutritivo</span>
+                        <span class="badge bg-warning text-dark">De temporada</span>
+                    </div>
+                </div>
+                
+                <div class="alert cultural-note">
+                    <p class="mb-0">"Borscht" se pronuncia "borshch". Existen cientos de variaciones regionales en Ucrania, desde las versiones con carne hasta las vegetarianas para la Cuaresma. Tradicionalmente se sirve con pan de centeno y ajo.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-4">
+            <!-- Ingredients Section -->
+            <div class="col-lg-5">
+                <h2 class="h3 mb-4" style="color: #dc3545;">Ingredientes</h2>
+                
+                <div class="ingredient-section">
+                    <h3 class="h5">Para el caldo:</h3>
+                    <ul class="list-group list-group-flush mb-3">
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="ms-2 me-auto">
+                                500g de carne de res para sopa (costilla, falda o hueso con tuétano)
+                            </div>
+                            <span class="badge bg-danger rounded-pill">Base</span>
+                        </li>
+                        <li class="list-group-item">1 cebolla grande</li>
+                        <li class="list-group-item">1 zanahoria</li>
+                        <li class="list-group-item">1 rama de apio</li>
+                        <li class="list-group-item">2 hojas de laurel</li>
+                        <li class="list-group-item">6-8 granos de pimienta negra</li>
+                        <li class="list-group-item">3 litros de agua</li>
+                        <li class="list-group-item">Sal al gusto</li>
+                    </ul>
+                </div>
+                
+                <div class="ingredient-section">
+                    <h3 class="h5">Para la sopa:</h3>
+                    <ul class="list-group list-group-flush mb-3">
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="ms-2 me-auto">
+                                3 remolachas medianas (400-500g)
+                            </div>
+                            <span class="badge bg-danger rounded-pill">Esencial</span>
+                        </li>
+                        <li class="list-group-item">2 patatas medianas</li>
+                        <li class="list-group-item">1/4 de repollo blanco</li>
+                        <li class="list-group-item">1 cebolla</li>
+                        <li class="list-group-item">1 zanahoria</li>
+                        <li class="list-group-item">1 pimiento rojo (opcional)</li>
+                        <li class="list-group-item">2 cucharadas de pasta de tomate</li>
+                        <li class="list-group-item">2 dientes de ajo</li>
+                        <li class="list-group-item">2 cucharadas de vinagre de manzana</li>
+                        <li class="list-group-item">1 cucharadita de azúcar</li>
+                        <li class="list-group-item">Aceite vegetal para freír</li>
+                    </ul>
+                </div>
+                
+                <div class="ingredient-section">
+                    <h3 class="h5">Para servir:</h3>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Crema agria (smetana)</li>
+                        <li class="list-group-item">Eneldo fresco picado</li>
+                        <li class="list-group-item">Perejil fresco</li>
+                        <li class="list-group-item">Pan de centeno</li>
+                        <li class="list-group-item">Salo (tocino curado) opcional</li>
+                    </ul>
+                </div>
+                
+                <div class="card shadow-sm mt-4 broth-tips">
+                    <div class="card-header bg-warning text-dark">
+                        <h3 class="h5 mb-0">Consejos para el Borscht perfecto</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul class="mb-0">
+                            <li class="mb-2">No pelar las remolachas antes de cocinar para conservar el color</li>
+                            <li class="mb-2">Añadir el vinagre o limón ayuda a mantener el color rojo brillante</li>
+                            <li>El Borscht sabe mejor al día siguiente, cuando los sabores se han mezclado</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Preparation Section -->
+            <div class="col-lg-7">
+                <h2 class="h3 mb-4" style="color: #28a745;">Preparación</h2>
+                
+                <div class="step-card card mb-3">
+                    <div class="card-body">
+                        <h3 class="h5">1. Preparar el caldo</h3>
+                        <p>Coloca la carne en una olla grande con 3 litros de agua fría. Lleva a ebullición y reduce el fuego. Con una espumadera, retira la espuma que se forme en la superficie durante los primeros 10-15 minutos.</p>
+                        <p class="mb-0">Añade la cebolla pelada y cortada por la mitad, la zanahoria pelada, el apio, las hojas de laurel y los granos de pimienta. Cocina a fuego lento durante 1.5-2 horas. Cuela el caldo y reserva la carne.</p>
+                    </div>
+                </div>
+                
+                <div class="step-card card mb-3">
+                    <div class="card-body">
+                        <h3 class="h5">2. Preparar las verduras</h3>
+                        <p>Lava las remolachas (sin pelar) y cocínalas enteras en agua con un poco de vinagre hasta que estén tiernas (30-40 min). Enfría, pela y corta en juliana o ralla gruesa.</p>
+                        <p class="mb-0">Pela las patatas y córtalas en cubos. Corta el repollo en tiras finas. Pica finamente la cebolla y ralla la zanahoria.</p>
+                    </div>
+                </div>
+                
+                <div class="step-card card mb-3">
+                    <div class="card-body">
+                        <h3 class="h5">3. Cocinar la sopa</h3>
+                        <p>Vuelve a llevar el caldo a ebullición. Añade las patatas y cocina durante 5 minutos. Agrega el repollo y cocina otros 5-7 minutos.</p>
+                        <p>Mientras tanto, en una sartén con aceite, sofríe la cebolla hasta que esté transparente. Añade la zanahoria rallada y cocina 3-4 minutos. Incorpora la pasta de tomate y cocina 2 minutos más.</p>
+                        <p class="mb-0">Añade esta mezcla a la olla junto con las remolachas cocidas. Sazona con sal, azúcar y vinagre. Corta la carne reservada en trozos y añádela a la sopa. Cocina todo junto durante 10-15 minutos. Al final, añade el ajo picado.</p>
+                    </div>
+                </div>
+                
+                <div class="step-card card mb-4">
+                    <div class="card-body">
+                        <h3 class="h5">4. Reposo y servir</h3>
+                        <p>Apaga el fuego y deja reposar el Borscht tapado durante al menos 30 minutos antes de servir. Esto permite que los sabores se integren.</p>
+                        <p class="mb-0">Sirve caliente en tazones hondos con una cucharada generosa de crema agria, eneldo y perejil fresco picado. Acompaña con pan de centeno.</p>
+                    </div>
+                </div>
+                
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card shadow-sm h-100">
+                            <div class="card-header bg-info text-white">
+                                <h3 class="h5 mb-0">Variaciones</h3>
+                            </div>
+                            <div class="card-body">
+                                <ul class="mb-0">
+                                    <li class="mb-2"><strong>Borscht verde:</strong> Con acedera en lugar de remolacha</li>
+                                    <li class="mb-2"><strong>Borscht blanco:</strong> Con nabos en lugar de remolacha</li>
+                                    <li class="mb-2"><strong>Borscht de Cuaresma:</strong> Versión vegetariana sin carne</li>
+                                    <li><strong>Borscht frío:</strong> Popular en verano, servido refrigerado</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card shadow-sm h-100">
+                            <div class="card-header bg-dark text-white">
+                                <h3 class="h5 mb-0">Información Nutricional</h3>
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex flex-wrap gap-2 mb-3">
+                                    <span class="badge bg-primary nutrition-badge">250-350 kcal</span>
+                                    <span class="badge bg-success nutrition-badge">15g proteína</span>
+                                    <span class="badge bg-warning text-dark nutrition-badge">30g carbohidratos</span>
+                                    <span class="badge bg-danger nutrition-badge">8g grasas</span>
+                                </div>
+                                <p class="mb-2"><strong>Beneficios:</strong> Rico en hierro, vitamina C, folato y antioxidantes. Las remolachas tienen propiedades antiinflamatorias.</p>
+                                <p class="mb-0"><strong>Contiene:</strong> Probióticos naturales (de la crema agria), fibra y compuestos beneficiosos de la remolacha.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- History Section -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-secondary text-white">
+                        <h2 class="h4 mb-0">Historia y Cultura del Borscht</h2>
+                    </div>
+                    <div class="card-body">
+                        <p>El Borscht tiene sus raíces en la antigua Rus de Kiev (siglo IX-XIII), pero la versión con remolacha se desarrolló en el territorio de la actual Ucrania alrededor del siglo XIV. Las remolachas eran un cultivo común en la región y su uso en sopas se popularizó entre campesinos y cosacos.</p>
+                        <p>En 2022, la UNESCO incluyó la cultura del Borscht ucraniano en su lista de Patrimonio Cultural Inmaterial que requiere protección urgente, reconociendo su importancia como elemento identitario del pueblo ucraniano, especialmente durante la invasión rusa.</p>
+                        <p class="mb-0">Tradicionalmente, el Borscht se prepara en ollas grandes para toda la familia y es un elemento central en celebraciones como la Navidad ortodoxa y la Pascua ucraniana. Cada región de Ucrania tiene su propia versión distintiva.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 class="h5">Borscht Ucraniano</h3>
+                    <p class="text-muted">Receta tradicional adaptada para cocinas internacionales</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">© 2023 Cocina Eslava Auténtica</p>
+                    <p class="text-muted small">Patrimonio Cultural Inmaterial de la Humanidad (UNESCO)</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buddha Bowl Saludable | Comida Sana</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome (íconos) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --color-primary: #6C9E60;
+            --color-secondary: #F4A261;
+            --color-accent: #E76F51;
+        }
+        .recipe-header {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                        url('https://images.unsplash.com/photo-1546069901-4562a0d211c2');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            margin-bottom: 30px;
+        }
+        .time-badge {
+            font-size: 0.9rem;
+            padding: 8px 12px;
+        }
+        .ingredient-icon {
+            color: var(--color-primary);
+            width: 24px;
+            text-align: center;
+            margin-right: 10px;
+        }
+        .step-number {
+            background-color: var(--color-primary);
+            color: white;
+            width: 30px;
+            height: 30px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .nutrition-badge {
+            font-size: 0.85rem;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+        .card-header-custom {
+            background-color: var(--color-primary);
+            color: white;
+        }
+        .tips-card {
+            border-left: 4px solid var(--color-secondary);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header con imagen -->
+    <header class="recipe-header text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Buddha Bowl Saludable</h1>
+            <p class="lead">Un plato equilibrado con granos, proteínas, vegetales y un delicioso aderezo</p>
+            <div class="mt-4">
+                <span class="badge bg-light text-dark me-2">
+                    <i class="fas fa-clock me-1"></i> 25 min
+                </span>
+                <span class="badge bg-light text-dark me-2">
+                    <i class="fas fa-utensils me-1"></i> 2 porciones
+                </span>
+                <span class="badge bg-light text-dark">
+                    <i class="fas fa-signal me-1"></i> Fácil
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <!-- Columna de ingredientes -->
+            <div class="col-lg-5">
+                <div class="card mb-4">
+                    <div class="card-header card-header-custom">
+                        <h3 class="h5 mb-0">
+                            <i class="fas fa-shopping-basket me-2"></i> Ingredientes
+                        </h3>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="h6 text-muted mb-3">Base del Bowl:</h5>
+                        <ul class="list-unstyled">
+                            <li class="d-flex align-items-center mb-2">
+                                <span class="ingredient-icon"><i class="fas fa-seedling"></i></span>
+                                <span>1 taza de quinoa cocida (o arroz integral)</span>
+                            </li>
+                            <li class="d-flex align-items-center mb-2">
+                                <span class="ingredient-icon"><i class="fas fa-leaf"></i></span>
+                                <span>2 tazas de espinacas o kale frescas</span>
+                            </li>
+                        </ul>
+
+                        <h5 class="h6 text-muted mb-3 mt-4">Vegetales:</h5>
+                        <ul class="list-unstyled">
+                            <li class="d-flex align-items-center mb-2">
+                                <span class="ingredient-icon"><i class="fas fa-carrot"></i></span>
+                                <span>1 zanahoria rallada</span>
+                            </li>
+                            <li class="d-flex align-items-center mb-2">
+                                <span class="ingredient-icon"><i class="fas fa-pepper-hot"></i></span>
+                                <span>1/2 pimiento rojo en tiras</span>
+                            </li>
+                            <li class="d-flex align-items-center mb-2">
+                                <span class="ingredient-icon"><i class="fas fa-apple-alt"></i></span>
+                                <span>1/2 aguacate en rodajas</span>
+                            </li>
+                            <li class="d-flex align-items-center mb-2">
+                                <span class="ingredient-icon"><i class="fas fa-seedling"></i></span>
+                                <span>1/2 taza de brotes de soja o alfalfa</span>
+                            </li>
+                        </ul>
+
+                        <h5 class="h6 text-muted mb-3 mt-4">Proteínas:</h5>
+                        <ul class="list-unstyled">
+                            <li class="d-flex align-items-center mb-2">
+                                <span class="ingredient-icon"><i class="fas fa-drumstick-bite"></i></span>
+                                <span>1 taza de garbanzos cocidos (o pollo a la plancha)</span>
+                            </li>
+                            <li class="d-flex align-items-center mb-2">
+                                <span class="ingredient-icon"><i class="fas fa-egg"></i></span>
+                                <span>2 huevos duros (opcional)</span>
+                            </li>
+                        </ul>
+
+                        <h5 class="h6 text-muted mb-3 mt-4">Aderezo:</h5>
+                        <ul class="list-unstyled">
+                            <li class="d-flex align-items-center mb-2">
+                                <span class="ingredient-icon"><i class="fas fa-blender"></i></span>
+                                <span>2 cucharadas de tahini</span>
+                            </li>
+                            <li class="d-flex align-items-center mb-2">
+                                <span class="ingredient-icon"><i class="fas fa-lemon"></i></span>
+                                <span>Jugo de 1 limón</span>
+                            </li>
+                            <li class="d-flex align-items-center mb-2">
+                                <span class="ingredient-icon"><i class="fas fa-tint"></i></span>
+                                <span>1 cucharada de aceite de oliva</span>
+                            </li>
+                            <li class="d-flex align-items-center mb-2">
+                                <span class="ingredient-icon"><i class="fas fa-mortar-pestle"></i></span>
+                                <span>Sal, pimienta y comino al gusto</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Información nutricional -->
+                <div class="card mb-4">
+                    <div class="card-header bg-info text-white">
+                        <h3 class="h5 mb-0">
+                            <i class="fas fa-chart-pie me-2"></i> Información Nutricional
+                        </h3>
+                    </div>
+                    <div class="card-body">
+                        <p class="mb-3">Por porción (aproximadamente):</p>
+                        <div>
+                            <span class="badge nutrition-badge bg-primary">450 kcal</span>
+                            <span class="badge nutrition-badge bg-secondary">18g Grasas</span>
+                            <span class="badge nutrition-badge bg-success">55g Carbohidratos</span>
+                            <span class="badge nutrition-badge bg-danger">20g Proteínas</span>
+                            <span class="badge nutrition-badge bg-warning text-dark">12g Fibra</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Columna de preparación -->
+            <div class="col-lg-7">
+                <div class="card mb-4">
+                    <div class="card-header card-header-custom">
+                        <h3 class="h5 mb-0">
+                            <i class="fas fa-book me-2"></i> Preparación
+                        </h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="mb-4 d-flex">
+                            <div class="step-number">1</div>
+                            <div>
+                                <h5 class="h6">Cocinar la quinoa</h5>
+                                <p>Enjuagar la quinoa bajo agua fría. Cocinar en agua (2:1) con una pizca de sal durante 15 minutos. Dejar reposar 5 min y luego fluff con un tenedor.</p>
+                            </div>
+                        </div>
+
+                        <div class="mb-4 d-flex">
+                            <div class="step-number">2</div>
+                            <div>
+                                <h5 class="h6">Preparar los vegetales</h5>
+                                <p>Lavar y cortar todos los vegetales: rallar zanahoria, cortar pimiento en tiras, pelar y rebanar el aguacate, lavar las hojas verdes.</p>
+                            </div>
+                        </div>
+
+                        <div class="mb-4 d-flex">
+                            <div class="step-number">3</div>
+                            <div>
+                                <h5 class="h6">Preparar las proteínas</h5>
+                                <p>Si usas garbanzos enlatados, escurrirlos y enjuagarlos. Si prefieres, puedes dorarlos en una sartén con un poco de aceite y especias. Cocinar los huevos si los incluyes.</p>
+                            </div>
+                        </div>
+
+                        <div class="mb-4 d-flex">
+                            <div class="step-number">4</div>
+                            <div>
+                                <h5 class="h6">Hacer el aderezo</h5>
+                                <p>Mezclar el tahini con jugo de limón, aceite de oliva, sal, pimienta y comino. Añadir agua poco a poco hasta lograr una consistencia cremosa.</p>
+                            </div>
+                        </div>
+
+                        <div class="mb-4 d-flex">
+                            <div class="step-number">5</div>
+                            <div>
+                                <h5 class="h6">Armar el bowl</h5>
+                                <p>En un tazón grande, colocar la quinoa como base. Organizar los vegetales y proteínas en secciones atractivas. Rocía con el aderezo y decora con semillas o hierbas frescas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Consejos -->
+                <div class="card tips-card mb-4">
+                    <div class="card-header bg-warning text-dark">
+                        <h3 class="h5 mb-0">
+                            <i class="fas fa-lightbulb me-2"></i> Consejos y Variaciones
+                        </h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <h5 class="h6">
+                                        <i class="fas fa-random text-secondary me-2"></i> Variaciones
+                                    </h5>
+                                    <ul class="small">
+                                        <li>Vegano: Usa tofu en lugar de huevo</li>
+                                        <li>Sin gluten: Asegúrate de que la quinoa esté certificada sin gluten</li>
+                                        <li>Aderezos alternativos: Prueba con pesto o vinagreta de mango</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <h5 class="h6">
+                                        <i class="fas fa-clock text-secondary me-2"></i> Meal Prep
+                                    </h5>
+                                    <ul class="small">
+                                        <li>Cocina la quinoa y garbanzos con anticipación</li>
+                                        <li>Guarda los vegetales cortados en recipientes herméticos</li>
+                                        <li>El aderezo puede durar hasta 5 días refrigerado</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Galería -->
+                <div class="card mb-4">
+                    <div class="card-header bg-dark text-white">
+                        <h3 class="h5 mb-0">
+                            <i class="fas fa-images me-2"></i> Presentación
+                        </h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="row g-3">
+                            <div class="col-6 col-md-4">
+                                <img src="https://images.unsplash.com/photo-1546069901-4562a0d211c2" class="img-fluid rounded" alt="Buddha Bowl servido">
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19" class="img-fluid rounded" alt="Detalle de ingredientes">
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <img src="https://images.unsplash.com/photo-1505576399279-565b52d4ac71" class="img-fluid rounded" alt="Aderezo tahini">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-0">© 2023 Comida Saludable | Todos los derechos reservados</p>
+            <div class="mt-3">
+                <a href="#" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-white mx-2"><i class="fab fa-pinterest"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

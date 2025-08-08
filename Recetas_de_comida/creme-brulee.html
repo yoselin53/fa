@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receta de Crème Brûlée</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .recipe-header {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1606755456206-b6f2a5a6f68a');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            margin-bottom: 30px;
+        }
+        .ingredient-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .ingredient-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .step-card {
+            margin-bottom: 20px;
+            transition: transform 0.3s;
+        }
+        .step-card:hover {
+            transform: translateY(-5px);
+        }
+        .nutrition-info {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header con imagen de fondo -->
+    <header class="recipe-header text-center">
+        <div class="container">
+            <h1 class="display-3 fw-bold">Crème Brûlée</h1>
+            <p class="lead">El clásico postre francés con textura cremosa y crujiente caramelo</p>
+            <div class="mt-4">
+                <span class="badge bg-light text-dark me-2"><i class="fas fa-clock me-1"></i> 1h 30min</span>
+                <span class="badge bg-light text-dark me-2"><i class="fas fa-utensils me-1"></i> 6 porciones</span>
+                <span class="badge bg-light text-dark"><i class="fas fa-signal me-1"></i> Media</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <!-- Columna de ingredientes -->
+            <div class="col-lg-4 mb-4">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-primary text-white">
+                        <h3 class="h5 mb-0"><i class="fas fa-shopping-basket me-2"></i>Ingredientes</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul class="ingredient-list">
+                            <li><i class="fas fa-check-circle text-primary me-2"></i> 600 ml de crema de leche (nata para montar)</li>
+                            <li><i class="fas fa-check-circle text-primary me-2"></i> 1 vaina de vainilla o 1 cucharadita de extracto</li>
+                            <li><i class="fas fa-check-circle text-primary me-2"></i> 6 yemas de huevo</li>
+                            <li><i class="fas fa-check-circle text-primary me-2"></i> 90 g de azúcar (más extra para caramelizar)</li>
+                            <li><i class="fas fa-check-circle text-primary me-2"></i> 1 pizca de sal</li>
+                        </ul>
+                        
+                        <h4 class="mt-4 h5">Utensilios necesarios</h4>
+                        <ul class="list-group list-group-flush mt-3">
+                            <li class="list-group-item"><i class="fas fa-blender me-2"></i> Batidora o batidor</li>
+                            <li class="list-group-item"><i class="fas fa-utensil-spoon me-2"></i> Cuchara de madera</li>
+                            <li class="list-group-item"><i class="fas fa-fire me-2"></i> Soplete de cocina</li>
+                            <li class="list-group-item"><i class="fas fa-drumstick-bite me-2"></i> Ramekins (moldecitos individuales)</li>
+                            <li class="list-group-item"><i class="fas fa-temperature-high me-2"></i> Horno</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Información nutricional -->
+                <div class="nutrition-info mt-4 shadow-sm">
+                    <h3 class="h5 mb-3"><i class="fas fa-chart-pie me-2"></i>Información Nutricional (por porción)</h3>
+                    <div class="row">
+                        <div class="col-6">
+                            <p class="mb-1"><strong>Calorías:</strong> 420 kcal</p>
+                            <p class="mb-1"><strong>Grasas:</strong> 36g</p>
+                        </div>
+                        <div class="col-6">
+                            <p class="mb-1"><strong>Carbohidratos:</strong> 22g</p>
+                            <p class="mb-1"><strong>Proteínas:</strong> 5g</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Columna de preparación -->
+            <div class="col-lg-8">
+                <div class="card shadow-sm mb-4">
+                    <div class="card-header bg-success text-white">
+                        <h2 class="h4 mb-0"><i class="fas fa-book me-2"></i>Preparación</h2>
+                    </div>
+                    <div class="card-body">
+                        <!-- Paso 1 -->
+                        <div class="step-card card mb-3">
+                            <div class="card-header bg-light">
+                                <h3 class="h5 mb-0">Paso 1: Infusionar la crema</h3>
+                            </div>
+                            <div class="card-body">
+                                <p>Calentar la crema de leche en una cacerola a fuego medio. Si usas vainilla, cortar la vaina por la mitad a lo largo y raspar las semillas. Añadir tanto las semillas como la vaina a la crema. Justo antes de que hierva, retirar del fuego, tapar y dejar infusionar 15-20 minutos.</p>
+                                <img src="https://recetinas.com/wp-content/uploads/2022/05/creme-brulee-francesa.jpg" class="img-fluid rounded mt-2" alt="Infusión de crema">
+                            </div>
+                        </div>
+                        
+                        <!-- Paso 2 -->
+                        <div class="step-card card mb-3">
+                            <div class="card-header bg-light">
+                                <h3 class="h5 mb-0">Paso 2: Preparar las yemas</h3>
+                            </div>
+                            <div class="card-body">
+                                <p>En un bol, batir las yemas con el azúcar y la pizca de sal hasta que la mezcla blanquee ligeramente y aumente de volumen.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Paso 3 -->
+                        <div class="step-card card mb-3">
+                            <div class="card-header bg-light">
+                                <h3 class="h5 mb-0">Paso 3: Combinar las mezclas</h3>
+                            </div>
+                            <div class="card-body">
+                                <p>Retirar la vaina de vainilla de la crema (si se usó). Verter la crema caliente poco a poco sobre las yemas, batiendo constantemente para no cocinar los huevos.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Paso 4 -->
+                        <div class="step-card card mb-3">
+                            <div class="card-header bg-light">
+                                <h3 class="h5 mb-0">Paso 4: Cocinar al baño María</h3>
+                            </div>
+                            <div class="card-body">
+                                <p>Precalentar el horno a 150°C. Colocar los ramequins en una bandeja para horno profunda. Verter la mezcla en los ramequins y llenar la bandea con agua caliente hasta la mitad de la altura de los moldes. Hornear durante 35-40 minutos hasta que estén cuajados pero aún temblorosos en el centro.</p>
+                                <img src="img/creme.jpeg" class="img-fluid rounded mt-2" alt="Crème brûlée en horno">
+                            </div>
+                        </div>
+                        
+                        <!-- Paso 5 -->
+                        <div class="step-card card mb-3">
+                            <div class="card-header bg-light">
+                                <h3 class="h5 mb-0">Paso 5: Enfriar y refrigerar</h3>
+                            </div>
+                            <div class="card-body">
+                                <p>Retirar los ramequins del baño María y dejar enfriar a temperatura ambiente. Luego, refrigerar al menos 4 horas (preferiblemente toda la noche).</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Paso 6 -->
+                        <div class="step-card card mb-3">
+                            <div class="card-header bg-light">
+                                <h3 class="h5 mb-0">Paso 6: Caramelizar</h3>
+                            </div>
+                            <div class="card-body">
+                                <p>Antes de servir, espolvorear una capa fina y uniforme de azúcar sobre cada crema. Usar un soplete de cocina para caramelizar el azúcar hasta que quede dorado y crujiente. Servir inmediatamente.</p>
+                                <div class="alert alert-warning mt-3">
+                                    <i class="fas fa-lightbulb me-2"></i> <strong>Consejo:</strong> Si no tienes soplete, puedes poner los ramequins bajo el grill del horno precalentado al máximo durante 1-2 minutos, vigilando constantemente.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Variaciones -->
+                <div class="card shadow-sm mb-4">
+                    <div class="card-header bg-info text-white">
+                        <h2 class="h4 mb-0"><i class="fas fa-random me-2"></i>Variaciones</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-4 mb-3">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Chocolate</h5>
+                                        <p class="card-text">Añadir 50g de chocolate negro fundido a la crema caliente antes de mezclar con las yemas.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Café</h5>
+                                        <p class="card-text">Infusionar la crema con 2 cucharadas de café molido en lugar de vainilla.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Cítrica</h5>
+                                        <p class="card-text">Añadir la ralladura de 1 limón o naranja a la crema durante la infusión.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Notas finales -->
+                <div class="card shadow-sm">
+                    <div class="card-header bg-secondary text-white">
+                        <h2 class="h4 mb-0"><i class="fas fa-clipboard-check me-2"></i>Notas y Consejos</h2>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><i class="fas fa-check-circle text-success me-2"></i> Para saber si está bien cocido, la crema debe estar firme en los bordes pero aún temblorosa en el centro.</li>
+                            <li class="list-group-item"><i class="fas fa-check-circle text-success me-2"></i> El tiempo de refrigeración es clave para obtener la textura perfecta.</li>
+                            <li class="list-group-item"><i class="fas fa-check-circle text-success me-2"></i> Puedes preparar las cremas con 1-2 días de anticipación y caramelizar justo antes de servir.</li>
+                            <li class="list-group-item"><i class="fas fa-check-circle text-success me-2"></i> Para un acabado profesional, usa azúcar superfina o azúcar glas para caramelizar.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <p class="mb-0">© 2023 Recetas Gourmet | Todos los derechos reservados</p>
+            <div class="mt-2">
+                <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-white me-3"><i class="fab fa-pinterest-p"></i></a>
+                <a href="#" class="text-white"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

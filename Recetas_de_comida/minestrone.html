@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minestrone Italiano</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://assets.tmecosys.com/image/upload/t_web_rdp_recipe_584x480_1_5x/img/recipe/ras/Assets/3710E455-33FC-4CC7-97B2-C8C902B697CD/Derivates/81c54342-038a-43a5-a02d-01c8ad36e72e.jpg">
+    <style>
+        .soup-header {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://assets.unileversolutions.com/recipes-v2/110759.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            margin-bottom: 30px;
+        }
+        .ingredient-card {
+            transition: transform 0.3s;
+        }
+        .ingredient-card:hover {
+            transform: translateY(-5px);
+        }
+        .step-number {
+            width: 40px;
+            height: 40px;
+            background-color: #198754;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 15px;
+        }
+        .nutrition-badge {
+            font-size: 0.85rem;
+        }
+        .tips-section {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header con imagen -->
+    <header class="soup-header text-center">
+        <div class="container">
+            <h1 class="display-3 fw-bold">Minestrone Italiano</h1>
+            <p class="lead">La clásica sopa de verduras italiana, nutritiva y reconfortante</p>
+            <div class="mt-4">
+                <span class="badge bg-light text-dark me-2"><i class="fas fa-clock me-1"></i> 45 min</span>
+                <span class="badge bg-light text-dark me-2"><i class="fas fa-utensils me-1"></i> 6 porciones</span>
+                <span class="badge bg-light text-dark"><i class="fas fa-signal me-1"></i> Fácil</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <!-- Columna izquierda - Ingredientes -->
+            <div class="col-lg-4 mb-4">
+                <div class="card shadow-sm mb-4">
+                    <div class="card-header bg-success text-white">
+                        <h3 class="h5 mb-0"><i class="fas fa-shopping-basket me-2"></i>Ingredientes</h3>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="h6 text-muted">Verduras</h5>
+                        <ul class="list-group list-group-flush mb-3">
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <span><i class="fas fa-carrot text-warning me-2"></i> 2 zanahorias</span>
+                                <span class="badge bg-light text-dark">picadas</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <span><i class="fas fa-apple-alt text-danger me-2"></i> 2 tallos de apio</span>
+                                <span class="badge bg-light text-dark">en cubos</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <span><i class="fas fa-leaf text-success me-2"></i> 1 cebolla</span>
+                                <span class="badge bg-light text-dark">picada</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <span><i class="fas fa-pepper-hot text-danger me-2"></i> 1 calabacín</span>
+                                <span class="badge bg-light text-dark">en cubos</span>
+                            </li>
+                        </ul>
+
+                        <h5 class="h6 text-muted">Otros ingredientes</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><i class="fas fa-wine-bottle text-primary me-2"></i> 400g de tomates triturados</li>
+                            <li class="list-group-item"><i class="fas fa-seedling text-success me-2"></i> 400g de alubias blancas</li>
+                            <li class="list-group-item"><i class="fas fa-bread-slice text-warning me-2"></i> 100g de pasta pequeña (ditalini)</li>
+                            <li class="list-group-item"><i class="fas fa-flask text-secondary me-2"></i> 1.5L de caldo vegetal</li>
+                            <li class="list-group-item"><i class="fas fa-leaf text-success me-2"></i> 2 hojas de laurel</li>
+                            <li class="list-group-item"><i class="fas fa-mortar-pestle text-dark me-2"></i> Sal y pimienta al gusto</li>
+                            <li class="list-group-item"><i class="fas fa-oil-can text-warning me-2"></i> 3 cucharadas de aceite de oliva</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Información nutricional -->
+                <div class="card shadow-sm">
+                    <div class="card-header bg-primary text-white">
+                        <h3 class="h5 mb-0"><i class="fas fa-chart-pie me-2"></i>Información Nutricional</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex flex-wrap gap-2 mb-3">
+                            <span class="badge bg-light text-dark nutrition-badge"><strong>Calorías:</strong> 280 kcal</span>
+                            <span class="badge bg-light text-dark nutrition-badge"><strong>Proteínas:</strong> 12g</span>
+                            <span class="badge bg-light text-dark nutrition-badge"><strong>Carbohidratos:</strong> 45g</span>
+                            <span class="badge bg-light text-dark nutrition-badge"><strong>Grasas:</strong> 6g</span>
+                            <span class="badge bg-light text-dark nutrition-badge"><strong>Fibra:</strong> 10g</span>
+                        </div>
+                        <p class="small text-muted mb-0">* Valores por porción aproximados</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Columna derecha - Preparación -->
+            <div class="col-lg-8">
+                <div class="card shadow-sm mb-4">
+                    <div class="card-header bg-success text-white">
+                        <h2 class="h4 mb-0"><i class="fas fa-book me-2"></i>Preparación</h2>
+                    </div>
+                    <div class="card-body">
+                        <!-- Paso 1 -->
+                        <div class="d-flex mb-4">
+                            <div class="step-number">1</div>
+                            <div>
+                                <h4 class="h5">Sofreír las verduras</h4>
+                                <p>En una olla grande, calentar el aceite de oliva a fuego medio. Añadir la cebolla, zanahorias y apio. Sofreír durante 5-7 minutos hasta que las verduras estén tiernas pero aún crujientes.</p>
+                                <img src="https://cocinandoentreolivos.com/wp-content/uploads/2024/01/Sopa-de-verduras-y-pollo-pasos-1-750x500.jpg" class="img-fluid rounded mt-2" alt="Sofrito de verduras">
+                            </div>
+                        </div>
+
+                        <!-- Paso 2 -->
+                        <div class="d-flex mb-4">
+                            <div class="step-number">2</div>
+                            <div>
+                                <h4 class="h5">Añadir el resto de ingredientes</h4>
+                                <p>Incorporar el calabacín, los tomates triturados, las alubias escurridas, el caldo vegetal y las hojas de laurel. Sazonar con sal y pimienta al gusto. Llevar a ebullición.</p>
+                            </div>
+                        </div>
+
+                        <!-- Paso 3 -->
+                        <div class="d-flex mb-4">
+                            <div class="step-number">3</div>
+                            <div>
+                                <h4 class="h5">Cocinar a fuego lento</h4>
+                                <p>Reducir el fuego y cocinar a fuego lento durante 20 minutos, tapado pero dejando una pequeña abertura para que escape el vapor.</p>
+                            </div>
+                        </div>
+
+                        <!-- Paso 4 -->
+                        <div class="d-flex mb-4">
+                            <div class="step-number">4</div>
+                            <div>
+                                <h4 class="h5">Añadir la pasta</h4>
+                                <p>Incorporar la pasta y cocinar durante el tiempo indicado en el paquete (generalmente 8-10 minutos), hasta que esté al dente.</p>
+                                <div class="alert alert-warning mt-3">
+                                    <i class="fas fa-lightbulb me-2"></i> <strong>Consejo:</strong> Si prefieres una sopa más espesa, puedes añadir 1 cucharada de puré de tomate o reducir un poco el caldo.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Paso 5 -->
+                        <div class="d-flex">
+                            <div class="step-number">5</div>
+                            <div>
+                                <h4 class="h5">Servir y decorar</h4>
+                                <p>Retirar las hojas de laurel antes de servir. Decorar con hojas de albahaca fresca, un chorrito de aceite de oliva virgen extra y queso parmesano rallado al gusto.</p>
+                                <img src="https://www.recetasnestle.com.ec/sites/default/files/srh_recipes/49d9a39eb069cd01e94809221c3b626d.jpg" class="img-fluid rounded mt-2" alt="Minestrone servido">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Variaciones -->
+                <div class="card shadow-sm mb-4">
+                    <div class="card-header bg-info text-white">
+                        <h2 class="h4 mb-0"><i class="fas fa-random me-2"></i>Variaciones</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-4 mb-3">
+                                <div class="card h-100 ingredient-card">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><i class="fas fa-leaf text-success me-2"></i>Vegetariana</h5>
+                                        <p class="card-text">Usar caldo vegetal y añadir más variedad de verduras de temporada.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card h-100 ingredient-card">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><i class="fas fa-drumstick-bite text-danger me-2"></i>Con pollo</h5>
+                                        <p class="card-text">Añadir 200g de pechuga de pollo en cubos al sofrito inicial.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card h-100 ingredient-card">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><i class="fas fa-fish text-primary me-2"></i>Marinera</h5>
+                                        <p class="card-text">Incorporar almejas o mejillones en el último momento de cocción.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Consejos y notas -->
+                <div class="card shadow-sm">
+                    <div class="card-header bg-warning text-dark">
+                        <h2 class="h4 mb-0"><i class="fas fa-lightbulb me-2"></i>Consejos y Notas</h2>
+                    </div>
+                    <div class="card-body tips-section">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> El minestrone sabe aún mejor al día siguiente, ya que los sabores se intensifican.</li>
+                            <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Puedes usar cualquier verdura de temporada que tengas disponible.</li>
+                            <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Para una versión más cremosa, triturar una parte de la sopa antes de servir.</li>
+                            <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Si la sopa queda muy espesa al recalentar, añade un poco más de caldo o agua.</li>
+                            <li class="list-group-item bg-transparent"><i class="fas fa-check-circle text-success me-2"></i> Conservar en refrigeración hasta 3 días o congelar por 1 mes.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <p class="mb-0">© 2023 Cocina Italiana Auténtica | Todos los derechos reservados</p>
+            <div class="mt-2">
+                <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-white me-3"><i class="fab fa-pinterest-p"></i></a>
+                <a href="#" class="text-white"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

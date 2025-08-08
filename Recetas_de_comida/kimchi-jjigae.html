@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kimchi Jjigae - Estofado Coreano de Kimchi</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hero-kimchi-jjigae {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://www.maangchi.com/wp-content/uploads/2019/06/kimchistewtuna-1.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 120px 0;
+            margin-bottom: 40px;
+        }
+        .ingredient-card {
+            border-left: 4px solid #e53935;
+            transition: transform 0.3s;
+        }
+        .ingredient-card:hover {
+            transform: translateY(-5px);
+        }
+        .step-card {
+            border-left: 4px solid #43a047;
+            margin-bottom: 20px;
+        }
+        .fermentation-tip {
+            border-left: 4px solid #fb8c00;
+            background-color: #fff3e0;
+        }
+        .korean-flag {
+            height: 20px;
+            width: 30px;
+            display: inline-block;
+            background: url('https://www.maangchi.com/wp-content/uploads/2019/06/kimchistewtuna-1.jpg ');
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+        .spice-meter {
+            height: 10px;
+            background: linear-gradient(to right, #f5f5f5, #ff5722);
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+        .spice-label {
+            font-size: 0.8rem;
+            color: #e53935;
+        }
+        .cultural-note {
+            font-style: italic;
+            color: #6c757d;
+        }
+        .pro-tip {
+            border-left: 4px solid #2196f3;
+            background-color: #e3f2fd;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero-kimchi-jjigae text-center">
+        <div class="container">
+            <h1 class="display-3 fw-bold">Kimchi Jjigae</h1>
+            <p class="lead fs-4">Estofado coreano de kimchi reconfortante</p>
+            <div class="mt-4">
+                <span class="badge bg-light text-dark me-2"><i class="bi bi-clock"></i> Tiempo: 40 min</span>
+                <span class="badge bg-light text-dark me-2">Dificultad: Media</span>
+                <span class="badge bg-light text-dark">Porciones: 3-4</span>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <!-- Intro -->
+        <div class="row mb-5">
+            <div class="col-lg-10 mx-auto">
+                <div class="text-center mb-4">
+                    <p class="fs-5">El Kimchi Jjigae es uno de los platos más queridos de Corea, un estofado picante y ácido hecho con kimchi bien fermentado. Este reconfortante guiso es perfecto para días fríos o cuando necesitas un impulso de sabor, y mejora cuanto más fermentado esté tu kimchi.</p>
+                    <div class="d-flex justify-content-center flex-wrap gap-2 mt-3">
+                        <span class="badge bg-danger">Picante</span>
+                        <span class="badge bg-primary"><span class="korean-flag"></span> Corea</span>
+                        <span class="badge bg-success">Probiótico</span>
+                        <span class="badge bg-warning text-dark">Reconfortante</span>
+                    </div>
+                </div>
+                
+                <div class="alert alert-dark cultural-note">
+                    <p class="mb-0">"Kimchi Jjigae" se pronuncia "kim-chi chi-gae". Es un plato que los coreanos suelen preparar cuando el kimchi está muy fermentado y ácido, transformando su sabor intenso en una base deliciosa para el estofado. Tradicionalmente se sirve en una cazuela de barro (ttukbaegi) que mantiene el calor.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-4">
+            <!-- Ingredients Section -->
+            <div class="col-lg-5">
+                <h2 class="h3 mb-4" style="color: #e53935;">Ingredientes</h2>
+                
+                <div class="card shadow-sm ingredient-card mb-4">
+                    <div class="card-header bg-danger text-white">
+                        <h3 class="h5 mb-0">Ingredientes principales</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                    2 tazas de kimchi bien fermentado (con su jugo)
+                                </div>
+                                <span class="badge bg-primary rounded-pill">Esencial</span>
+                            </li>
+                            <li class="list-group-item">200g de carne de cerdo (panceta o paleta)</li>
+                            <li class="list-group-item">1 cebolla mediana</li>
+                            <li class="list-group-item">2 dientes de ajo</li>
+                            <li class="list-group-item">1 cucharada de aceite de sésamo</li>
+                            <li class="list-group-item">1 cucharada de pasta de chile coreana (gochujang)</li>
+                            <li class="list-group-item">1 cucharadita de azúcar</li>
+                            <li class="list-group-item">2 tazas de agua o caldo de anchoveta</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="card shadow-sm ingredient-card mb-4">
+                    <div class="card-header bg-danger text-white">
+                        <h3 class="h5 mb-0">Ingredientes adicionales</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">200g de tofu firme</li>
+                            <li class="list-group-item">2 cebollines</li>
+                            <li class="list-group-item">1/2 taza de jugo de kimchi (opcional, para más sabor)</li>
+                            <li class="list-group-item">1 cucharada de salsa de soja</li>
+                            <li class="list-group-item">1 cucharadita de polvo de chile coreano (gochugaru)</li>
+                        </ul>
+                        <div class="mt-3">
+                            <div class="d-flex justify-content-between">
+                                <span class="spice-label">Picor</span>
+                                <span class="spice-label">Alto</span>
+                            </div>
+                            <div class="spice-meter" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card shadow-sm fermentation-tip">
+                    <div class="card-header bg-warning text-dark">
+                        <h3 class="h5 mb-0">Consejos sobre el kimchi</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul class="mb-0">
+                            <li class="mb-2">Usa kimchi fermentado por al menos 2-3 semanas para mejor sabor</li>
+                            <li class="mb-2">El kimchi muy ácido funciona mejor para este plato</li>
+                            <li>Si no tienes jugo de kimchi, añade 1 cucharada de vinagre</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Preparation Section -->
+            <div class="col-lg-7">
+                <h2 class="h3 mb-4" style="color: #43a047;">Preparación</h2>
+                
+                <div class="step-card card mb-3">
+                    <div class="card-body">
+                        <h3 class="h5">1. Preparar los ingredientes</h3>
+                        <p>Corta la carne de cerdo en trozos pequeños (2-3cm). Pica la cebolla en juliana y el ajo finamente. Corta el tofu en cubos de 2cm y los cebollines en trozos de 5cm. Corta el kimchi en trozos de bocado (3-4cm) y reserva el jugo.</p>
+                    </div>
+                </div>
+                
+                <div class="step-card card mb-3">
+                    <div class="card-body">
+                        <h3 class="h5">2. Saltear la base</h3>
+                        <p>En una cazuela o olla mediana, calienta el aceite de sésamo a fuego medio-alto. Añade la carne de cerdo y saltea hasta que esté ligeramente dorada (3-4 minutos). Agrega la cebolla y el ajo, y saltea por 2 minutos más hasta que la cebolla esté transparente.</p>
+                    </div>
+                </div>
+                
+                <div class="step-card card mb-3">
+                    <div class="card-body">
+                        <h3 class="h5">3. Añadir el kimchi</h3>
+                        <p>Incorpora el kimchi cortado y saltea todo junto por 5-7 minutos, revolviendo ocasionalmente. Esto intensificará el sabor. Añade el gochujang, el azúcar y el gochugaru, mezclando bien para integrar todos los sabores.</p>
+                    </div>
+                </div>
+                
+                <div class="step-card card mb-3">
+                    <div class="card-body">
+                        <h3 class="h5">4. Cocinar el estofado</h3>
+                        <p>Vierte el agua o caldo y el jugo de kimchi (si usas). Lleva a ebullición, luego reduce el fuego a medio-bajo y cocina a fuego lento durante 15-20 minutos. Esto permitirá que los sabores se mezclen y el kimchi se ablande aún más.</p>
+                    </div>
+                </div>
+                
+                <div class="step-card card mb-4">
+                    <div class="card-body">
+                        <h3 class="h5">5. Añadir los toques finales</h3>
+                        <p>Agrega los cubos de tofu y los cebollines, y cocina por 5 minutos más. Prueba y ajusta el sazón con salsa de soja si es necesario (el kimchi ya es salado, así que ten cuidado).</p>
+                        <p class="mb-0">Sirve inmediatamente en tazones individuales o en la cazuela de barro si usaste. Acompaña con arroz blanco y otros banchan (pequeños platillos coreanos).</p>
+                    </div>
+                </div>
+                
+                <div class="card shadow-sm pro-tip mb-4">
+                    <div class="card-header bg-primary text-white">
+                        <h3 class="h5 mb-0">Consejos profesionales</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li class="mb-2"><strong>Sabor equilibrado:</strong> Si el estofado queda muy ácido, añade un poco más de azúcar. Si queda muy picante, añade más caldo o un poco de agua.</li>
+                            <li class="mb-2"><strong>Textura:</strong> Para un estofado más espeso, cocina a fuego lento por más tiempo sin tapar.</li>
+                            <li class="mb-2"><strong>Variaciones:</strong> Puedes sustituir el cerdo por atún enlatado (versión clásica) o hacerlo vegetariano omitiendo la carne y usando caldo de verduras.</li>
+                            <li><strong>Presentación:</strong> Para servir al estilo coreano, coloca un huevo crudo en el centro justo al servir (se cocinará con el calor residual).</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card shadow-sm h-100">
+                            <div class="card-header bg-info text-white">
+                                <h3 class="h5 mb-0">Variaciones populares</h3>
+                            </div>
+                            <div class="card-body">
+                                <ul class="mb-0">
+                                    <li class="mb-2"><strong>Chamchi Kimchi Jjigae:</strong> Con atún enlatado</li>
+                                    <li class="mb-2"><strong>Sundubu Kimchi Jjigae:</strong> Con tofu sedoso</li>
+                                    <li class="mb-2"><strong>Gogi Kimchi Jjigae:</strong> Con diferentes carnes</li>
+                                    <li><strong>Haemul Kimchi Jjigae:</strong> Con mariscos variados</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card shadow-sm h-100">
+                            <div class="card-header bg-success text-white">
+                                <h3 class="h5 mb-0">Información Nutricional</h3>
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex flex-wrap gap-2 mb-3">
+                                    <span class="badge bg-primary">280 kcal</span>
+                                    <span class="badge bg-success">18g proteína</span>
+                                    <span class="badge bg-warning text-dark">12g carbohidratos</span>
+                                    <span class="badge bg-danger">15g grasas</span>
+                                </div>
+                                <p class="mb-2"><strong>Beneficios:</strong> Rico en probióticos del kimchi fermentado, proteínas de calidad y compuestos antioxidantes. Bajo en carbohidratos.</p>
+                                <p class="mb-0"><strong>Contiene:</strong> Vitamina C, vitamina K, capsaicina (del chile) y bacterias lácticas beneficiosas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- History Section -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-secondary text-white">
+                        <h2 class="h4 mb-0">Historia y Cultura del Kimchi Jjigae</h2>
+                    </div>
+                    <div class="card-body">
+                        <p>El Kimchi Jjigae tiene sus orígenes como una forma práctica de utilizar kimchi muy fermentado que ya no era ideal para comer solo. En la cultura coreana, donde el desperdicio de alimentos es tabú, este plato representaba la sabiduría de transformar ingredientes "pasados" en algo delicioso.</p>
+                        <p>Durante la Guerra de Corea (1950-1953), el Kimchi Jjigae se convirtió en un alimento básico para los soldados y civiles por su facilidad de preparación y alto valor nutricional. El uso de carne enlatada (como Spam o atún) en lugar de cerdo fresco también se popularizó en esta época.</p>
+                        <p class="mb-0">Hoy, el Kimchi Jjigae es considerado uno de los platos más reconfortantes de Corea, especialmente en invierno. Es común en los menús de los jjigae-bang (restaurantes especializados en estofados) y se sirve frecuentemente en hogares coreanos como comida rápida pero nutritiva.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 class="h5">Kimchi Jjigae Coreano</h3>
+                    <p class="text-muted">Reconfortante estofado de kimchi fermentado</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">© 2023 Sabores de Corea</p>
+                    <p class="text-muted small">Cocina que calienta el cuerpo y el alma</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

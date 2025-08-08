@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Pepperoni Crujiente | Sabores & Delicias</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #e63946;
+            --secondary-color: #f1faee;
+            --accent-color: #a8dadc;
+            --text-dark: #1d3557;
+            --text-light: #457b9d;
+            --bg-light: #f8f9fa;
+            --border-radius: 12px;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+        }
+        
+        .recipe-header {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://callforpizzeria.com/wp-content/uploads/2025/06/tenweb_media_s2g6kmlqd.webp');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: flex-end;
+            padding-bottom: 50px;
+            margin-bottom: 50px;
+            border-radius: 0 0 var(--border-radius) var(--border-radius);
+        }
+        
+        .recipe-title {
+            font-size: 3rem;
+            font-weight: 700;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        .recipe-meta {
+            background-color: white;
+            border-radius: var(--border-radius);
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: -50px;
+            position: relative;
+            z-index: 10;
+        }
+        
+        .badge-difficulty {
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-weight: 600;
+        }
+        
+        .badge-medium {
+            background-color: #f39c12;
+            color: white;
+        }
+        
+        .ingredients-card, .instructions-card {
+            background-color: white;
+            border-radius: var(--border-radius);
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            height: 100%;
+        }
+        
+        .section-title {
+            color: var(--primary-color);
+            font-weight: 700;
+            margin-bottom: 25px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background-color: var(--primary-color);
+        }
+        
+        .list-group-item {
+            border: none;
+            padding: 12px 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .list-group-item:last-child {
+            border-bottom: none;
+        }
+        
+        .step-number {
+            background-color: var(--primary-color);
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            font-weight: bold;
+        }
+        
+        .chef-tip {
+            background-color: var(--accent-color);
+            border-left: 4px solid var(--primary-color);
+            padding: 20px;
+            border-radius: 0 var(--border-radius) var(--border-radius) 0;
+            margin: 30px 0;
+        }
+        
+        .nutrition-card {
+            background-color: var(--secondary-color);
+            border-radius: var(--border-radius);
+            padding: 20px;
+        }
+        
+        .nutrition-item {
+            margin-bottom: 15px;
+        }
+        
+        .nutrition-value {
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+        
+        .pepperoni-tip {
+            border: 2px dashed var(--primary-color);
+            border-radius: var(--border-radius);
+            padding: 15px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header de la receta -->
+    <div class="recipe-header">
+        <div class="container">
+            <h1 class="recipe-title">Pizza Pepperoni Crujiente</h1>
+        </div>
+    </div>
+    
+    <!-- Meta información -->
+    <div class="container">
+        <div class="recipe-meta">
+            <div class="row">
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="d-flex align-items-center">
+                        <span class="badge badge-difficulty badge-medium me-3">Media</span>
+                        <div>
+                            <div class="text-muted small">DIFICULTAD</div>
+                            <div class="fw-bold">Intermedio</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-clock fa-2x me-3" style="color: var(--primary-color);"></i>
+                        <div>
+                            <div class="text-muted small">TIEMPO</div>
+                            <div class="fw-bold">1.5 horas (30 min activo)</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-utensils fa-2x me-3" style="color: var(--primary-color);"></i>
+                        <div>
+                            <div class="text-muted small">PORCIONES</div>
+                            <div class="fw-bold">2 pizzas medianas</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Contenido principal -->
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Columna izquierda - Ingredientes -->
+            <div class="col-lg-4">
+                <div class="ingredients-card">
+                    <h3 class="section-title"><i class="fas fa-shopping-basket me-2"></i>Ingredientes</h3>
+                    
+                    <h5 class="mt-4 mb-3">Para la masa:</h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">500g de harina de fuerza (o harina 00)</li>
+                        <li class="list-group-item">325ml de agua tibia</li>
+                        <li class="list-group-item">10g de sal marina</li>
+                        <li class="list-group-item">5g de levadura seca instantánea</li>
+                        <li class="list-group-item">1 cucharadita de azúcar</li>
+                        <li class="list-group-item">2 cucharadas de aceite de oliva virgen extra</li>
+                    </ul>
+                    
+                    <h5 class="mt-4 mb-3">Para el topping:</h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">200g de pepperoni en rodajas (preferiblemente doble curado)</li>
+                        <li class="list-group-item">350g de salsa de tomate para pizza</li>
+                        <li class="list-group-item">300g de mozzarella rallada (mezcla de baja y alta humedad)</li>
+                        <li class="list-group-item">50g de queso parmesano rallado</li>
+                        <li class="list-group-item">1 cucharadita de hojuelas de chile rojo</li>
+                        <li class="list-group-item">1 cucharadita de orégano seco</li>
+                        <li class="list-group-item">Aceite de oliva virgen extra</li>
+                        <li class="list-group-item">Opcional: 1 cucharada de miel para el borde</li>
+                    </ul>
+                    
+                    <div class="pepperoni-tip mt-3">
+                        <h5><i class="fas fa-pepper-hot me-2"></i>Elección del Pepperoni:</h5>
+                        <p class="mb-0">Para el efecto "copa" crujiente, usa pepperoni en rodajas finas (1-2mm) y con alto contenido de grasa. Las marcas tradicionales americanas funcionan mejor.</p>
+                    </div>
+                    
+                    <div class="nutrition-card mt-4">
+                        <h5 class="mb-3">Información Nutricional (por porción):</h5>
+                        <div class="nutrition-item d-flex justify-content-between">
+                            <span>Calorías:</span>
+                            <span class="nutrition-value">950 kcal</span>
+                        </div>
+                        <div class="nutrition-item d-flex justify-content-between">
+                            <span>Carbohidratos:</span>
+                            <span class="nutrition-value">105g</span>
+                        </div>
+                        <div class="nutrition-item d-flex justify-content-between">
+                            <span>Proteínas:</span>
+                            <span class="nutrition-value">42g</span>
+                        </div>
+                        <div class="nutrition-item d-flex justify-content-between">
+                            <span>Grasas:</span>
+                            <span class="nutrition-value">45g</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Columna derecha - Instrucciones -->
+            <div class="col-lg-8">
+                <div class="instructions-card">
+                    <h3 class="section-title"><i class="fas fa-list-ol me-2"></i>Preparación</h3>
+                    
+                    <div class="chef-tip">
+                        <h5><i class="fas fa-lightbulb me-2"></i>Consejo del Chef:</h5>
+                        <p class="mb-0">El secreto del pepperoni crujiente está en: 1) Usar pepperoni de calidad con buen contenido graso, 2) Hornear a temperatura muy alta, y 3) Colocar parte del pepperoni debajo del queso y parte encima.</p>
+                    </div>
+                    
+                    <h5 class="mt-4">Preparación de la masa (24h antes):</h5>
+                    <div class="d-flex align-items-start mb-3">
+                        <span class="step-number">1</span>
+                        <div>
+                            <p>En un bol grande, mezcla la harina, sal y levadura. Añade el agua tibia y el aceite de oliva. Mezcla hasta formar una masa pegajosa.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex align-items-start mb-3">
+                        <span class="step-number">2</span>
+                        <div>
+                            <p>Amasa en superficie enharinada durante 10-12 minutos hasta obtener una masa suave y elástica. La masa debe pasar la "prueba del vidrio" (estirarse sin romperse).</p>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex align-items-start mb-3">
+                        <span class="step-number">3</span>
+                        <div>
+                            <p>Divide en 2 bolas, coloca en recipientes engrasados, tapa con film y refrigera por 24-48 horas para fermentación lenta (o 1-2 horas a temperatura ambiente para fermentación rápida).</p>
+                        </div>
+                    </div>
+                    
+                    <h5 class="mt-4">Preparación (día de cocción):</h5>
+                    <div class="d-flex align-items-start mb-3">
+                        <span class="step-number">4</span>
+                        <div>
+                            <p>Saca la masa del refrigerador 2 horas antes de hornear. Precalienta el horno al máximo (250-300°C) con piedra para pizza o bandeja de horno invertida dentro.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex align-items-start mb-3">
+                        <span class="step-number">5</span>
+                        <div>
+                            <p>Estira cada bola de masa sobre papel de horno enharinado hasta 3-4mm de grosor. Para bordes extra crujientes, pincela los bordes con mezcla de miel y agua (1:1).</p>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex align-items-start mb-3">
+                        <span class="step-number">6</span>
+                        <div>
+                            <p>Extiende una capa delgada de salsa de tomate, dejando 1cm libre en los bordes. Espolvorea la mitad del queso mozzarella.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex align-items-start mb-3">
+                        <span class="step-number">7</span>
+                        <div>
+                            <p>Coloca la mitad del pepperoni (asegurando que las rodajas se superpongan ligeramente). Añade el resto del queso y luego el pepperoni restante (esto creará dos texturas de pepperoni).</p>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex align-items-start mb-3">
+                        <span class="step-number">8</span>
+                        <div>
+                            <p>Espolvorea parmesano, hojuelas de chile y orégano. Rocía ligeramente con aceite de oliva.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex align-items-start mb-3">
+                        <span class="step-number">9</span>
+                        <div>
+                            <p>Transfiere la pizza (con el papel) a la piedra caliente. Hornea 8-10 minutos hasta que el borde esté dorado y el pepperoni forme "copas" crujientes.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex align-items-start mb-3">
+                        <span class="step-number">10</span>
+                        <div>
+                            <p>Saca del horno y deja reposar 1 minuto antes de cortar. Para pepperoni extra crujiente, puedes colocar unos slices adicionales y meter 1 minuto más bajo el grill.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="chef-tip mt-4">
+                        <h5><i class="fas fa-fire me-2"></i>Técnica de Cocción Alternativa:</h5>
+                        <p class="mb-0"><strong>Sartén + Horno:</strong> Para máxima crujiencia, cocina primero la base 2-3 min en sartén de hierro a fuego alto, luego termina bajo el grill del horno. <strong>Parrilla:</strong> Cocina indirecta a 300°C con tapa cerrada.</p>
+                    </div>
+                    
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <div class="card border-0 shadow-sm">
+                                <div class="card-body">
+                                    <h5><i class="fas fa-wine-bottle me-2"></i>Maridaje</h5>
+                                    <p>Combina con cerveza IPA artesanal o vino tinto joven con taninos suaves como un Primitivo o Zinfandel.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card border-0 shadow-sm">
+                                <div class="card-body">
+                                    <h5><i class="fas fa-ice-cream me-2"></i>Acompañamiento</h5>
+                                    <p>Sirve con aros de cebolla crujientes o ensalada César. De postre, gelato de vainilla contrasta perfectamente.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="pepperoni-tip mt-4">
+                        <h5><i class="fas fa-question-circle me-2"></i>¿Por qué mi pepperoni no queda crujiente?</h5>
+                        <p class="mb-0">1) Temperatura del horno demasiado baja - necesita mínimo 250°C. 2) Pepperoni de baja calidad (necesita 30%+ de grasa). 3) No usar técnica de doble capa (parte bajo queso, parte sobre queso). 4) Cortar el pepperoni demasiado grueso.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">© 2023 Sabores & Delicias. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Animación para los pasos de preparación
+        document.addEventListener('DOMContentLoaded', function() {
+            const steps = document.querySelectorAll('.d-flex.align-items-start.mb-3');
+            
+            steps.forEach((step, index) => {
+                setTimeout(() => {
+                    step.style.opacity = '1';
+                    step.style.transform = 'translateX(0)';
+                }, index * 200);
+            });
+            
+            // Efecto especial para el tip del pepperoni
+            const pepperoniTip = document.querySelector('.pepperoni-tip');
+            setTimeout(() => {
+                pepperoniTip.style.border = '2px solid var(--primary-color)';
+                pepperoniTip.style.transform = 'scale(1.02)';
+            }, 1500);
+        });
+    </script>
+</body>
+</html>
